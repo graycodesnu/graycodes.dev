@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <header className="bg-black-variant border-b border-light-black-variant">
       <div className="">
-        <nav className="flex items-center justify-between ml-4 md:justify-start md:space-x-10">
+        <nav className="flex items-center justify-between ml-6 mr-6 md:justify-start md:space-x-10">
           <div className="flex justify-start">
             <a href="/">
               <span className="sr-only">Grayson Harvey</span>
@@ -52,7 +52,7 @@ export default function Navbar() {
           <div className="ml-10 space-x-4">
             <a
               href="#"
-              className="inline-block rounded-md py-2 px-3 mr-4 text-base font-medium outline outline-lavender text-light-grey  hover:outline-green"
+              className="inline-block rounded-md py-2 px-3  text-base font-medium outline outline-lavender text-light-grey  hover:outline-green"
             >
               Download Resume
             </a>
