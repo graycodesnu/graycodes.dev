@@ -9,11 +9,11 @@ export default function Navbar() {
   return (
     <header className="bg-black-variant border-b border-light-black-variant">
       <div className="">
-        <nav className="flex items-center justify-between p-2 md:justify-start md:space-x-10">
-          <div className="flex justify-start lg:w-0 lg:flex-1">
+        <nav className="flex items-center justify-between ml-4 md:justify-start md:space-x-10">
+          <div className="flex justify-start">
             <a href="/">
               <span className="sr-only">Grayson Harvey</span>
-            <svg width="220" height="80" version="1.0" viewBox="0 0 375 375">
+            <svg width="100" height="100" version="1.0" viewBox="0 0 375 375">
               <defs>
                 <clipPath id="a">
                   <path d="M51.305 185.273h285.89v23.75H51.305Zm0 0" />
@@ -37,7 +37,7 @@ export default function Navbar() {
             </a>
           </div>
 
-          <div className="ml-10 flex justify-center space-x-8 lg:block">
+          <div className=" hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-12">
               {navigation.map((link) => (
                 <a key={link.name} href={link.href} className="text-base font-medium text-light-grey hover:text-green">
                   {link.name}
@@ -50,22 +50,14 @@ export default function Navbar() {
 
             <a
               href="#"
-              className="inline-block rounded-md py-2 px-2 text-base font-medium outline outline-lavender text-light-grey  hover:bg-green"
-            >
-              Sign up
-            </a>
-          </div>
-
-
-
-          <div className="flex justify-end">
-            <a
-              className="inline-block px-2 py-2 outline hover:bg-green outline-lavender text-light-grey rounded-md"
-              href="#"
+              className="inline-block rounded-md py-2 px-3 mr-4 text-base font-medium outline outline-lavender text-light-grey  hover:bg-green"
             >
               Download Resume
             </a>
           </div>
+
+
+
         </nav>
       </div>
     </header>
