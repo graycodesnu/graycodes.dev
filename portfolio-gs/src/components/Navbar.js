@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
-    <header className="bg-light-black border-b border-light-black-variant">
-      <div className="flex items-center justify-between max-w-7xl mx-auto">
+    <header className="bg-black-variant border-b border-light-black-variant">
+      <div className="flex items-center justify-between max-w-7xl mx-auto" >
         <svg width="220" height="70" version="1.0" viewBox="0 0 375 375">
           <defs>
             <clipPath id="a">

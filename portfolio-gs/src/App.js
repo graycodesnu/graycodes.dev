@@ -7,7 +7,7 @@ import Contact from "./components/pages/Contact";
 
 function App() {
   return (
-    <div className="font-montserrat  text-light-grey">
+    <div className="font-montserrat bg-light-black text-light-grey">
       <BrowserRouter>
         <Navbar />
         <Routes>
