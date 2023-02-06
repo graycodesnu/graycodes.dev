@@ -5,6 +5,7 @@ import Background from "./components/Background";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/footer";
+import SocialMedia from "./components/socialMedia";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer/>
+        <SocialMedia/>
+        <Footer />
       </BrowserRouter>
     </div>
   );
