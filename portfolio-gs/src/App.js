@@ -1,20 +1,20 @@
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import { Routes, Route, BrowserRouter} from "react-router-dom";
 import Home from "./components/pages/Home";
-import About from "./components/pages/About";
+import Background from "./components/pages/Background";
 import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
 
 function App() {
   return (
-    <div className="font-montserrat">
-      <Navbar />
+    <div className="font-montserrat  text-light-grey">
       <BrowserRouter>
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/projects" element={<Projects/>} />
-          <Route path="/contact" element={<Contact/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/background" element={<Background />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </div>
