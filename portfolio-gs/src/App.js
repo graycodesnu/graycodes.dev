@@ -5,7 +5,7 @@ import Background from "./components/Background";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/footer";
-import SocialMedia from "./components/socialMedia";
+import SocialMedia from "./components/SocialMedia";
 
 function App() {
   return (
