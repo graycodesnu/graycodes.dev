@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Background from "./components/Background";
@@ -10,17 +10,13 @@ import SocialMedia from "./components/SocialMedia";
 function App() {
   return (
     <div className="font-montserrat bg-light-black text-light-grey">
-      <BrowserRouter>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/background" element={<Background />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+          <Home />
+          <Background />
+          <Projects />
+          <Contact />
         <SocialMedia/>
         <Footer />
-      </BrowserRouter>
     </div>
   );
 }
