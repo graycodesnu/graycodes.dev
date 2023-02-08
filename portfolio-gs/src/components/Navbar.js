@@ -7,7 +7,7 @@ const navigation = [
 
 export default function Navbar() {
   return (
-    <header className="bg-black-variant border-b border-light-black-variant">
+    <header className="bg-primary-alt border-b border-light-black-variant shadow-sm shadow-blue">
       <div className="">
         <nav className="flex items-center justify-between ml-6 mr-6 md:justify-start md:space-x-10">
           <div className="flex justify-start">
@@ -42,7 +42,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-base font-medium text-light-grey hover:text-green"
+                className="text-base font-medium text-secondary hover:text-gold"
               >
                 {link.name}
               </a>
@@ -52,7 +52,7 @@ export default function Navbar() {
           <div className="ml-10 space-x-4">
             <a
               href="#"
-              className="inline-block rounded-md py-2 px-3  text-base font-medium outline outline-lavender text-light-grey  hover:outline-green"
+              className="inline-block rounded-md py-2 px-3  text-base font-medium outline outline-green text-light-grey  hover:outline-gold"
             >
               Download Resume
             </a>
