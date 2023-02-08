@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <header className="bg-primary-alt border-b border-light-black-variant shadow-sm shadow-blue">
       <div className="">
-        <nav className="flex items-center justify-between ml-6 mr-6 md:justify-start md:space-x-10">
+        <nav className="flex items-center justify-between ml-12 mr-12 md:justify-start md:space-x-10">
           <div className="flex justify-start">
             <a href="/">
               <span className="sr-only">Grayson Harvey</span>

@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 import Background from "./components/Background";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import SocialMedia from "./components/SocialMedia";
 
 function App() {

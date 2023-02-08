@@ -78,7 +78,7 @@ const navigation = [
 export default function SocialMedia() {
   return (
     <>
-      <div className="fixed  bottom-0 left-0 content-start ml-6 object-left">
+      <div className="fixed  bottom-0 left-0 content-start ml-12 object-left">
         <div className="space-x-6 md:order-2 ">
           {navigation.map((item) => (
             <a
@@ -92,7 +92,7 @@ export default function SocialMedia() {
           ))}
           
         </div>
-        <div class=" w-0.5 h-20 bg-green"></div>
+        <div class=" w-0.5 h-60 bg-green"></div>
 
       </div>
     </>
