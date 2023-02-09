@@ -1,4 +1,5 @@
 import { heroData } from "../data/heroData";
+import heroImg from "../assets/heroImg.jpg"
 
 export default function Hero() {
 
@@ -19,11 +20,11 @@ export default function Hero() {
 
   return (
   <>
-  <div className="relative ml-20 bg-primary">
+  <div className="relative ml-20 mt-0.5 bg-primary">
       <div className="mx-auto max-w-7xl">
         <div className="relative z-10 lg:w-full lg:max-w-2xl">
           <svg
-            className="absolute inset-y-0 right-8 hidden h-full w-80 translate-x-1/2 transform fill-blue lg:block"
+            className="absolute inset-y-0 right-8 hidden fill-primary h-full w-80 translate-x-1/2 transform lg:block"
             viewBox="0 0 100 100"
             preserveAspectRatio="none"
             aria-hidden="true"
@@ -58,11 +59,12 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <div className="
+       lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <img
-          className="aspect-[5/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-          src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
-          alt=""
+          className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
+          src={heroImg}
+          alt="Grayson Harvey"
         />
       </div>
     </div>
