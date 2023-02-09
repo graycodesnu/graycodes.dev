@@ -1,11 +1,15 @@
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Background", href: "/background" },
-  { name: "Projects", href: "/projects"},
+  { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <header className="bg-primary-alt border-b border-light-black-variant shadow-sm shadow-blue">
       <div className="">
