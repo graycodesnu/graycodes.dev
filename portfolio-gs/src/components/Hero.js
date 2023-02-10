@@ -1,5 +1,6 @@
 import { heroData } from "../data/heroData";
-import heroImg from "../assets/heroImg.jpg"
+import heroImg from "../assets/heroImg.jpg";
+// import Projects from "./Projects"
 
 export default function Hero() {
 
@@ -45,14 +46,9 @@ export default function Hero() {
 {heroBio}
               </p>
               <div className="mt-10 flex items-center gap-x-6">
-                <a
-                  href="#"
-                  className="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
-                  Get started
-                </a>
+{/* TODO: Link href to project page*/}
                 <a href="#" className="text-base font-semibold leading-7 text-gray-900">
-                  Learn more <span aria-hidden="true">→</span>
+                  View my projects <span aria-hidden="true">→</span>
                 </a>
               </div>
             </div>
