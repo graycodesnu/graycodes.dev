@@ -13,7 +13,7 @@ const navigation = [
   { name: "Contact", href: "/contact", current: false },
 ];
 
-// Todo: Define classses and figure out what this does
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -88,7 +88,7 @@ export default function Navbar() {
                   </a>
                 </div>
 
-                <div className="hidden sm:ml-6 sm:block">
+                <div className="pt-6 hidden sm:ml-6 sm:block ">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
