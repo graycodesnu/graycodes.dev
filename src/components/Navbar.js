@@ -1,18 +1,21 @@
+// Import components
+import Hero from "./Hero";
+import Background from "./Background";
+import Projects from "./Projects";
+import Contact from "./Contact";
 // Import logo asset
 import { ReactComponent as Logo } from "../assets/logo.svg";
 // Import responsive elements
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 // Nav routes
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "Background", href: "/background", current: false },
-  { name: "Projects", href: "/projects", current: false },
-  { name: "Contact", href: "/contact", current: false },
+  { name: "Home", href: { Hero }, current: true },
+  { name: "Background", href: { Background }, current: false },
+  { name: "Projects", href: { Projects }, current: false },
+  { name: "Contact", href: { Contact }, current: false },
 ];
-
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -60,12 +63,12 @@ export default function Navbar() {
 
     <Disclosure
       as="nav"
-      className="py-5 bg-primary-alt border-b border-light-black-variant shadow-sm shadow-blue"
+      className="py-3 bg-primary-alt border-b border-light-black-variant shadow-sm shadow-blue"
     >
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
+            <div className="relative flex items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2  text-green hover: hover:text-gold focus:outline-none">
@@ -81,10 +84,7 @@ export default function Navbar() {
                 {/* Logo */}
                 <div className="flex flex-shrink-0 items-center">
                   <a href="/">
-                    <Logo
-                      className="block h-20 w-auto lg:hidden"
-                      alt="Grayson Harvey"
-                    />
+                    <Logo className="block h-20 w-auto" alt="Grayson Harvey" />
                   </a>
                 </div>
 
@@ -98,7 +98,7 @@ export default function Navbar() {
                           item.current
                             ? "bg-blue text-gold"
                             : "text-secondary hover:text-gold",
-                          "px-3 py-2 rounded-md text-sm font-medium"
+                          "px-3 py-2 rounded-md text-md font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -114,10 +114,10 @@ export default function Navbar() {
                 <a
                   href="#"
                   className="
-                  
+                  h-10 mt-6
                   absolute inset-y-0 right-0 flex items-center 
                   
-                  rounded-md px-3 text-base font-medium outline outline-green  hover:outline-gold hover:text-gold"
+                  rounded-md px-2 text-base font-medium outline outline-green  hover:outline-gold hover:text-gold"
                 >
                   Download Resume
                 </a>
