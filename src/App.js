@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SocialMedia from "./components/SocialMedia";
+import ScrollArrow from "./components/ScrollArrow"
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
           <Background />
           <Projects />
           <Contact />
-        <SocialMedia/>
+          <SocialMedia/>
+          <ScrollArrow/>
         <Footer />
     </div>
   );
