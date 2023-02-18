@@ -1,1 +1,1 @@
-Hi! This portfolio is a work-in-progress. Stay tuned for updates. In the meantime, [click here](https://graycodesnu.github.io/g-harvey-portfolio) to see my current live portfolio. 
+Welcome, dear reader! This portfolio is a work-in-progress. Stay tuned for updates. In the meantime, [click here](https://graycodesnu.github.io/g-harvey-portfolio) to see my current live portfolio. 
