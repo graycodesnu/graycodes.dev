@@ -58,14 +58,17 @@ export default function Navbar() {
     //   </header>
     // </>
 
-    <Disclosure as="nav" className="bg-primary-alt border-b border-light-black-variant shadow-sm shadow-blue">
+    <Disclosure
+      as="nav"
+      className="py-5 bg-primary-alt border-b border-light-black-variant shadow-sm shadow-blue"
+    >
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-{/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2  text-green hover: hover:text-gold">
+                {/* Mobile menu button*/}
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2  text-green hover: hover:text-gold focus:outline-none">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -75,19 +78,12 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-{/* Logo */}
+                {/* Logo */}
                 <div className="flex flex-shrink-0 items-center">
                   <a href="/">
                     <Logo
-                      className="block h-8 w-auto lg:hidden"
-                      src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                      alt="Your Company"
-                    />
-
-                    <Logo
-                      className="hidden h-8 w-auto lg:block"
-                      src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                      alt="Your Company"
+                      className="block h-20 w-auto lg:hidden"
+                      alt="Grayson Harvey"
                     />
                   </a>
                 </div>
@@ -113,7 +109,7 @@ export default function Navbar() {
                 </div>
               </div>
 
-{/* Download Resume */}
+              {/* Download Resume */}
               <div className="ml-10 space-x-4">
                 <a
                   href="#"
@@ -121,14 +117,14 @@ export default function Navbar() {
                   
                   absolute inset-y-0 right-0 flex items-center 
                   
-                  rounded-md py-2 px-3 text-base font-medium outline outline-green  hover:outline-gold hover:text-gold"
+                  rounded-md px-3 text-base font-medium outline outline-green  hover:outline-gold hover:text-gold"
                 >
                   Download Resume
                 </a>
               </div>
             </div>
           </div>
-{/* Bar Menu */}
+          {/* Bar Menu */}
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
