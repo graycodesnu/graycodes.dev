@@ -22,13 +22,13 @@ function App() {
             <SocialMedia />
           </div>
 
-          <div className="grow mx-10">
+          <div className="grow px-10">
             <Background />
             <Projects />
             <Contact />
           </div>
 
-          <div>
+          <div className="px-10">
             <ScrollArrow />
           </div>
         </div>

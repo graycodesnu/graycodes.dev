@@ -78,7 +78,7 @@ const navigation = [
 export default function SocialMedia() {
   return (
     <>
-      <div className="ml-14 ">
+      <div className="px-14 ">
         <div className="space-x-6 md:order-2 justify-items-center">
           {navigation.map((item) => (
             <a
