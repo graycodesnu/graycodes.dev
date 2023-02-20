@@ -24,8 +24,12 @@ export default function Background() {
   return (
   <>  
     <h1>Background</h1>
+    <p>Qui esse adipisicing dolor reprehenderit velit esse adipisicing amet consequat nostrud commodo consectetur. Fugiat elit aliqua anim reprehenderit in. Proident aliqua officia ad fugiat. Aliquip labore fugiat dolore reprehenderit dolor occaecat eiusmod cillum irure.</p>
+
 
   <h3>Grayson Harvey</h3>
+  <p>Qui esse adipisicing dolor reprehenderit velit esse adipisicing amet consequat nostrud commodo consectetur. Fugiat elit aliqua anim reprehenderit in. Proident aliqua officia ad fugiat. Aliquip labore fugiat dolore reprehenderit dolor occaecat eiusmod cillum irure.</p>
+
   </>
 
   )

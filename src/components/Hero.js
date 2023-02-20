@@ -21,7 +21,7 @@ export default function Hero() {
 
   return (
   <>
-  <div className="relative ml-20 mt-0.5 bg-primary">
+  <div className="relative ml-20 mt-0.5">
       <div className="mx-auto max-w-7xl">
         <div className="relative z-10 lg:w-full lg:max-w-2xl">
           <svg
@@ -47,7 +47,7 @@ export default function Hero() {
               </p>
               <div className="mt-10 flex items-center gap-x-6">
 {/* TODO: Link href to project page*/}
-                <a href="#" className="text-base font-semibold leading-7 text-gray-900">
+                <a href="projects" className="text-base font-semibold leading-7 text-gray-900">
                   View my projects <span aria-hidden="true">→</span>
                 </a>
               </div>

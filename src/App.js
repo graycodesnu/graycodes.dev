@@ -1,6 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+// import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
 import Background from "./components/Background";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
@@ -17,26 +16,23 @@ function App() {
       >
         <Navbar />
 
-        {/* Flex formatting */}
+        <div className="flex flex-row">
 
-        {/* <div className="flex flex-col  flex-1"> */}
-        {/* Sidebar start */}
-        {/* <div className="w-fixed w-full h-full flex-shrink flex-grow-0 "> */}
-        <SocialMedia />
-        {/* </div> */}
+          <div>
+            <SocialMedia />
+          </div>
 
-        {/* Main start */}
-        <main className="flex-growpt-1 mx-20">
-          {/* <Hero /> */}
-          <Background />
-          <Projects />
-          <Contact />
-        </main>
+          <div className="grow mx-10">
+            <Background />
+            <Projects />
+            <Contact />
+          </div>
 
-        {/* Scroll arrow start */}
-          <ScrollArrow className="flex flex-row-reverse"/>
+          <div>
+            <ScrollArrow />
+          </div>
+        </div>
 
-        {/* </div> */}
         <Footer />
       </div>
     </>
