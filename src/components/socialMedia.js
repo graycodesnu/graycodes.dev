@@ -92,7 +92,7 @@ export default function SocialMedia() {
           ))}
           
         </div>
-        <div class=" w-0.5 h-60 bg-green"></div>
+        <div class=" w-0.5 h-24 bg-green"></div>
 
       </div>
     </>
