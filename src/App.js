@@ -11,30 +11,15 @@ import ScrollArrow from "./components/ScrollArrow";
 function App() {
   return (
     <>
-      <div className="font-montserrat bg-primary text-secondary w-full flex flex-col sm:flex-row flex-wrap sm:flex-nowrap py-4 flex-grow">
-        {/* fixed width */}
-        <div className="w-fixed w-full flex-shrink flex-grow-0 px-4">
-          {/* Nav format */}
-          <div className="sticky top-0 p-4 w-full h-full">
-            <Navbar />
-          </div>
-        </div>
-        {/* Main content */}
-        <main role="main" className="w-full flex-grow pt-1 px-3">
-          {/* <Hero /> */}
-          <Background />
-          <Projects />
-          <Contact />
-        </main>
-        <div className="w-fixed w-full flex-shrink flex-grow-0 px-2">
-                  {/* Sidebars */}
-          <div className="flex sm:flex-col px-2">
-            <SocialMedia />
-            <ScrollArrow />
-          </div>
-        </div>
-        <Footer/>
-
+      <div className="font-montserrat bg-primary text-secondary">
+        <Navbar />
+        <Hero />
+        <Background />
+        <Projects />
+        <Contact />
+        <SocialMedia />
+        <ScrollArrow />
+        <Footer />
       </div>
     </>
   );
