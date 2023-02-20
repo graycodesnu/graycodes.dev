@@ -11,18 +11,32 @@ import ScrollArrow from "./components/ScrollArrow";
 function App() {
   return (
     <>
-      <div className="font-montserrat bg-primary text-secondary
-      ">
+      <div
+        className="font-montserrat bg-primary text-secondary
+      "
+      >
         <Navbar />
+
         {/* Flex formatting */}
-        <div className="flex flex-col">
-        {/* <Hero /> */}
-        <Background />
-        <Projects />
-        <Contact />
+
+        {/* <div className="flex flex-col  flex-1"> */}
+        {/* Sidebar start */}
+        {/* <div className="w-fixed w-full h-full flex-shrink flex-grow-0 "> */}
         <SocialMedia />
-        <ScrollArrow />
-        </div>
+        {/* </div> */}
+
+        {/* Main start */}
+        <main className="flex-growpt-1 mx-20">
+          {/* <Hero /> */}
+          <Background />
+          <Projects />
+          <Contact />
+        </main>
+
+        {/* Scroll arrow start */}
+          <ScrollArrow className="flex flex-row-reverse"/>
+
+        {/* </div> */}
         <Footer />
       </div>
     </>

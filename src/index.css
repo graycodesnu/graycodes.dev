@@ -6,7 +6,12 @@ html {
   background-color: #121212;
 };
 
-
+/* @media (min-width: 640px) {
+  .w-fixed {
+      flex: 0 1 230px;
+      min-width: 230px;
+  }
+} */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
