@@ -31,7 +31,8 @@ export default function ScrollArrow() {
   return (
     <div className="scroll-to-top">
       {isVisible && (
-        <div onClick={ScrollArrow} className="text-green hover:text-gold cursor-pointer flex
+        <div onClick={ScrollArrow} className="
+        h-8 w-8 text-green hover:text-gold cursor-pointer flex
         flex-row-reverse	
         transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
           <UpArrow/>

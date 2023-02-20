@@ -1,4 +1,4 @@
-// import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Background from "./components/Background";
@@ -11,14 +11,18 @@ import ScrollArrow from "./components/ScrollArrow";
 function App() {
   return (
     <>
-      <div className="font-montserrat bg-primary text-secondary">
+      <div className="font-montserrat bg-primary text-secondary
+      ">
         <Navbar />
-        <Hero />
+        {/* Flex formatting */}
+        <div className="flex flex-col">
+        {/* <Hero /> */}
         <Background />
         <Projects />
         <Contact />
         <SocialMedia />
         <ScrollArrow />
+        </div>
         <Footer />
       </div>
     </>
