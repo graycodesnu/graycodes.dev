@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SocialMedia from "./components/SocialMedia";
 import ScrollArrow from "./components/ScrollArrow";
+import Hero from "./components/Hero";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           </div>
 
           <div className="grow px-10">
+            <Hero/>
             <Background />
             <Projects />
             <Contact />

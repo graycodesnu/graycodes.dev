@@ -78,8 +78,8 @@ const navigation = [
 export default function SocialMedia() {
   return (
     <>
-      <div className="px-14 ">
-        <div className="space-x-6 md:order-2 justify-items-center">
+      <div className="px-14 items-center">
+        <div className="space-x-6 md:order-2 ">
           {navigation.map((item) => (
             <a
               key={item.name}
@@ -90,8 +90,11 @@ export default function SocialMedia() {
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </a>
           ))}
-          <div class=" w-0.5 h-24 bg-green"></div>
+          <hr className="w-0.5 h-24 bg-green border-none"/>
         </div>
+        {/* <div className="">
+          <hr className="w-0.5 h-24 bg-green border-none"/>
+        </div> */}
       </div>
     </>
   );
