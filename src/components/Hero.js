@@ -1,6 +1,9 @@
+// Import react scroll for button 
+import { Link } from "react-scroll";
+
+// Import data
 import { heroData } from "../data/heroData";
 import heroImg from "../assets/heroImg.jpg";
-// import Projects from "./Projects"
 
 export default function Hero() {
 
@@ -47,9 +50,12 @@ export default function Hero() {
               </p>
               <div className="mt-10 flex items-center gap-x-6">
 {/* TODO: Link href to project page*/}
-                <a href="projects" className="text-base font-semibold leading-7 text-gray-900">
+                <Link to="projects" spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={500} className="text-base font-semibold leading-7 text-gray-900">
                   View my projects <span aria-hidden="true">→</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

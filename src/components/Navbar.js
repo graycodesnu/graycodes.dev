@@ -1,10 +1,6 @@
 // Import react scroll for nav buttons 
 import { Link } from "react-scroll";
-// Import components
-import Hero from "./Hero";
-import Background from "./Background";
-import Projects from "./Projects";
-import Contact from "./Contact";
+
 // Import logo asset
 import { ReactComponent as Logo } from "../assets/logo.svg";
 // Import responsive elements
@@ -50,9 +46,12 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 {/* Logo */}
                 <div className="flex flex-shrink-0 items-center">
-                  <a href="/">
+                  <Link   to="hero" spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={500}>
                     <Logo className="block h-28 w-auto" alt="Grayson Harvey" />
-                  </a>
+                  </Link>
                 </div>
 {/* TODO: EDIT flex and centering on wide screen (pt should be nixed */}
                 <div className="pt-6 hidden sm:ml-6 sm:block ">
