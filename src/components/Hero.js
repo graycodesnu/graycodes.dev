@@ -53,7 +53,7 @@ export default function Hero() {
                 <Link to="projects" spy={true}
                       smooth={true}
                       offset={50}
-                      duration={500} className="text-base font-semibold leading-7 text-gray-900">
+                      duration={500} className="text-base font-semibold leading-7 text-gray-900 cursor-pointer">
                   View my projects <span aria-hidden="true">→</span>
                 </Link>
               </div>

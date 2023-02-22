@@ -70,7 +70,7 @@ export default function Navbar() {
                           item.current
                             ? "bg-blue text-gold"
                             : "text-secondary hover:text-gold",
-                          "px-3 py-2 rounded-md text-md font-medium"
+                          "px-3 py-2 rounded-md text-md font-medium cursor-pointer"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
