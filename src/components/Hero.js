@@ -21,7 +21,7 @@ export default function Hero() {
 
   return (
   <>
-  <div className="relative ml-20 mt-0.5">
+  <div id="hero" className="relative ml-20 mt-0.5" >
       <div className="mx-auto max-w-7xl">
         <div className="relative z-10 lg:w-full lg:max-w-2xl">
           <svg

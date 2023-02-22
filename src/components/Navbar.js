@@ -1,3 +1,5 @@
+// Import react scroll for nav buttons 
+import { Link } from "react-scroll";
 // Import components
 import Hero from "./Hero";
 import Background from "./Background";
@@ -11,10 +13,10 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 // Nav routes
 const navigation = [
-  { name: "Home", href: { Hero }, current: true },
-  { name: "Background", href: { Background }, current: false },
-  { name: "Projects", href: { Projects }, current: false },
-  { name: "Contact", href: { Contact }, current: false },
+  { name: "Home", href: "hero", current: true },
+  { name: "Background", href: "background", current: false },
+  { name: "Projects", href: "projects", current: false },
+  { name: "Contact", href: "contact", current: false },
 ];
 
 function classNames(...classes) {
@@ -56,9 +58,14 @@ export default function Navbar() {
                 <div className="pt-6 hidden sm:ml-6 sm:block ">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link
+                      spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={500}
+
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         className={classNames(
                           item.current
                             ? "bg-blue text-gold"
@@ -68,7 +75,7 @@ export default function Navbar() {
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>

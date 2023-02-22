@@ -12,27 +12,27 @@ function App() {
   return (
     <>
       <div
-        className="font-montserrat bg-primary text-secondary
+        className="font-montserrat text-secondary
       "
       >
         <Navbar />
 
         <div className="flex flex-row">
-
           <div>
             <SocialMedia />
           </div>
 
           <div className="grow px-10">
-            <Hero/>
-            <Background />
-            <Projects />
-            <Contact />
+            <Hero id="/"/>
+            <Background id="background"/>
+            <Projects id="projects" />
+            <Contact id="contact"/>
           </div>
 
           <div className="px-10">
             <ScrollArrow />
           </div>
+
         </div>
 
         <Footer />

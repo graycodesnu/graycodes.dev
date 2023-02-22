@@ -23,6 +23,7 @@ export default function Background() {
 
   return (
   <>  
+    <div id="background"></div>
     <h1>Background</h1>
     <p>Qui esse adipisicing dolor reprehenderit velit esse adipisicing amet consequat nostrud commodo consectetur. Fugiat elit aliqua anim reprehenderit in. Proident aliqua officia ad fugiat. Aliquip labore fugiat dolore reprehenderit dolor occaecat eiusmod cillum irure.</p>
 

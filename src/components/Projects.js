@@ -1,6 +1,7 @@
 export default function Projects() {
   return (
     <>
+      <div id="projects"></div>
       <h1>Projects</h1>
       <p>
         Qui esse adipisicing dolor reprehenderit velit esse adipisicing amet
