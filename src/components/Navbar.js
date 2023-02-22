@@ -1,4 +1,4 @@
-// Import react scroll for nav buttons 
+// Import react scroll for nav buttons
 import { Link } from "react-scroll";
 
 // Import logo asset
@@ -23,7 +23,6 @@ export default function Navbar() {
   // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-
     <Disclosure
       as="nav"
       className="py-3 bg-primary-alt border-b border-light-black-variant shadow-sm shadow-blue"
@@ -46,23 +45,25 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 {/* Logo */}
                 <div className="flex flex-shrink-0 items-center">
-                  <Link   to="hero" spy={true}
-                      smooth={true}
-                      offset={50}
-                      duration={500}>
+                  <Link
+                    to="hero"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
                     <Logo className="block h-28 w-auto" alt="Grayson Harvey" />
                   </Link>
                 </div>
-{/* TODO: EDIT flex and centering on wide screen (pt should be nixed */}
+                {/* TODO: EDIT flex and centering on wide screen (pt should be nixed */}
                 <div className="pt-6 hidden sm:ml-6 sm:block ">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <Link
-                      spy={true}
-                      smooth={true}
-                      offset={50}
-                      duration={500}
-
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
                         key={item.name}
                         to={item.href}
                         className={classNames(
@@ -82,7 +83,7 @@ export default function Navbar() {
 
               {/* Download Resume */}
               <div className="ml-10 space-x-4">
-{/* TODO: EDIT flex and centering on wide screen (mt should be nixed */}
+                {/* TODO: EDIT flex and centering on wide screen (mt should be nixed */}
                 <a
                   href="#"
                   className="
@@ -100,20 +101,27 @@ export default function Navbar() {
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current
-                      ? "bg-blue text-gold"
-                      : "text-secondary hover:text-gold",
-                    "block px-3 py-2 rounded-md text-base font-medium"
-                  )}
-                  aria-current={item.current ? "page" : undefined}
+                <Link
+                  to={item.href}
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
                 >
-                  {item.name}
-                </Disclosure.Button>
+                  <Disclosure.Button
+                    key={item.name}
+                    as="a"
+                    className={classNames(
+                      item.current
+                        ? "bg-blue text-gold"
+                        : "text-secondary hover:text-gold",
+                      "block px-3 py-2 rounded-md text-base font-medium"
+                    )}
+                    aria-current={item.current ? "page" : undefined}
+                  >
+                    {item.name}
+                  </Disclosure.Button>
+                </Link>
               ))}
             </div>
           </Disclosure.Panel>
