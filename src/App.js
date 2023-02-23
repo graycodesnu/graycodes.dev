@@ -21,17 +21,14 @@ function App() {
           <div>
             <SocialMedia />
           </div>
-
           <div className="grow px-10">
-            <Hero id="/"/>
-            <Background id="background"/>
-            <Projects id="projects" />
-            <Contact id="contact"/>
-          </div>
+            <Hero id="/" />
 
-          <div className="px-10">
-            <ScrollArrow />
+            <Background id="background" />
+            <Projects id="projects" />
+            <Contact id="contact" />
           </div>
+          <ScrollArrow className="px-10 object-right"/>
 
         </div>
 
