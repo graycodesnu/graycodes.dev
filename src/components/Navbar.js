@@ -102,15 +102,15 @@ export default function Navbar() {
                 {/* </div> */}
 
                 {/* Download Resume */}
-                <div className="ml-10 space-x-4">
+                <div className="">
                   {/* TODO: EDIT flex and centering on wide screen (mt should be nixed */}
                   <a
                     href="#"
                     className="
-                  h-10 mt-6
-                  absolute inset-y-0 right-0 flex items-center 
+                 
+                  flex items-center 
                   
-                  rounded-md px-2 text-base font-medium outline outline-green  hover:outline-gold hover:text-gold"
+                  rounded-md px-2 py-2 text-base font-medium outline outline-green  hover:outline-gold hover:outline-2 hover:text-gold"
                   >
                     Download Resume
                   </a>
