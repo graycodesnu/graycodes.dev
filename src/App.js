@@ -28,8 +28,10 @@ function App() {
             <Projects id="projects" />
             <Contact id="contact" />
           </div>
-          <ScrollArrow className="px-10 object-right"/>
 
+          <div className="px-10 object-right">
+          <ScrollArrow />
+</div>
         </div>
 
         <Footer />

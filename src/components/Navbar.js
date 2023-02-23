@@ -25,14 +25,14 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="py-3 bg-primary-alt border-b border-light-black-variant shadow-sm shadow-blue"
+      className="py-3 bg-primary-alt border-b border-light-black-variant shadow-sm shadow-blue "
     >
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
+          <div className="mx-auto px-2 sm:px-6 lg:px-8">
+            <div className="outline outline-red relative flex items-center justify-between">
+              <div className="outline outline-silver absolute inset-y-0 left-0 flex items-center sm:hidden">
+                {/* Mobile menu buttons */}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2  text-green hover: hover:text-gold focus:outline-none">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -42,58 +42,79 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                {/* Logo */}
-                <div className="flex flex-shrink-0 items-center">
-                  <Link
-                    to="hero"
-                    spy={true}
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                  >
-                    <Logo className="block h-28 w-auto" alt="Grayson Harvey" />
-                  </Link>
-                </div>
+              {/* <div
+                className="outline outline-gold flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+              > */}
+              {/* Logo */}
+              <div
+                className="outline outline-green flex flex-1 flex-shrink-0 items-center
+                justify-center  
+                
+                "
+              >
+                <Link
+                  to="hero"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  <Logo
+                    className=" outline outline-blue block h-28 w-auto justify-items-start"
+                    alt="Grayson Harvey"
+                  />
+                </Link>
+                {/* </div> */}
                 {/* TODO: EDIT flex and centering on wide screen (pt should be nixed */}
-                <div className="pt-6 hidden sm:ml-6 sm:block ">
-                  <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <Link
-                        spy={true}
-                        smooth={true}
-                        offset={50}
-                        duration={500}
-                        key={item.name}
-                        to={item.href}
-                        className={classNames(
-                          item.current
-                            ? "bg-blue text-gold"
-                            : "text-secondary hover:text-gold",
-                          "px-3 py-2 rounded-md text-md font-medium cursor-pointer"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
-                  </div>
+                {/* <div
+                  className="outline outline-blue 
+                justify-items-center
+                pt-6 hidden sm:ml-6 sm:block "
+                > */}
+                <div
+                  className="outline outline-white 
+                  
+                  justify-items-center items-center
+                 hidden sm:ml-6 sm:block 
+                
+                 space-x-4"
+                >
+                  {navigation.map((item) => (
+                    <Link
+                      spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={500}
+                      key={item.name}
+                      to={item.href}
+                      className={classNames(
+                        item.current
+                          ? "bg-blue text-gold"
+                          : "text-secondary hover:text-gold",
+                        "px-3 py-2 rounded-md text-md font-medium cursor-pointer"
+                      )}
+                      aria-current={item.current ? "page" : undefined}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
                 </div>
-              </div>
+                {/* </div> */}
 
-              {/* Download Resume */}
-              <div className="ml-10 space-x-4">
-                {/* TODO: EDIT flex and centering on wide screen (mt should be nixed */}
-                <a
-                  href="#"
-                  className="
+                {/* Download Resume */}
+                <div className="ml-10 space-x-4">
+                  {/* TODO: EDIT flex and centering on wide screen (mt should be nixed */}
+                  <a
+                    href="#"
+                    className="
                   h-10 mt-6
                   absolute inset-y-0 right-0 flex items-center 
                   
                   rounded-md px-2 text-base font-medium outline outline-green  hover:outline-gold hover:text-gold"
-                >
-                  Download Resume
-                </a>
+                  >
+                    Download Resume
+                  </a>
+                </div>
               </div>
             </div>
           </div>
