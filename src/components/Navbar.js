@@ -47,10 +47,7 @@ export default function Navbar() {
               > */}
               {/* Logo */}
               <div
-                className="outline outline-green flex flex-1 flex-shrink-0 items-center
-                justify-center  
-                
-                "
+                className="outline outline-green flex flex-1 flex-shrink-0 items-center justify-between"
               >
                 <Link
                   to="hero"
@@ -71,49 +68,51 @@ export default function Navbar() {
                 justify-items-center
                 pt-6 hidden sm:ml-6 sm:block "
                 > */}
-                <div
-                  className="outline outline-white 
+                <div className="flex flex-row ">
+                  <div
+                    className="outline outline-white 
                   
                   justify-items-center items-center
                  hidden sm:ml-6 sm:block 
                 
                  space-x-4"
-                >
-                  {navigation.map((item) => (
-                    <Link
-                      spy={true}
-                      smooth={true}
-                      offset={50}
-                      duration={500}
-                      key={item.name}
-                      to={item.href}
-                      className={classNames(
-                        item.current
-                          ? "bg-blue text-gold"
-                          : "text-secondary hover:text-gold",
-                        "px-3 py-2 rounded-md text-md font-medium cursor-pointer"
-                      )}
-                      aria-current={item.current ? "page" : undefined}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
-                {/* </div> */}
+                  >
+                    {navigation.map((item) => (
+                      <Link
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                        key={item.name}
+                        to={item.href}
+                        className={classNames(
+                          item.current
+                            ? "bg-blue text-gold"
+                            : "text-secondary hover:text-gold",
+                          "px-3 py-2 rounded-md text-md font-medium cursor-pointer"
+                        )}
+                        aria-current={item.current ? "page" : undefined}
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                  {/* </div> */}
 
-                {/* Download Resume */}
-                <div className="">
-                  {/* TODO: EDIT flex and centering on wide screen (mt should be nixed */}
-                  <a
-                    href="#"
-                    className="
+                  {/* Download Resume */}
+                  <div className="">
+                    {/* TODO: EDIT flex and centering on wide screen (mt should be nixed */}
+                    <a
+                      href="#"
+                      className="
                  
                   flex items-center 
-                  
+
                   rounded-md px-2 py-2 text-base font-medium outline outline-green  hover:outline-gold hover:outline-2 hover:text-gold"
-                  >
-                    Download Resume
-                  </a>
+                    >
+                      Download Resume
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
