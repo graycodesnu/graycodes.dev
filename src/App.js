@@ -12,8 +12,7 @@ function App() {
   return (
     <>
       <div
-        className="font-montserrat text-secondary
-      "
+        className="font-montserrat text-secondary "
       >
         <Navbar />
 

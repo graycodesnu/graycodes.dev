@@ -9,7 +9,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 // Nav routes
 const navigation = [
-  { name: "Home", href: "hero", current: true },
+  { name: "Home", href: "hero", current: false },
   { name: "Background", href: "background", current: false },
   { name: "Projects", href: "projects", current: false },
   { name: "Contact", href: "contact", current: false },
@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="py-3 bg-primary-alt border-b border-light-black-variant shadow-sm shadow-blue "
+      className="py-3 bg-primary-alt border-b border-light-black-variant shadow-sm shadow-blue w-full sticky top-0"
     >
       {({ open }) => (
         <>
