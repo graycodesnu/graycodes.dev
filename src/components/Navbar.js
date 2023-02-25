@@ -30,8 +30,8 @@ export default function Navbar() {
       {({ open }) => (
         <>
           <div className="mx-auto px-2 sm:px-6 lg:px-8">
-            <div className="outline outline-red relative flex items-center justify-between">
-              <div className="outline outline-silver absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <div className="relative flex items-center justify-between">
+              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu buttons */}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2  text-green hover: hover:text-gold focus:outline-none">
                   <span className="sr-only">Open main menu</span>
@@ -42,13 +42,9 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              {/* <div
-                className="outline outline-gold flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
-              > */}
+
               {/* Logo */}
-              <div
-                className="outline outline-green flex flex-1 flex-shrink-0 items-center justify-between"
-              >
+              <div className=" flex flex-1 flex-shrink-0 items-center justify-between">
                 <Link
                   to="hero"
                   spy={true}
@@ -57,26 +53,13 @@ export default function Navbar() {
                   duration={500}
                 >
                   <Logo
-                    className=" outline outline-blue block h-28 w-auto justify-items-start"
+                    className="block h-28 w-auto justify-items-start"
                     alt="Grayson Harvey"
                   />
                 </Link>
-                {/* </div> */}
-                {/* TODO: EDIT flex and centering on wide screen (pt should be nixed */}
-                {/* <div
-                  className="outline outline-blue 
-                justify-items-center
-                pt-6 hidden sm:ml-6 sm:block "
-                > */}
-                <div className="flex flex-row ">
-                  <div
-                    className="outline outline-white 
-                  
-                  justify-items-center items-center
-                 hidden sm:ml-6 sm:block 
-                
-                 space-x-4"
-                  >
+
+                <div className="flex flex-row items-center space-x-4">
+                  <div className="justify-items-center hidden sm:ml-6 sm:block">
                     {navigation.map((item) => (
                       <Link
                         spy={true}
@@ -97,18 +80,13 @@ export default function Navbar() {
                       </Link>
                     ))}
                   </div>
-                  {/* </div> */}
 
                   {/* Download Resume */}
                   <div className="">
-                    {/* TODO: EDIT flex and centering on wide screen (mt should be nixed */}
                     <a
                       href="#"
                       className="
-                 
-                  flex items-center 
-
-                  rounded-md px-2 py-2 text-base font-medium outline outline-green  hover:outline-gold hover:outline-2 hover:text-gold"
+                  flex items-center rounded-md px-2 py-2 text-base font-medium outline outline-green  hover:outline-gold hover:outline-2 hover:text-gold"
                     >
                       Download Resume
                     </a>
