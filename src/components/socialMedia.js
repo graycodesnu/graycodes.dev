@@ -4,6 +4,7 @@ const navigation = [
     href: "https://www.linkedin.com/in/g-harvey/",
     icon: (props) => (
       <svg
+      height={30}
         xmlns="http://www.w3.org/2000/svg"
         role="img"
         viewBox="0 0 24 24"
@@ -25,6 +26,7 @@ const navigation = [
     href: "https://github.com/graycodesnu",
     icon: (props) => (
       <svg
+      height={30}
         fill="currentColor"
         viewBox="0 0 24 24"
         className=""
@@ -44,6 +46,7 @@ const navigation = [
     href: "https://www.instagram.com/graysonjharvey/",
     icon: (props) => (
       <svg
+      height={30}
         fill="currentColor"
         viewBox="0 0 24 24"
         className=""
@@ -63,6 +66,7 @@ const navigation = [
     href: "https://twitter.com/GraysonJHarvey",
     icon: (props) => (
       <svg
+      height={30}
         fill="currentColor"
         viewBox="0 0 24 24"
         className=""
@@ -78,8 +82,8 @@ const navigation = [
 export default function SocialMedia() {
   return (
     <>
-      <div className="px-14 items-center">
-        <div className="space-x-6 md:order-2 ">
+      <div className="items-center">
+        <div className="space-x-6">
           {navigation.map((item) => (
             <a
               key={item.name}
@@ -87,10 +91,10 @@ export default function SocialMedia() {
               className="text-green hover:text-gold"
             >
               <span className="sr-only ">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
+              <item.icon className="" aria-hidden="true" />
             </a>
           ))}
-          <hr className="w-0.5 h-24  bg-green border-none"/>
+          <div className="w-0.5 h-24  bg-green border-none"/>
         </div>
         {/* <div className="">
           <hr className="w-0.5 h-24 bg-green border-none"/>

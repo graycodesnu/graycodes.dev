@@ -15,11 +15,10 @@ function App() {
       <div className="font-montserrat text-secondary ">
         <Navbar />
 
-        <div className="flex flex-row">
-          <div>
-            <SocialMedia />
-          </div>
-          <div className="grow px-10">
+        <div className="grid grid-cols-11">
+            <SocialMedia className="col-span-1 col-start-1 col-end-2" />
+
+          <div className="col-span-9 grow border border-red">
             <Hero id="/" />
             <Divider />
             <Background id="background" />
@@ -30,9 +29,8 @@ function App() {
             <Divider/>
           </div>
 
-          <div className="px-10 object-right">
-            <ScrollArrow />
-          </div>
+          <ScrollArrow className="col-span-1 col-start-11 border border-green absolute "/>
+
         </div>
 
         <Footer />
