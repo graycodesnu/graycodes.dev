@@ -9,12 +9,12 @@ export default function ScrollArrow() {
   const ScrollArrow = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
   useEffect(() => {
-    // Button is displayed after scrolling for 500 pixels
+    // Button is displayed after scrolling for 100 pixels
     const toggleVisibility = () => {
       if (window.pageYOffset > 100) {
         setIsVisible(true);
@@ -29,12 +29,20 @@ export default function ScrollArrow() {
   }, []);
 
   return (
-    <div className="">
-      {isVisible && (
-        <div onClick={ScrollArrow} className="fixed inset-y-0 right-0 text-green hover:text-gold cursor-pointer transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
-          <UpArrow/>
-        </div>
-      )}
-    </div>
+
+<div className="flex flex-col ">
+  <div className="fixed bottom-3 right-16">
+    
+ {isVisible && (
+          <div
+            onClick={ScrollArrow}
+            className="text-green  hover:text-gold cursor-pointer transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+          >
+            <UpArrow className="h-10 w-10"/>
+          </div>
+        )}
+  </div>
+</div>
+
   );
 }

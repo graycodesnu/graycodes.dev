@@ -29,15 +29,12 @@ function App() {
             <Divider />
           </div>
 
-          <div className="col-span-1 col-start-11 row-start-1 row-end-auto">
-            <ScrollArrow />
-          </div>
-                  {/* <ScrollArrow className="scrollToTop" /> */}
+          <ScrollArrow className="col-span-1 col-start-11 border border-green absolute "/>
+
 
         </div>
-        {/* <ScrollArrow className="scrollToTop" /> */}
 
-        <Footer className=""/>
+        <Footer className="" />
       </div>
     </>
   );
