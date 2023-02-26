@@ -7,7 +7,11 @@ module.exports = {
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"]
     },
-    extend: {},
+    extend: {
+      skew: {
+        '50': '50deg'
+      }
+    },
     colors: {
       'primary': '#121212',
       'primary-alt': '#0E0E0E',

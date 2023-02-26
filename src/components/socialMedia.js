@@ -90,7 +90,7 @@ export default function SocialMedia() {
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </a>
           ))}
-          <hr className="w-0.5 h-24 bg-green border-none"/>
+          <hr className="w-0.5 h-24  bg-green border-none"/>
         </div>
         {/* <div className="">
           <hr className="w-0.5 h-24 bg-green border-none"/>

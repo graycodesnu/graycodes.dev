@@ -53,7 +53,7 @@ export default function Hero() {
                 <Link to="projects" spy={true}
                       smooth={true}
                       offset={50}
-                      duration={500} className="text-base font-semibold leading-7 text-gray-900 cursor-pointer">
+                      duration={500} className="text-base font-semibold leading-7 text-silver cursor-pointer">
                   View my projects <span aria-hidden="true">→</span>
                 </Link>
               </div>
@@ -61,10 +61,11 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
       <div className="
        lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <img
-          className="aspect-[3/2] object-cover xlg:aspect-auto lg:h-full lg:w-full "
+          className="aspect-auto object-cover rounded-lg xlg:aspect-auto lg:h-full lg:w-full "
           src={heroImg}
           alt="Grayson Harvey"
         />

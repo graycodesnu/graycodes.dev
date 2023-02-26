@@ -21,17 +21,16 @@ export default function Background() {
 
   // Tools
   const toolsList = proficiencies.tools.length ? (
-    proficiencies.tools.map((tools, index) => (
-      <li key={index}>{tools}</li>
-    ))
+    proficiencies.tools.map((tools, index) => <li key={index}>{tools}</li>)
   ) : (
     <p>No data to show.</p>
   );
 
   return (
     <>
-      <div id="background"></div>
-
+      <div id="background">
+        <h1 className="text-4xl">Background</h1>
+      </div>
     </>
   );
 }
