@@ -4,7 +4,7 @@ const navigation = [
     href: "https://www.linkedin.com/in/g-harvey/",
     icon: (props) => (
       <svg
-      height={30}
+        height={30}
         xmlns="http://www.w3.org/2000/svg"
         role="img"
         viewBox="0 0 24 24"
@@ -26,7 +26,7 @@ const navigation = [
     href: "https://github.com/graycodesnu",
     icon: (props) => (
       <svg
-      height={30}
+        height={30}
         fill="currentColor"
         viewBox="0 0 24 24"
         className=""
@@ -46,7 +46,7 @@ const navigation = [
     href: "https://www.instagram.com/graysonjharvey/",
     icon: (props) => (
       <svg
-      height={30}
+        height={30}
         fill="currentColor"
         viewBox="0 0 24 24"
         className=""
@@ -66,7 +66,7 @@ const navigation = [
     href: "https://twitter.com/GraysonJHarvey",
     icon: (props) => (
       <svg
-      height={30}
+        height={30}
         fill="currentColor"
         viewBox="0 0 24 24"
         className=""
@@ -82,23 +82,25 @@ const navigation = [
 export default function SocialMedia() {
   return (
     <>
-      <div className="items-center">
-        <div className="space-x-6">
-          {navigation.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-green hover:text-gold"
-            >
-              <span className="sr-only ">{item.name}</span>
-              <item.icon className="" aria-hidden="true" />
-            </a>
-          ))}
-          <div className="w-0.5 h-24  bg-green border-none"/>
-        </div>
-        {/* <div className="">
+      <div className="flex flex-col content-center ">
+        <div className="fixed bottom-0 left-0 ">
+          <div className="space-x-6 ml-11">
+            {navigation.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-green hover:text-gold"
+              >
+                <span className="sr-only ">{item.name}</span>
+                <item.icon className="" aria-hidden="true" />
+              </a>
+            ))}
+          </div>
+          {/* <div className="">
           <hr className="w-0.5 h-24 bg-green border-none"/>
         </div> */}
+          <div className="w-0.5 h-24  bg-green border-none ml-14 mt-4" />
+        </div>
       </div>
     </>
   );

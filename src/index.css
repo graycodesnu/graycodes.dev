@@ -14,17 +14,13 @@ html {
   transform-origin: right;
 }
 
-/* .heroLine{
-    width: 112px;
-    height: 47px;
-    border-bottom: 1px solid red;
-    transform:
-        translateY(20px)
-        translateX(5px)
-        rotate(-26deg);
-    position: absolute;
-    top: -33px;
-    left: -13px;
+/* .scrollToTop{
+  position: fixed; 
+  left: 90%;
+  bottom: 40px;
+  height: 20px;
+  font-size: 3rem;
+  z-index: 1;
 
 } */
 

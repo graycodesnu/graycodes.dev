@@ -16,24 +16,28 @@ function App() {
         <Navbar />
 
         <div className="grid grid-cols-11">
-            <SocialMedia className="col-span-1 col-start-1 col-end-2" />
+          <SocialMedia className="col-span-1 col-start-1 col-end-2" />
 
           <div className="col-span-9 grow border border-red">
             <Hero id="/" />
             <Divider />
             <Background id="background" />
-            <Divider/>
+            <Divider />
             <Projects id="projects" />
-            <Divider/>
+            <Divider />
             <Contact id="contact" />
-            <Divider/>
+            <Divider />
           </div>
 
-          <ScrollArrow className="col-span-1 col-start-11 border border-green absolute "/>
+          <div className="col-span-1 col-start-11 row-start-1 row-end-auto">
+            <ScrollArrow />
+          </div>
+                  {/* <ScrollArrow className="scrollToTop" /> */}
 
         </div>
+        {/* <ScrollArrow className="scrollToTop" /> */}
 
-        <Footer />
+        <Footer className=""/>
       </div>
     </>
   );
