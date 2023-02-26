@@ -18,7 +18,8 @@ module.exports = {
       'white': '#FBF7F7',
       'red': '#CC5A71',
       'blue': '#2E294E',
-      'gold': '#C89B7B'
+      'gold': '#C89B7B',
+      'orange': '#CA7B76'
     }
   },
   plugins: [],
