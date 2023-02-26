@@ -23,8 +23,11 @@ function App() {
             <Hero id="/" />
             <Divider />
             <Background id="background" />
+            <Divider/>
             <Projects id="projects" />
+            <Divider/>
             <Contact id="contact" />
+            <Divider/>
           </div>
 
           <div className="px-10 object-right">
