@@ -53,7 +53,7 @@ export default function Navbar() {
                   duration={500}
                 >
                   <Logo
-                    className="block h-28 w-auto justify-items-start"
+                    className="block h-28 w-auto justify-items-start xs:hidden"
                     alt="Grayson Harvey"
                   />
                 </Link>

@@ -29,7 +29,7 @@ function App() {
             <Divider />
           </div>
 
-          <ScrollArrow className="col-span-1 col-start-11 border border-green absolute "/>
+          <ScrollArrow className="col-span-1 col-start-11 border border-green absolute"/>
 
 
         </div>

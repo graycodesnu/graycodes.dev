@@ -83,7 +83,7 @@ export default function SocialMedia() {
   return (
     <>
       <div className="flex flex-col content-center ">
-        <div className="fixed bottom-0 left-16 ">
+        <div className="fixed bottom-0 left-16 xs:left-2">
           <div className="space-x-6 ">
             {navigation.map((item) => (
               <a
@@ -96,9 +96,6 @@ export default function SocialMedia() {
               </a>
             ))}
           </div>
-          {/* <div className="">
-          <hr className="w-0.5 h-24 bg-green border-none"/>
-        </div> */}
           <div className="w-0.5 h-24  bg-green border-none ml-3 mt-4" />
         </div>
       </div>
