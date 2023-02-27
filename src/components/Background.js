@@ -32,13 +32,15 @@ export default function Background() {
         <h1 className="text-4xl">Background</h1>
         {/* Front to back div w/ divider */}
         <div className="py-5 flex justify-evenly">
-          <div className="">
+          <div className="hover:shadow-md hover:shadow-orange">
             {/* Frontend */}
+            <div className="p-4">
             <div className="text-2xl">
               <h2>Frontend</h2>
             </div>
             <div className="py-1">
               <ul>{frontendList}</ul>
+            </div>
             </div>
           </div>
           {/* Divider */}
@@ -57,12 +59,14 @@ export default function Background() {
           </div>
         </div>
         {/* Tools */}
-        <div className="pt-5">
+        <div className="pt-5 justify-center">
           <div className="">
             <div className="text-2xl">
               <h2>Tools</h2>
             </div>
-            <ul>{toolsList}</ul>
+            <div className="py-1">
+              <ul>{toolsList}</ul>
+            </div>
           </div>
         </div>
       </div>

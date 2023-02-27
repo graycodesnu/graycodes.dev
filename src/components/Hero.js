@@ -51,7 +51,7 @@ export default function Hero() {
                     smooth={true}
                     offset={50}
                     duration={500}
-                    className="text-base font-semibold leading-7 text-silver cursor-pointer"
+                    className="text-base font-semibold leading-7 text-silver cursor-pointer hover:text-gold"
                   >
                     View my projects <span aria-hidden="true">→</span>
                   </Link>
