@@ -30,10 +30,32 @@ export default function Background() {
     <>
       <div id="background">
         <h1 className="text-4xl">Background</h1>
-
+        {/* Frontend */}
+        <div className="float-left">
+          <div className="text-2xl">
+            <h2>Frontend</h2>
+          </div>
+          <ul>{frontendList}</ul>
+        </div>
         {/* Divider */}
         <div className="self-center ">
           <div className="w-30 h-0.5 -skew-y-[50deg] bg-green" />
+        </div>
+        {/* Backend */}
+        <div className="float-right">
+          <div className="text-2xl">
+            <h2>Backend</h2>
+          </div>
+          <ul>{backendList}</ul>
+        </div>
+        {/* Tools */}
+        <div>
+          <div className="">
+            <div className="text-2xl">
+              <h2>Tools</h2>
+            </div>
+            <ul>{toolsList}</ul>
+          </div>
         </div>
       </div>
     </>
