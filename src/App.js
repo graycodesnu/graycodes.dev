@@ -18,7 +18,7 @@ function App() {
         <div className="grid grid-cols-11">
           <SocialMedia className="col-span-1 col-start-1 col-end-2" />
 
-          <div className="col-span-9 grow border border-red">
+          <div className="col-span-9 grow">
             <Hero id="/" />
             <Divider />
             <Background id="background" />

@@ -30,6 +30,11 @@ export default function Background() {
     <>
       <div id="background">
         <h1 className="text-4xl">Background</h1>
+
+        {/* Divider */}
+        <div className="self-center ">
+          <div className="w-30 h-0.5 -skew-y-[50deg] bg-green" />
+        </div>
       </div>
     </>
   );
