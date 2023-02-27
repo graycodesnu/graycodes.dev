@@ -30,26 +30,34 @@ export default function Background() {
     <>
       <div id="background">
         <h1 className="text-4xl">Background</h1>
-        {/* Frontend */}
-        <div className="float-left">
-          <div className="text-2xl">
-            <h2>Frontend</h2>
+        {/* Front to back div w/ divider */}
+        <div className="py-5 flex justify-evenly">
+          <div className="">
+            {/* Frontend */}
+            <div className="text-2xl">
+              <h2>Frontend</h2>
+            </div>
+            <div className="py-1">
+              <ul>{frontendList}</ul>
+            </div>
           </div>
-          <ul>{frontendList}</ul>
-        </div>
-        {/* Divider */}
-        <div className="self-center ">
-          <div className="w-30 h-0.5 -skew-y-[50deg] bg-green" />
-        </div>
-        {/* Backend */}
-        <div className="float-right">
-          <div className="text-2xl">
-            <h2>Backend</h2>
+          {/* Divider */}
+          {/* flex setting breaks the divider with skew: -skew-y-[50deg] */}
+          <div className="">
+            <div className="w-0.5 h-64  bg-green" />
           </div>
-          <ul>{backendList}</ul>
+          {/* Backend */}
+          <div className="">
+            <div className="text-2xl">
+              <h2>Backend</h2>
+            </div>
+            <div className="py-1">
+              <ul>{backendList}</ul>
+            </div>
+          </div>
         </div>
         {/* Tools */}
-        <div>
+        <div className="pt-5">
           <div className="">
             <div className="text-2xl">
               <h2>Tools</h2>
