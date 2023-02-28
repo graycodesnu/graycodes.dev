@@ -52,9 +52,9 @@ export default function Background() {
               </div>
               {/* Data */}
               {/* <div className="content-center justify-items-center"> */}
-                <div className="text-silver py-1 border grid grid-cols-2">
-                  <div className="bg-red">
-                    <ul>
+                <div className="py-5 grid grid-cols-2 justify-around text-silver leading-8 font-inconsolata font-medium text-xl">
+                  <div className="flex justify-center">
+                    <ul className="">
                       <li>JavaScript</li>
                       <li>jQuery</li>
                       <li>Bootstrap</li>
@@ -63,7 +63,7 @@ export default function Background() {
 
                     </ul>
                   </div>
-                  <div className="bg-blue">
+                  <div className="flex justify-center">
                     <ul>
                       <li>React</li>
                       <li>Tailwind</li>
