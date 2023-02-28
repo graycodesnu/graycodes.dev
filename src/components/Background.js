@@ -35,18 +35,17 @@ export default function Background() {
   return (
     <>
       <div id="background">
-        <h1 className="text-4xl text-secondary">My Background</h1>
+        <h1 className="text-5xl text-secondary font-medium">My Background</h1>
         {/* Front to back div w/ divider */}
         <div className="pt-8 pb-5 flex justify-evenly">
           <div className=" rounded-lg border border-orange hover:shadow-md hover:shadow-orange">
             {/* Frontend */}
             <div className="bg-primary-light py-4 px-8">
-              {/* Heading */}
-            <div className="text-2xl underline underline-offset-4 pb-2 ">
-              <div className="">
-              <ComputerDesktopIcon className="h-12 w-12 text-red"/>
-              <h2 className="text-secondary">Frontend</h2>
-              </div>
+              {/* Heading with icon */}
+            <div className="pb-2 flex flex-row justify-center items-end">
+
+              <ComputerDesktopIcon className="h-12 w-12 mr-2"/>
+              <h2 className="text-secondary text-4xl font-medium headingUnderline">Frontend</h2>
             </div>
             <div className="py-1 text-silver">
               <ul>{frontendList}</ul>
