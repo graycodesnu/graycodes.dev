@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
 
 html {
   width: 100%;
@@ -8,10 +9,10 @@ html {
   /* color: #D9D9D9; */
 }
 
-/* gradient underline */
-.headingUnderline {
+/* Background Heading Underlines */
+.frontendUnderline {
   background-image: linear-gradient(90deg, #CC5A71, #CC5A71);
-  background-position: 15% 90%;
+  background-position: 15% 92%;
   background-size: 100% 15%;
   background-repeat: no-repeat;
 }

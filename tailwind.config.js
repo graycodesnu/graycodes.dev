@@ -22,7 +22,8 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     fontFamily: {
-      montserrat: ["Montserrat", "sans-serif"]
+      montserrat: ["Montserrat", "sans-serif"],
+      inconsolata: ["Inconsolata", "monospace"]
     },
     extend: {
       skew: {

@@ -1,7 +1,9 @@
-// Import icons 
-import { ComputerDesktopIcon, Cog8ToothIcon, WrenchScrewdriverIcon } from "@heroicons/react/24/outline";
-
-
+// Import icons
+import {
+  ComputerDesktopIcon,
+  Cog8ToothIcon,
+  WrenchScrewdriverIcon,
+} from "@heroicons/react/24/outline";
 
 // Import data
 import { proficiencies } from "../data/resumeData";
@@ -35,21 +37,44 @@ export default function Background() {
   return (
     <>
       <div id="background">
-        <h1 className="text-5xl text-secondary font-medium">My Background</h1>
+        <h1 className="text-6xl text-secondary font-medium">My Background</h1>
         {/* Front to back div w/ divider */}
         <div className="pt-8 pb-5 flex justify-evenly">
-          <div className=" rounded-lg border border-orange hover:shadow-md hover:shadow-orange">
+          <div className="bg-primary-light rounded-lg border border-orange hover:shadow-md hover:shadow-orange">
             {/* Frontend */}
-            <div className="bg-primary-light py-4 px-8">
+            <div className="py-4 px-8">
               {/* Heading with icon */}
-            <div className="pb-2 flex flex-row justify-center items-end">
+              <div className="pb-2 flex flex-row justify-center items-end">
+                <ComputerDesktopIcon className="h-12 w-12 mr-3 " />
+                <h2 className="text-secondary text-5xl font-medium frontendUnderline">
+                  Frontend
+                </h2>
+              </div>
+              {/* Data */}
+              {/* <div className="content-center justify-items-center"> */}
+                <div className="text-silver py-1 border grid grid-cols-2">
+                  <div className="bg-red">
+                    <ul>
+                      <li>JavaScript</li>
+                      <li>jQuery</li>
+                      <li>Bootstrap</li>
+                      <li>Handlebars</li>
+                      <li>CSS</li>
 
-              <ComputerDesktopIcon className="h-12 w-12 mr-2"/>
-              <h2 className="text-secondary text-4xl font-medium headingUnderline">Frontend</h2>
-            </div>
-            <div className="py-1 text-silver">
-              <ul>{frontendList}</ul>
-            </div>
+                    </ul>
+                  </div>
+                  <div className="bg-blue">
+                    <ul>
+                      <li>React</li>
+                      <li>Tailwind</li>
+                      <li>Material UI</li>
+                      <li>HTML</li>
+                      <li></li>
+
+                    </ul>
+                  </div>
+                </div>
+              {/* </div> */}
             </div>
           </div>
           {/* Divider */}
