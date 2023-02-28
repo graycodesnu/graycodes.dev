@@ -1,3 +1,9 @@
+// Import icons 
+import { ComputerDesktopIcon, Cog8ToothIcon, WrenchScrewdriverIcon } from "@heroicons/react/24/outline";
+
+
+
+// Import data
 import { proficiencies } from "../data/resumeData";
 
 export default function Background() {
@@ -29,16 +35,20 @@ export default function Background() {
   return (
     <>
       <div id="background">
-        <h1 className="text-4xl">My Background</h1>
+        <h1 className="text-4xl text-secondary">My Background</h1>
         {/* Front to back div w/ divider */}
-        <div className="py-5 flex justify-evenly">
+        <div className="pt-8 pb-5 flex justify-evenly">
           <div className=" rounded-lg border border-orange hover:shadow-md hover:shadow-orange">
             {/* Frontend */}
-            <div className="py-4 px-8">
-            <div className="text-2xl underline underline-offset-4">
-              <h2>Frontend</h2>
+            <div className="bg-primary-light py-4 px-8">
+              {/* Heading */}
+            <div className="text-2xl underline underline-offset-4 pb-2 ">
+              <div className="">
+              <ComputerDesktopIcon className="h-12 w-12 text-red"/>
+              <h2 className="text-secondary">Frontend</h2>
+              </div>
             </div>
-            <div className="py-1 flex flex-row flex-wrap">
+            <div className="py-1 text-silver">
               <ul>{frontendList}</ul>
             </div>
             </div>
@@ -59,7 +69,7 @@ export default function Background() {
           </div>
         </div>
         {/* Tools */}
-        <div className="pt-5 justify-center">
+        <div className="pt-8 flex justify-center">
           <div className="">
             <div className="text-2xl">
               <h2>Tools</h2>

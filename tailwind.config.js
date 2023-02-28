@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     screens: {
       'xs': '475px',
-      'sm': '640px',
+            'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
       'md': '768px',
@@ -33,6 +33,7 @@ module.exports = {
       'primary': '#121212',
       'primary-alt': '#0E0E0E',
       'primary-dark': '#000001',
+      'primary-light': '#141414',
       'secondary': '#D9D9D9',
       'silver': '#C6C4C7',
       'green': '#0B7A75',
