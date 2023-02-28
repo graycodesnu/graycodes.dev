@@ -31,14 +31,14 @@ export default function ScrollArrow() {
   return (
 
 <div className="flex flex-col ">
-  <div className="fixed bottom-3 lg:right-16 md:right-3 xs:right-1">
+  <div className="fixed bottom-3 lg:right-10 md:right-3 xs:right-1">
     
  {isVisible && (
           <div
             onClick={ScrollArrow}
             className="text-green  hover:text-gold cursor-pointer transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
           >
-            <UpArrow className="h-10 w-10"/>
+            <UpArrow className="lg:h-16 lg:w-16 xs:h-10 xs:w-10"/>
           </div>
         )}
   </div>
