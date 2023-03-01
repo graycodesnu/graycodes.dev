@@ -6,7 +6,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 // Import data
-import { proficiencies } from "../data/resumeData";
+import { proficiencies } from "../../data/resumeData";
 
 export default function Background() {
   // Frontend
