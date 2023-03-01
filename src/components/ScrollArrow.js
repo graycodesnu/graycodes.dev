@@ -1,4 +1,4 @@
-import { ReactComponent as UpArrow } from "./icons/upArrow.svg";
+import { ReactComponent as UpArrow } from "../assets/icons/upArrow.svg";
 import { useState, useEffect } from "react";
 
 export default function ScrollArrow() {
