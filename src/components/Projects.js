@@ -6,7 +6,7 @@ export default function Projects() {
     <>
       <div id="projects">
 
-<h1 className="text-4xl">Projects</h1>
+<h1 className="text-6xl text-secondary font-bold p-6">Projects</h1>
 
       </div>
     </>
