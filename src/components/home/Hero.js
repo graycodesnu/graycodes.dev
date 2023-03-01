@@ -33,16 +33,15 @@ export default function Hero() {
 
   return (
     <>
-      <motion.div 
+      <div 
       id="hero" 
       className="relative ml-20 mt-0.5"
-      initial="hidden"
-      animate="visible"
-      exit={{ opacity: 0, transition: { duration: 1 } }}
-      variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
       >
         <div className="mx-auto max-w-7xl">
+
+          {/* Greeting, bio, link, polygon */}
           <div className="relative z-10 lg:w-full lg:max-w-2xl">
+            {/* Polygon */}
             <svg
               className="absolute inset-y-0 right-8 hidden fill-primary h-full w-80 translate-x-1/2 transform lg:block"
               viewBox="0 0 100 100"
@@ -52,23 +51,40 @@ export default function Hero() {
               <polygon points="0,0 90,0 50,100 0,100" />
             </svg>
 
+{/* Greeting, bio, link */}
             <div className="relative py-32 px-6 sm:py-40 lg:py-56 lg:px-8 lg:pr-0">
-              <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-                <div className="hidden sm:mb-10 sm:flex"></div>
-                <motion.h1 
+              <motion.div 
+              className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl"
+                    initial="hidden"
+                    animate="visible"
+                    exit={{ opacity: 0, transition: { duration: .75 } }}
+                    variants={{ visible: { transition: { staggerChildren: 0.45 } } }}
+              >
+                {/* <div className="hidden sm:mb-10 sm:flex"></div> */}
+                <h1 
                 className="text-5xl font-bold tracking-tight text-secondary sm:text-6xl"
+               
+                >
+                  {heroGreeting}
+                </h1>
+                <motion.p 
+                className="mt-6 text-lg leading-8 text-secondary"
                 variants={{
-                  hidden: { opacity: 0, y: -20 },
+                  hidden: { opacity: 0, y: -10 },
                   visible
                 }}
                 >
-                  {heroGreeting}
-                </motion.h1>
-                <p className="mt-6 text-lg leading-8 text-secondary">
                   {heroBio}
-                </p>
-                <div className="mt-10 flex items-center gap-x-6">
-                  {/* TODO: Link href to project page*/}
+                </motion.p>
+                {/* Link */}
+                <motion.div 
+                className="mt-10 flex items-center gap-x-6"
+                variants={{
+                  hidden: { opacity: 0},
+                  visible
+                }}
+                >
+
                   <Link
                     to="projects"
                     spy={true}
@@ -76,26 +92,37 @@ export default function Hero() {
                     offset={50}
                     duration={500}
                     className="text-base font-semibold leading-7 text-silver cursor-pointer hover:text-gold"
+
                   >
                     View my projects <span aria-hidden="true">→</span>
                   </Link>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             </div>
+
           </div>
         </div>
 
-        <div
+{/* Image */}
+        <motion.div
           className="
        lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
+       initial="hidden"
+       animate="visible"
+       exit={{ opacity: 10, transition: { duration: 1.5 } }}
+       variants={{ visible: { transition: { staggerChildren: 0.45 } } }}
         >
-          <img
+          <motion.img
             className="aspect-auto object-cover rounded-lg xlg:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
             src={heroImg}
             alt="Grayson Harvey"
+            variants={{
+              hidden: { opacity: -10},
+              visible
+            }}
           />
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </>
   );
 }
