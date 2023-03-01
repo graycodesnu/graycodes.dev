@@ -76,14 +76,14 @@ export default function Background() {
           {/* Divider */}
           {/* flex setting breaks the divider with skew: -skew-y-[50deg] */}
           <div className="">
-            <div className="w-0.5 h-64 mt-4 bg-green" />
+            <div className="w-0.5 h-64 mt-6 bg-green" />
           </div>
           {/* Backend */}
           <div className="p-5 border border-primary-dark bg-primary-light rounded-lg">
             <div className="px-5">
               {/* Heading with icon */}
               <div className="p-2 flex flex-row justify-center items-end">
-                <ComputerDesktopIcon className="h-12 w-12 mr-5 " />
+                <Cog8ToothIcon className="h-12 w-12 mr-5 " />
                 <h2 className="text-secondary text-5xl font-medium backendUnderline">
                   Backend
                 </h2>
@@ -113,14 +113,14 @@ export default function Background() {
           </div>
           {/* Divider */}
           <div className="">
-            <div className="w-0.5 h-64 mt-4 bg-green" />
+            <div className="w-0.5 h-64 mt-6 bg-green" />
           </div>
           {/* Tools */}
           <div className="p-5 border border-primary-dark bg-primary-light rounded-lg">
             <div className="px-5">
               {/* Heading with icon */}
               <div className="p-2 flex flex-row justify-center items-end">
-                <ComputerDesktopIcon className="h-12 w-12 mr-5 " />
+                <WrenchScrewdriverIcon className="h-12 w-12 mr-5 " />
                 <h2 className="text-secondary text-5xl font-medium toolsUnderline">
                   Tools
                 </h2>
