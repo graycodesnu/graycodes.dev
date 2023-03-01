@@ -37,7 +37,7 @@ export default function Background() {
   return (
     <>
       <div id="background">
-        <h1 className="text-6xl text-secondary font-medium">Proficiencies</h1>
+        <h1 className="text-6xl text-secondary font-medium">My Proficiencies</h1>
         {/* Front to tools div w/ dividers */}
         <div className="pt-8 pb-5 flex justify-evenly">
           {/* Frontend */}
@@ -67,17 +67,17 @@ export default function Background() {
                     <li>Tailwind</li>
                     <li>Material UI</li>
                     <li>HTML</li>
-                    <li>*Blank*</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
+
           {/* Divider */}
-          {/* flex setting breaks the divider with skew: -skew-y-[50deg] */}
           <div className="">
             <div className="w-0.5 h-64 mt-6 bg-green" />
           </div>
+
           {/* Backend */}
           <div className="p-5 border border-primary-dark bg-primary-light rounded-lg">
             <div className="px-5">
@@ -92,29 +92,28 @@ export default function Background() {
               <div className="m-4 gap-4 flex flex-row justify-around text-silver leading-8 font-inconsolata font-medium text-xl">
                 <div className="flex justify-center">
                   <ul className="">
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>Bootstrap</li>
-                    <li>Handlebars</li>
-                    <li>CSS</li>
+                    <li>MySQL</li>
+                    <li>Node.js</li>
+                    <li>Mongoose</li>
+                    <li>Postman</li>
                   </ul>
                 </div>
                 <div className="flex justify-center">
                   <ul>
-                    <li>React</li>
-                    <li>Tailwind</li>
-                    <li>Material UI</li>
-                    <li>HTML</li>
-                    <li>*Blank*</li>
+                    <li>MongoDB</li>
+                    <li>Express.js</li>
+                    <li>GraphQL</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
+
           {/* Divider */}
           <div className="">
             <div className="w-0.5 h-64 mt-6 bg-green" />
           </div>
+
           {/* Tools */}
           <div className="p-5 border border-primary-dark bg-primary-light rounded-lg">
             <div className="px-5">
@@ -129,20 +128,18 @@ export default function Background() {
               <div className="m-4 gap-4 flex flex-row justify-around text-silver leading-8 font-inconsolata font-medium text-xl">
                 <div className="flex justify-center">
                   <ul className="">
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>Bootstrap</li>
-                    <li>Handlebars</li>
-                    <li>CSS</li>
+                    <li>Git (CLI)</li>
+                    <li>GitHub Pages</li>
+                    <li>Deta</li>
+                    <li>Figma</li>
                   </ul>
                 </div>
                 <div className="flex justify-center">
                   <ul>
-                    <li>React</li>
-                    <li>Tailwind</li>
-                    <li>Material UI</li>
-                    <li>HTML</li>
-                    <li>*Blank*</li>
+                    <li>GitHub (CI)</li>
+                    <li>Heroku</li>
+                    <li>Cyclic</li>
+                    <li>Whimsical</li>
                   </ul>
                 </div>
               </div>
