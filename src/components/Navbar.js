@@ -64,7 +64,7 @@ export default function Navbar() {
                       <Link
                         spy={true}
                         smooth={true}
-                        offset={50}
+                        offset={15}
                         duration={500}
                         key={item.name}
                         to={item.href}

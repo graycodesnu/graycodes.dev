@@ -37,9 +37,9 @@ export default function Background() {
   return (
     <>
       <div id="background">
-        <h1 className="text-6xl text-secondary font-medium p-6">My Proficiencies</h1>
+        <h1 className="text-6xl text-secondary font-bold p-6">My Proficiencies</h1>
         {/* Front to tools div w/ dividers */}
-        <div className="pt-8 pb-5 flex flex-wrap justify-evenly">
+        <div className="pt-8 pb-5 flex flex-wrap justify-between">
           {/* Frontend */}
           <div className="p-5 border border-primary-dark bg-primary-light rounded-lg">
             <div className="px-5">
