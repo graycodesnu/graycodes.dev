@@ -11,9 +11,23 @@ html {
 
 /* Background Heading Underlines */
 .frontendUnderline {
-  background-image: linear-gradient(90deg, #CC5A71, #CC5A71);
+  background-image: linear-gradient(90deg, #CA536B, #CA536B);
   background-position: 15% 92%;
-  background-size: 100% 15%;
+  background-size: 100% 20%;
+  background-repeat: no-repeat;
+}
+
+.backendUnderline {
+  background-image: linear-gradient(90deg, #473F78, #473F78);
+  background-position: 15% 92%;
+  background-size: 100% 20%;
+  background-repeat: no-repeat;
+}
+
+.toolsUnderline {
+  background-image: linear-gradient(90deg, #B77C52, #B77C52);
+  background-position: 15% 92%;
+  background-size: 100% 20%;
   background-repeat: no-repeat;
 }
 

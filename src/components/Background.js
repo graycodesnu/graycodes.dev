@@ -37,44 +37,40 @@ export default function Background() {
   return (
     <>
       <div id="background">
-        <h1 className="text-6xl text-secondary font-medium">My Background</h1>
-        {/* Front to back div w/ divider */}
+        <h1 className="text-6xl text-secondary font-medium">Proficiencies</h1>
+        {/* Front to tools div w/ dividers */}
         <div className="pt-8 pb-5 flex justify-evenly">
-          <div className="bg-primary-light rounded-lg border border-orange hover:shadow-md hover:shadow-orange">
-            {/* Frontend */}
-            <div className="py-4 px-8">
+          {/* Frontend */}
+          <div className="p-5 border border-primary-dark bg-primary-light rounded-lg">
+            <div className="px-5">
               {/* Heading with icon */}
-              <div className="pb-2 flex flex-row justify-center items-end">
-                <ComputerDesktopIcon className="h-12 w-12 mr-3 " />
+              <div className="p-2 flex flex-row justify-center items-end">
+                <ComputerDesktopIcon className="h-12 w-12 mr-5 " />
                 <h2 className="text-secondary text-5xl font-medium frontendUnderline">
                   Frontend
                 </h2>
               </div>
               {/* Data */}
-              {/* <div className="content-center justify-items-center"> */}
-                <div className="py-5 grid grid-cols-2 justify-around text-silver leading-8 font-inconsolata font-medium text-xl">
-                  <div className="flex justify-center">
-                    <ul className="">
-                      <li>JavaScript</li>
-                      <li>jQuery</li>
-                      <li>Bootstrap</li>
-                      <li>Handlebars</li>
-                      <li>CSS</li>
-
-                    </ul>
-                  </div>
-                  <div className="flex justify-center">
-                    <ul>
-                      <li>React</li>
-                      <li>Tailwind</li>
-                      <li>Material UI</li>
-                      <li>HTML</li>
-                      <li></li>
-
-                    </ul>
-                  </div>
+              <div className="m-4 gap-4 flex flex-row justify-around text-silver leading-8 font-inconsolata font-medium text-xl">
+                <div className="flex justify-center">
+                  <ul className="">
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Bootstrap</li>
+                    <li>Handlebars</li>
+                    <li>CSS</li>
+                  </ul>
                 </div>
-              {/* </div> */}
+                <div className="flex justify-center">
+                  <ul>
+                    <li>React</li>
+                    <li>Tailwind</li>
+                    <li>Material UI</li>
+                    <li>HTML</li>
+                    <li>*Blank*</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           {/* Divider */}
@@ -83,23 +79,73 @@ export default function Background() {
             <div className="w-0.5 h-64 mt-4 bg-green" />
           </div>
           {/* Backend */}
-          <div className="">
-            <div className="text-2xl">
-              <h2>Backend</h2>
-            </div>
-            <div className="py-1">
-              <ul>{backendList}</ul>
+          <div className="p-5 border border-primary-dark bg-primary-light rounded-lg">
+            <div className="px-5">
+              {/* Heading with icon */}
+              <div className="p-2 flex flex-row justify-center items-end">
+                <ComputerDesktopIcon className="h-12 w-12 mr-5 " />
+                <h2 className="text-secondary text-5xl font-medium backendUnderline">
+                  Backend
+                </h2>
+              </div>
+              {/* Data */}
+              <div className="m-4 gap-4 flex flex-row justify-around text-silver leading-8 font-inconsolata font-medium text-xl">
+                <div className="flex justify-center">
+                  <ul className="">
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Bootstrap</li>
+                    <li>Handlebars</li>
+                    <li>CSS</li>
+                  </ul>
+                </div>
+                <div className="flex justify-center">
+                  <ul>
+                    <li>React</li>
+                    <li>Tailwind</li>
+                    <li>Material UI</li>
+                    <li>HTML</li>
+                    <li>*Blank*</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        {/* Tools */}
-        <div className="pt-8 flex justify-center">
+          {/* Divider */}
           <div className="">
-            <div className="text-2xl">
-              <h2>Tools</h2>
-            </div>
-            <div className="py-1">
-              <ul>{toolsList}</ul>
+            <div className="w-0.5 h-64 mt-4 bg-green" />
+          </div>
+          {/* Tools */}
+          <div className="p-5 border border-primary-dark bg-primary-light rounded-lg">
+            <div className="px-5">
+              {/* Heading with icon */}
+              <div className="p-2 flex flex-row justify-center items-end">
+                <ComputerDesktopIcon className="h-12 w-12 mr-5 " />
+                <h2 className="text-secondary text-5xl font-medium toolsUnderline">
+                  Tools
+                </h2>
+              </div>
+              {/* Data */}
+              <div className="m-4 gap-4 flex flex-row justify-around text-silver leading-8 font-inconsolata font-medium text-xl">
+                <div className="flex justify-center">
+                  <ul className="">
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Bootstrap</li>
+                    <li>Handlebars</li>
+                    <li>CSS</li>
+                  </ul>
+                </div>
+                <div className="flex justify-center">
+                  <ul>
+                    <li>React</li>
+                    <li>Tailwind</li>
+                    <li>Material UI</li>
+                    <li>HTML</li>
+                    <li>*Blank*</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
