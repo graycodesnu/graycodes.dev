@@ -2,8 +2,8 @@
 import { Link } from "react-scroll";
 
 // Import data
-import { heroData } from "../data/heroData";
-import heroImg from "../assets/heroImg.jpg";
+import { heroData } from "../../data/heroData";
+import heroImg from "../../assets/images/heroImg.jpg";
 
 export default function Hero() {
   // Hero greeting
