@@ -2,7 +2,7 @@
 import { Link } from "react-scroll";
 
 // Import logo asset
-import { ReactComponent as Logo } from "../assets/logo.svg";
+import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 // Import responsive elements
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";

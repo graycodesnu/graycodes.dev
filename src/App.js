@@ -1,9 +1,9 @@
 // import { Routes, Route } from "react-router-dom";
 // Static components
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import SocialMedia from "./components/SocialMedia";
-import ScrollArrow from "./components/ScrollArrow";
+import Navbar from "./components/static/Navbar";
+import Footer from "./components/static/Footer";
+import SocialMedia from "./components/static/SocialMedia";
+import ScrollArrow from "./components/static/ScrollArrow";
 // Pages
 import Home from "./pages/Home";
 

@@ -2,14 +2,13 @@
 import Hero from "../components/home/Hero";
 import Divider from "../components/static/Divider";
 import Background from "../components/home/Background";
-
 import Projects from "../components/home/Projects";
 import Contact from "../components/home/Contact";
 
 export default function Home() {
   return (
     <>
-      <div >
+      <div>
             <Hero id="/" />
             <Divider />
             <Background id="background" />
