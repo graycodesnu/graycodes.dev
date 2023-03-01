@@ -1,9 +1,13 @@
-// Import react scroll for button
+// Import react scroll for view projects link
 import { Link } from "react-scroll";
-
+// Import animation
+import { motion } from "framer-motion";
 // Import data
 import { heroData } from "../../data/heroData";
 import heroImg from "../../assets/images/heroImg.jpg";
+
+ // Animation 
+ const visible = { opacity: 1, y: 0, transition: { duration: 1 } };
 
 export default function Hero() {
   // Hero greeting
