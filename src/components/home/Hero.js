@@ -9,15 +9,22 @@ import heroImg from "../../assets/images/heroImg.jpg";
  // Animation 
  const visible = { opacity: 1, y: 0, transition: { duration: 1 } };
 
+ const itemVariants = {
+  hidden: { opacity: 0, y: 10 },
+  visible
+};
+
+
 export default function Hero() {
-  // Hero greeting
+// Data Imports
+  // Greeting
   const heroGreeting = heroData.greeting.length ? (
     heroData.greeting.map((greeting, index) => <h1 key={index}>{greeting}</h1>)
   ) : (
     <p>Data Not Found</p>
   );
 
-  // Hero bio
+  // Bio
   const heroBio = heroData.bio.length ? (
     heroData.bio.map((bio, index) => <h1 key={index}>{bio}</h1>)
   ) : (
@@ -26,7 +33,14 @@ export default function Hero() {
 
   return (
     <>
-      <div id="hero" className="relative ml-20 mt-0.5">
+      <motion.div 
+      id="hero" 
+      className="relative ml-20 mt-0.5"
+      initial="hidden"
+      animate="visible"
+      exit={{ opacity: 0, transition: { duration: 1 } }}
+      variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
+      >
         <div className="mx-auto max-w-7xl">
           <div className="relative z-10 lg:w-full lg:max-w-2xl">
             <svg
@@ -41,9 +55,15 @@ export default function Hero() {
             <div className="relative py-32 px-6 sm:py-40 lg:py-56 lg:px-8 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <div className="hidden sm:mb-10 sm:flex"></div>
-                <h1 className="text-5xl font-bold tracking-tight text-secondary sm:text-6xl">
+                <motion.h1 
+                className="text-5xl font-bold tracking-tight text-secondary sm:text-6xl"
+                variants={{
+                  hidden: { opacity: 0, y: -20 },
+                  visible
+                }}
+                >
                   {heroGreeting}
-                </h1>
+                </motion.h1>
                 <p className="mt-6 text-lg leading-8 text-secondary">
                   {heroBio}
                 </p>
@@ -75,7 +95,7 @@ export default function Hero() {
             alt="Grayson Harvey"
           />
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
