@@ -66,6 +66,7 @@ export default function Background() {
                     <li>React</li>
                     <li>Tailwind</li>
                     <li>Material UI</li>
+                    <li>Framer Motion</li>
                     <li>HTML</li>
                   </ul>
                 </div>

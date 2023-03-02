@@ -7,7 +7,7 @@ import { heroData } from "../../data/heroData";
 import heroImg from "../../assets/images/heroImg.jpg";
 
 // Animation
-const visible = { opacity: 1, y: 0, transition: { duration: 1 } };
+const visible = { opacity: 1, y: 0, transition: { duration: 2.7 } };
 
 const itemVariants = {
   hidden: { opacity: 0, y: 10 },
@@ -57,7 +57,6 @@ export default function Hero() {
                   visible: { transition: { staggerChildren: 0.45 } },
                 }}
               >
-                {/* <div className="hidden sm:mb-10 sm:flex"></div> */}
                 <h1 className="pb-1 text-5xl font-bold tracking-tight text-secondary sm:text-6xl heroUnderline typewriter">
                   {heroGreeting}
                 </h1>
@@ -100,7 +99,7 @@ export default function Hero() {
        lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
           initial="hidden"
           animate="visible"
-          exit={{ opacity: 10, transition: { duration: 1.5 } }}
+          exit={{ opacity: 10, transition: { duration: 2 } }}
           variants={{ visible: { transition: { staggerChildren: 0.45 } } }}
         >
           <motion.img
