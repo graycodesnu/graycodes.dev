@@ -18,11 +18,11 @@ html {
 /*! Hero */
 /* Heading underlines */
 .heroUnderline {
-  background-image: linear-gradient(90deg, #c5445e, #c5445e);
-  background-position: 15% 92%;
-  background-size: 100% 20%;
+  background-image: linear-gradient(90deg, #AC354D, #AC354D);
+  background-position: 15% 85%;
+  background-size: 100% 15%;
   background-repeat: no-repeat;
-  width: 83%;
+  width: 82%;
 }
 
 /* Typewriter effect */

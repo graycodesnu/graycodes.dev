@@ -58,7 +58,7 @@ export default function Hero() {
                 }}
               >
                 {/* <div className="hidden sm:mb-10 sm:flex"></div> */}
-                <h1 className="text-5xl font-bold tracking-tight text-secondary sm:text-6xl heroUnderline typewriter">
+                <h1 className="pb-1 text-5xl font-bold tracking-tight text-secondary sm:text-6xl heroUnderline typewriter">
                   {heroGreeting}
                 </h1>
                 <motion.p

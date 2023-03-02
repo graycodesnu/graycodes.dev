@@ -41,9 +41,14 @@ module.exports = {
       'green': '#0B7A75',
       'white': '#FBF7F7',
       'red': '#CC5A71',
+      'red-readable': '#C5445E',
       'blue': '#2E294E',
+      'blue-readable': '#473F78',
       'gold': '#C89B7B',
-      'orange': '#CA7B76'
+      'gold-readable': '#9E6942',
+      'orange': '#CA7B76',
+      'orange-readable': '#BA564F'
+
     }
   },
   plugins: [],
