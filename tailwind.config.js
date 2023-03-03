@@ -5,8 +5,9 @@ module.exports = {
   ],
   theme: {
     screens: {
+      '2xs': '360px',
       'xs': '475px',
-            'sm': '640px',
+      'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
       'md': '768px',

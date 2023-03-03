@@ -82,7 +82,7 @@ const navigation = [
 export default function SocialMedia() {
   return (
     <>
-      <div className="flex flex-col content-center ">
+      <div className="sm:flex flex-col content-center xs:hidden">
         <div className="fixed bottom-0 lg:left-16 md:left-6 xs:left-2">
           <div className="space-x-6 ">
             {navigation.map((item) => (

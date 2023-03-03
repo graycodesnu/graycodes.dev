@@ -20,7 +20,6 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-  // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <Disclosure
@@ -53,7 +52,7 @@ export default function Navbar() {
                   duration={500}
                 >
                   <Logo
-                    className="block h-28 w-auto justify-items-start sm:visible xs:invisible"
+                    className="sm:block h-28 w-auto justify-items-start 2xs:hidden"
                     alt="Grayson Harvey"
                   />
                 </Link>
