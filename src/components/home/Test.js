@@ -7,7 +7,7 @@ import { heroData } from "../../data/heroData";
 import heroImg from "../../assets/images/heroImg.jpg";
 
 // Animation
-const visible = { opacity: 1, y: 0, transition: { duration: 2.7 } };
+const visible = { opacity: 1, y: 0, transition: { duration: 1.5, delay: 2 } };
 
 const itemVariants = {
   hidden: { opacity: 0, y: 10 },
@@ -27,37 +27,20 @@ export default function Hero() {
     <>
       <div id="hero" className="ml-20 mt-0.5">
         {/* Greeting */}
-        <div id="typedtext"></div>
-
         <motion.div
           className=""
           initial="hidden"
           animate="visible"
-          exit={{ opacity: 0, transition: { duration: 0.75 } }}
+          exit={{ opacity: 0, transition: { duration: 1 } }}
           variants={{
-            visible: { transition: { staggerChildren: 0.45 } },
+            visible: { transition: { staggerChildren: 0.5 } },
           }}
         >
           <div className="flex">
-            <motion.h1
-              className="py-2 w-1/3 text-6xl text-secondary font-bold heroUnderline"
-              variants={{
-                hidden: { opacity: 0, y: -10 },
-                visible,
-              }}
-            >
+            <h1
+              className="py-2 w-1/3 text-6xl text-secondary font-bold heroUnderline typewriter">
               Hi, I'm Grayson.<span className="inline-flex animate-pulse">_</span>
-            </motion.h1>
-            {/* Underscore */}
-            {/* <motion.span
-              className="border animate-pulse py-2 w-1/3 text-6xl text-secondary font-bold "
-              variants={{
-                hidden: { opacity: 0, y: -10 },
-                visible,
-              }}
-            >
-              _
-            </motion.span> */}
+            </h1>
           </div>
 
           {/* Bio */}
@@ -85,10 +68,6 @@ export default function Hero() {
               offset={50}
               duration={500}
               className="text-base font-semibold leading-7 text-silver cursor-pointer hover:text-gold"
-              variants={{
-                hidden: { opacity: -10 },
-                visible,
-              }}
             >
               View my projects <span aria-hidden="true">→</span>
             </Link>

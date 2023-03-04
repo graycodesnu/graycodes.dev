@@ -25,12 +25,21 @@ html {
   width: 39%;
 }
 
-.blinkerUnderline {
-  background-image: linear-gradient(90deg, #a04048, #a04048);
-  background-position: 15% 85%;
-  background-size: 100% 15%;
-  background-repeat: no-repeat;
-  width: 3%;
+.typewriter {
+  white-space: nowrap;
+  overflow: hidden;    
+}
+
+/* Animation */
+.typewriter {
+  animation: animated-text 2s steps(30,end) 1 normal both;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 39%;}
 }
 
 
