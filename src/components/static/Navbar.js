@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="py-3 bg-primary-alt shadow-sm shadow-blue w-full"
+      className="py-3 bg-primary-dark shadow-sm shadow-blue w-full"
     >
       {({ open }) => (
         <>

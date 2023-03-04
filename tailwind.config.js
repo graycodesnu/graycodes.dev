@@ -32,13 +32,13 @@ module.exports = {
       }
     },
     colors: {
-      'primary': '#121212',
-      'primary-alt': '#0E0E0E',
-      'primary-dark': '#000001',
-      'primary-light': '#141414',
-      'secondary': '#CCCCCC',  
+      'primary': '#141414',
+      'primary-alt': '#121212',
+      'primary-dark': '#0e0e0e',
+      'primary-light': '#1F1F1F',
+      'secondary': '#C6C4C7',  
       // secondary was previously #D9D9D9
-      'silver': '#C6C4C7',
+      'silver': '#C2C2C2',
       'green': '#0B7A75',
       'white': '#FBF7F7',
       'red': '#A04048',
