@@ -70,7 +70,7 @@ export default function Navbar() {
                         className={classNames(
                           item.current
                             ? "bg-blue text-gold"
-                            : "text-secondary hover:text-gold",
+                            : "text-secondary hover:text-gold hover:bg-blue",
                           "px-3 py-2 rounded-md text-xl font-medium cursor-pointer"
                         )}
                         aria-current={item.current ? "page" : undefined}
@@ -85,7 +85,7 @@ export default function Navbar() {
                     <a
                       href="#"
                       className="
-                  flex items-center rounded-md px-2 py-2 text-base font-medium outline outline-green  hover:outline-gold hover:outline-2 hover:text-gold"
+                  flex items-center rounded-md px-2 py-2 text-base font-medium outline outline-green hover:outline-2 hover:text-gold hover:bg-blue hover:outline-none"
                     >
                       Download Resume
                     </a>
