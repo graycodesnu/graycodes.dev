@@ -16,13 +16,6 @@ const itemVariants = {
 
 export default function Hero() {
   // Data Imports
-  // Greeting
-  const heroGreeting = heroData.greeting.length ? (
-    heroData.greeting.map((greeting, index) => <h1 key={index}>{greeting}</h1>)
-  ) : (
-    <p>Data Not Found</p>
-  );
-
   // Bio
   const heroBio = heroData.bio.length ? (
     heroData.bio.map((bio, index) => <h1 key={index}>{bio}</h1>)
@@ -32,16 +25,10 @@ export default function Hero() {
 
   return (
     <>
-      <div id="hero" className="relative ml-20 mt-0.5">
+      <div id="hero" className="ml-20 mt-0.5">
         {/* Greeting */}
+        <div id="typedtext"></div>
 
-        <div className="">
-          <h1 className="heroUnderline typewriter">
-            {heroGreeting}
-          </h1>
-        </div>
-
-        {/* Bio */}
         <motion.div
           className=""
           initial="hidden"
@@ -51,6 +38,29 @@ export default function Hero() {
             visible: { transition: { staggerChildren: 0.45 } },
           }}
         >
+          <div className="flex">
+            <motion.h1
+              className="py-2 w-1/3 text-6xl text-secondary font-bold heroUnderline"
+              variants={{
+                hidden: { opacity: 0, y: -10 },
+                visible,
+              }}
+            >
+              Hi, I'm Grayson.<span className="inline-flex animate-pulse">_</span>
+            </motion.h1>
+            {/* Underscore */}
+            {/* <motion.span
+              className="border animate-pulse py-2 w-1/3 text-6xl text-secondary font-bold "
+              variants={{
+                hidden: { opacity: 0, y: -10 },
+                visible,
+              }}
+            >
+              _
+            </motion.span> */}
+          </div>
+
+          {/* Bio */}
           <motion.p
             className="text-secondary"
             variants={{
@@ -62,7 +72,7 @@ export default function Hero() {
           </motion.p>
           {/* Link */}
           <motion.div
-            className=""
+            className="mt-10 flex items-center gap-x-6"
             variants={{
               hidden: { opacity: 0 },
               visible,
@@ -74,7 +84,11 @@ export default function Hero() {
               smooth={true}
               offset={50}
               duration={500}
-              className="text-base font-semibold text-silver cursor-pointer hover:text-gold"
+              className="text-base font-semibold leading-7 text-silver cursor-pointer hover:text-gold"
+              variants={{
+                hidden: { opacity: -10 },
+                visible,
+              }}
             >
               View my projects <span aria-hidden="true">→</span>
             </Link>
@@ -82,7 +96,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Image */}
-        <motion.div
+        {/* <motion.div
           className="
        lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
           initial="hidden"
@@ -99,7 +113,7 @@ export default function Hero() {
               visible,
             }}
           />
-        </motion.div>
+        </motion.div> */}
       </div>
     </>
   );

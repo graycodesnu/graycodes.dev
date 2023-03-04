@@ -99,7 +99,7 @@ export default function SocialMedia() {
               </a>
             ))}
           </div>
-          <div className="w-0.5 h-28 bg-gradient-to-t from-green via-green to-primary border-none ml-3 mt" />
+          <div className="w-1 h-28 bg-gradient-to-t from-green via-green to-primary border-none ml-3 mt" />
         </div>
       </div>
     </>
