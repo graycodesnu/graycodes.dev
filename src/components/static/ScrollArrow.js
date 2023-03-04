@@ -30,7 +30,7 @@ export default function ScrollArrow() {
 
   return (
 
-<div className="flex flex-col ">
+<div className="flex flex-col">
   <div className="fixed bottom-3 lg:right-10 md:right-3 xs:right-1">
     
  {isVisible && (
