@@ -41,14 +41,12 @@ module.exports = {
       'silver': '#C6C4C7',
       'green': '#0B7A75',
       'white': '#FBF7F7',
-      'red': '#CC5A71',
-      'red-readable': '#C5445E',
+      'red': '#A04048',
       'blue': '#2E294E',
-      'blue-readable': '#473F78',
-      'gold': '#C89B7B',
-      'gold-readable': '#9E6942',
-      'orange': '#CA7B76',
-      'orange-readable': '#BA564F'
+      'blue-light': '#42375A',
+      'gold': '#d89d46',
+      'orange': '#B35919',
+
 
     }
   },

@@ -18,7 +18,7 @@ html {
 /*! Hero */
 /* Heading underlines */
 .heroUnderline {
-  background-image: linear-gradient(90deg, #AC354D, #AC354D);
+  background-image: linear-gradient(90deg, #a04048, #a04048);
   background-position: 15% 85%;
   background-size: 100% 15%;
   background-repeat: no-repeat;
@@ -28,7 +28,7 @@ html {
 /** Typewriter effect **/
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .10em solid #2E294E; /* The typwriter cursor */
+  border-right: .10em solid #292929; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   animation: 
     typing 3s steps(30, end),
@@ -43,7 +43,7 @@ html {
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #2E294E }
+  50% { border-color: #3d3d3d }
 }
 
 /* Disable animation for small screens so content remains responsive */
@@ -60,14 +60,14 @@ html {
 /*! Background */
 /* Heading underlines */
 .frontendUnderline {
-  background-image: linear-gradient(90deg, #c5445e, #c5445e);
+  background-image: linear-gradient(90deg, #A04048, #A04048);
   background-position: 15% 92%;
   background-size: 100% 20%;
   background-repeat: no-repeat;
 }
 
 .backendUnderline {
-  background-image: linear-gradient(90deg, #473f78, #473f78);
+  background-image: linear-gradient(90deg, #42375A, #42375A);
   background-position: 15% 92%;
   background-size: 100% 20%;
   background-repeat: no-repeat;
@@ -75,7 +75,7 @@ html {
 
 .toolsUnderline {
   /* readable orange accent */
-  background-image: linear-gradient(90deg, #ba564f, #ba564f);
+  background-image: linear-gradient(90deg, #b35919, #b35919);
   /* readable gold accent */
   /* background-image: linear-gradient(90deg, #9E6942, #9E6942); */
   background-position: 15% 92%;
