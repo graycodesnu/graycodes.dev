@@ -7,7 +7,7 @@ import { heroData } from "../../data/heroData";
 import heroImg from "../../assets/images/heroImg.jpg";
 
 // Animation
-const visible = { opacity: 1, y: 0, transition: { duration: 1.5, delay: 2 } };
+const visible = { opacity: 1, y: 0, transition: { duration: 1.5, delay: .4 } };
 
 const itemVariants = {
   hidden: { opacity: 0, y: 10 },
@@ -25,7 +25,7 @@ export default function Hero() {
 
   return (
     <>
-      <div id="hero" className="ml-20 mt-0.5">
+      <div id="hero" className="">
         {/* Greeting */}
         <motion.div
           className=""
@@ -33,19 +33,24 @@ export default function Hero() {
           animate="visible"
           exit={{ opacity: 0, transition: { duration: 1 } }}
           variants={{
-            visible: { transition: { staggerChildren: 0.5 } },
+            visible: { transition: { delayChildren: 5 } },
           }}
         >
           <div className="flex">
-            <h1
-              className="py-2 w-1/3 text-6xl text-secondary font-bold heroUnderline typewriter">
+            <motion.h1
+              className="py-2 w-1/3 text-6xl text-secondary font-bold heroUnderline"
+              variants={{
+                hidden: { opacity: 0 },
+                visible,
+              }}
+              >
               Hi, I'm Grayson.<span className="inline-flex animate-pulse">_</span>
-            </h1>
+            </motion.h1>
           </div>
 
           {/* Bio */}
           <motion.p
-            className="text-secondary"
+            className="text-silver text-xl py-3"
             variants={{
               hidden: { opacity: 0, y: -10 },
               visible,
@@ -53,6 +58,7 @@ export default function Hero() {
           >
             {heroBio}
           </motion.p>
+          
           {/* Link */}
           <motion.div
             className="mt-10 flex items-center gap-x-6"

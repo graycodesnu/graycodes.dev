@@ -36,9 +36,11 @@ module.exports = {
       'primary-alt': '#121212',
       'primary-dark': '#0e0e0e',
       'primary-light': '#1F1F1F',
-      'secondary': '#C6C4C7',  
-      // secondary was previously #D9D9D9
-      'silver': '#C2C2C2',
+      'secondary': '#cccccc',  
+      'secondary-light': '#D6D6D6',
+
+      // secondary was previously #D9D9D9 C6C4C7
+      'silver': '#C6C4C7',
       'green': '#0B7A75',
       'white': '#FBF7F7',
       'red': '#A04048',
