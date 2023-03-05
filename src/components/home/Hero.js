@@ -59,29 +59,18 @@ export default function Hero() {
               {/* Bio */}
               <motion.div
                 className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl"
-                initial="hidden"
-                animate="visible"
-                exit={{ opacity: 0, transition: { duration: 0.75 } }}
-                variants={{
-                  visible: { transition: { staggerChildren: 0.45 } },
-                }}
+
               >
                 <motion.p
                   className="mt-6 text-lg leading-8 text-secondary"
-                  variants={{
-                    hidden: { opacity: 0, y: -10 },
-                    visible,
-                  }}
+
                 >
                   {heroBio}
                 </motion.p>
                 {/* Link */}
                 <motion.div
                   className="mt-10 flex items-center gap-x-6"
-                  variants={{
-                    hidden: { opacity: 0 },
-                    visible,
-                  }}
+
                 >
                   <Link
                     to="projects"

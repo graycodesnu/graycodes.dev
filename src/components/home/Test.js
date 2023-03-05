@@ -36,9 +36,9 @@ export default function Hero() {
             visible: { transition: { delayChildren: 5 } },
           }}
         >
-          <div className="flex">
+          <div className="">
             <motion.h1
-              className="py-2 w-1/3 text-6xl text-secondary font-bold heroUnderline"
+              className="border py-2 w-1/3 text-6xl text-secondary font-bold heroUnderline"
               variants={{
                 hidden: { opacity: 0 },
                 visible,
@@ -50,7 +50,7 @@ export default function Hero() {
 
           {/* Bio */}
           <motion.p
-            className="text-silver text-xl py-3"
+            className="border border-red text-silver text-xl font-medium py-3"
             variants={{
               hidden: { opacity: 0, y: -10 },
               visible,
@@ -73,7 +73,7 @@ export default function Hero() {
               smooth={true}
               offset={50}
               duration={500}
-              className="text-base font-semibold leading-7 text-silver cursor-pointer hover:text-gold"
+              className="border border-green text-base font-semibold leading-7 text-silver cursor-pointer hover:text-gold"
             >
               View my projects <span aria-hidden="true">→</span>
             </Link>
