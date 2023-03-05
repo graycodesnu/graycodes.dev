@@ -56,7 +56,7 @@ export default function Hero() {
               visible,
             }}
           >
-            I'm a <span className="underline decoration-orange font-medium">full-stack engineer</span> with strong skills in <span className="underline decoration-orange font-medium">JavaScript</span>, <span className="underline decoration-orange font-medium">MongoDB</span>, <span className="underline decoration-orange font-medium">MySQL</span>, and <span className="underline decoration-orange font-medium">React.js</span>. I recently earned a certificate in full-stack development from <span className="underline decoration-orange font-medium">Northwestern University</span>, complementing my degrees in Psychology and International Studies.
+            I'm a <span className="underline font-medium">full-stack engineer</span> with strong skills in <span className="underline decoration-blue-light font-medium">JavaScript</span>, <span className="underline decoration-blue-light font-medium">MongoDB</span>, <span className="underline decoration-blue-light font-medium">MySQL</span>, and <span className="underline decoration-blue-light font-medium">React.js</span>. I recently earned a certificate in full-stack development from <span className="underline font-medium">Northwestern University</span>, complementing my degrees in Psychology and International Studies.
           </motion.p>
           
           {/* Link */}
