@@ -50,13 +50,13 @@ export default function Hero() {
 
           {/* Bio */}
           <motion.p
-            className="border border-red text-silver text-xl font-medium py-3"
+            className="border border-red text-silver text-xl font-normal py-3"
             variants={{
               hidden: { opacity: 0, y: -10 },
               visible,
             }}
           >
-            I'm a <span>full-stack engineer</span> with strong skills in <span>JavaScript</span>, <span>MongoDB</span>, <span>MySQL</span>, and <span>React.js</span>. I recently earned a certificate in full-stack development from <span>Northwestern University</span>, complementing my degrees in Psychology and International Studies.
+            I'm a <span className="underline decoration-orange font-medium">full-stack engineer</span> with strong skills in <span className="underline decoration-orange font-medium">JavaScript</span>, <span className="underline decoration-orange font-medium">MongoDB</span>, <span className="underline decoration-orange font-medium">MySQL</span>, and <span className="underline decoration-orange font-medium">React.js</span>. I recently earned a certificate in full-stack development from <span className="underline decoration-orange font-medium">Northwestern University</span>, complementing my degrees in Psychology and International Studies.
           </motion.p>
           
           {/* Link */}
