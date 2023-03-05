@@ -56,7 +56,7 @@ export default function Hero() {
               visible,
             }}
           >
-            {heroBio}
+            I'm a <span>full-stack engineer</span> with strong skills in <span>JavaScript</span>, <span>MongoDB</span>, <span>MySQL</span>, and <span>React.js</span>. I recently earned a certificate in full-stack development from <span>Northwestern University</span>, complementing my degrees in Psychology and International Studies.
           </motion.p>
           
           {/* Link */}
