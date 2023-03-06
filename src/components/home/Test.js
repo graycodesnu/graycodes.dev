@@ -7,7 +7,7 @@ import { heroData } from "../../data/heroData";
 import heroImg from "../../assets/images/heroImg.jpg";
 
 // Animation
-const visible = { opacity: 1, y: 0, transition: { duration: 1.5, delay: .4 } };
+const visible = { opacity: 1, y: 0, transition: { duration: 1.5, delay: 0.4 } };
 
 const itemVariants = {
   hidden: { opacity: 0, y: 10 },
@@ -26,79 +26,87 @@ export default function Hero() {
   return (
     <>
       <div id="hero" className="">
-        {/* Greeting */}
         <motion.div
           className=""
           initial="hidden"
           animate="visible"
           exit={{ opacity: 0, transition: { duration: 1 } }}
           variants={{
-            visible: { transition: { delayChildren: 5 } },
+            visible: { transition: { staggerChildren: 0.3 } },
           }}
         >
+          {/* Greeting */}
           <div className="">
             <motion.h1
-              className="border py-2 w-1/3 text-6xl text-secondary font-bold heroUnderline"
+              className=" border py-2 w-1/3 text-6xl text-secondary font-bold heroUnderline"
               variants={{
-                hidden: { opacity: 0 },
+                hidden: { opacity: 0, y: -20 },
                 visible,
               }}
-              >
-              Hi, I'm Grayson.<span className="inline-flex animate-pulse">_</span>
+            >
+              Hi, I'm Grayson.
+              <span className="inline-flex animate-pulse">_</span>
             </motion.h1>
           </div>
 
-          {/* Bio */}
-          <motion.p
-            className="border border-red text-silver text-xl font-normal py-3"
-            variants={{
-              hidden: { opacity: 0, y: -10 },
-              visible,
-            }}
-          >
-            I'm a <span className="underline font-medium">full-stack engineer</span> with strong skills in <span className="underline decoration-blue-light font-medium">JavaScript</span>, <span className="underline decoration-blue-light font-medium">MongoDB</span>, <span className="underline decoration-blue-light font-medium">MySQL</span>, and <span className="underline decoration-blue-light font-medium">React.js</span>. I recently earned a certificate in full-stack development from Northwestern University, complementing my degrees in Psychology and International Studies.
-          </motion.p>
-          
-          {/* Link */}
-          <motion.div
-            className="mt-10 flex items-center gap-x-6"
-            variants={{
-              hidden: { opacity: 0 },
-              visible,
-            }}
-          >
-            <Link
-              to="projects"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-              className="border border-green text-base font-semibold leading-7 text-silver cursor-pointer hover:text-gold"
-            >
-              View my projects <span aria-hidden="true">→</span>
-            </Link>
-          </motion.div>
-        </motion.div>
+          <div className="border border-red flex justify-evenly items-center">
+            <div>
+              {/* Bio */}
+              <motion.p
+                className="max-w-3xl border text-silver text-xl font-light "
+                variants={itemVariants}
+              >
+                I'm a{" "}
+                <span className="underline font-medium">
+                  full-stack engineer
+                </span>{" "}
+                with strong skills in{" "}
+                <span className="underline decoration-blue-light font-medium">
+                  JavaScript
+                </span>
+                ,{" "}
+                <span className="underline decoration-blue-light font-medium">
+                  MongoDB
+                </span>
+                ,{" "}
+                <span className="underline decoration-blue-light font-medium">
+                  MySQL
+                </span>
+                , and{" "}
+                <span className="underline decoration-purple font-medium">
+                  React.js
+                </span>
+                . I recently earned a certificate in full-stack development from
+                Northwestern University, complementing my degrees in Psychology
+                and International Studies.
+              </motion.p>
 
-        {/* Image */}
-        {/* <motion.div
-          className="
-       lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
-          initial="hidden"
-          animate="visible"
-          exit={{ opacity: 10, transition: { duration: 2 } }}
-          variants={{ visible: { transition: { staggerChildren: 0.45 } } }}
-        >
-          <motion.img
-            className=""
-            src={heroImg}
-            alt="Grayson Harvey"
-            variants={{
-              hidden: { opacity: -10 },
-              visible,
-            }}
-          />
-        </motion.div> */}
+              {/* Link */}
+              <motion.div
+                className="mt-10 flex items-center gap-x-6"
+                variants={itemVariants}
+              >
+                <Link
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  className="relative border border-green text-base font-semibold leading-7 text-silver cursor-pointer hover:text-gold"
+                >
+                  View my projects <span aria-hidden="true">→</span>
+                </Link>
+              </motion.div>
+            </div>
+
+            {/* Image */}
+            <motion.img
+              className=" w-96 h-45"
+              src={heroImg}
+              alt="Grayson Harvey"
+            />
+          </div>
+        </motion.div>
       </div>
     </>
   );
