@@ -38,7 +38,7 @@ export default function Hero() {
           {/* Greeting */}
           <div className="">
             <motion.h1
-              className=" border py-2 w-1/3 text-6xl text-secondary font-bold heroUnderline"
+              className="py-2 w-1/3 text-6xl text-secondary font-bold heroUnderline"
               variants={{
                 hidden: { opacity: 0, y: -20 },
                 visible,
@@ -48,39 +48,45 @@ export default function Hero() {
               <span className="inline-flex animate-pulse">_</span>
             </motion.h1>
           </div>
-
+          {/* Bio, Link, Img */}
           <div className="border border-red flex justify-evenly items-center">
+            {/* Bio, Link */}
             <div>
               {/* Bio */}
-              <motion.p
-                className="max-w-3xl border text-silver text-xl font-light "
-                variants={itemVariants}
-              >
-                I'm a{" "}
-                <span className="underline font-medium">
-                  full-stack engineer
-                </span>{" "}
-                with strong skills in{" "}
-                <span className="underline decoration-blue-light font-medium">
-                  JavaScript
-                </span>
-                ,{" "}
-                <span className="underline decoration-blue-light font-medium">
-                  MongoDB
-                </span>
-                ,{" "}
-                <span className="underline decoration-blue-light font-medium">
-                  MySQL
-                </span>
-                , and{" "}
-                <span className="underline decoration-purple font-medium">
-                  React.js
-                </span>
-                . I recently earned a certificate in full-stack development from
-                Northwestern University, complementing my degrees in Psychology
-                and International Studies.
-              </motion.p>
-
+              <div>
+                <motion.p
+                  className="max-w-3xl border text-silver text-2xl font-normal "
+                  variants={itemVariants}
+                >
+                  I'm a{" "}
+                  <span className="underline font-medium">
+                    full-stack engineer
+                  </span>{" "}
+                  with strong skills in{" "}
+                  <span className="underline decoration-blue-light font-medium">
+                    JavaScript
+                  </span>
+                  ,{" "}
+                  <span className="underline decoration-purple font-medium">
+                    React.js
+                  </span>
+                  , {" "}
+                  <span className="underline decoration-purple font-medium">
+                    Node.js
+                  </span>
+                  ,{" "}
+                  <span className="underline decoration-blue-light font-medium">
+                    MongoDB
+                  </span>
+                  , and{" "}
+                  <span className="underline decoration-blue-light font-medium">
+                    MySQL
+                  </span>
+                  . I recently earned a certificate in full-stack development
+                  from Northwestern University, complementing my degrees in
+                  Psychology and International Studies.
+                </motion.p>
+              </div>
               {/* Link */}
               <motion.div
                 className="mt-10 flex items-center gap-x-6"
@@ -92,7 +98,7 @@ export default function Hero() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="relative border border-green text-base font-semibold leading-7 text-silver cursor-pointer hover:text-gold"
+                  className="relative border border-green text-lg font-semibold leading-7 text-silver cursor-pointer hover:text-gold"
                 >
                   View my projects <span aria-hidden="true">→</span>
                 </Link>
