@@ -53,27 +53,27 @@ export default function Hero() {
                   variants={itemVariants}
                 >
                   I'm a{" "}
-                  <span className="bioDataUnderline text-red tracking-wide	font-inconsolata">
+                  <span className="bioUnderline tracking-wider	font-inconsolata">
                     full-stack engineer
                   </span>{" "}
                   with strong skills in{" "}
-                  <span className="bioDataUnderline text-orange tracking-wide font-inconsolata">
+                  <span className="bioDataUnderline tracking-wider font-inconsolata">
                     JavaScript
                   </span>
                   ,{" "}
-                  <span className="bioDataUnderline text-gold tracking-wide font-inconsolata">
+                  <span className="bioDataUnderline tracking-wider font-inconsolata">
                     React.js
                   </span>
-                  ,{" "}
+                  {/* ,{" "}
                   <span className="bioDataUnderline text-green-light tracking-wide font-inconsolata">
                     Node.js
-                  </span>
+                  </span> */}
                   ,{" "}
-                  <span className="bioDataUnderline text-blue-readable tracking-wide  font-inconsolata">
+                  <span className="bioDataUnderline tracking-wider  font-inconsolata">
                     MongoDB
                   </span>
                   , and{" "}
-                  <span className="bioDataUnderline text-purple-readable tracking-wide font-inconsolata">
+                  <span className="bioDataUnderline tracking-wider font-inconsolata">
                     MySQL
                   </span>
                   . I recently earned a certificate in full-stack development
