@@ -7,7 +7,7 @@ import { heroData } from "../../data/heroData";
 import heroImg from "../../assets/images/heroImg.jpg";
 
 // Animation
-const visible = { opacity: 1, y: 0, transition: { duration: 2.7 } };
+const visible = { opacity: 1, y: 0, transition: { duration: 1.5, delay: 0.4 } };
 
 const itemVariants = {
   hidden: { opacity: 0, y: 10 },
@@ -15,63 +15,60 @@ const itemVariants = {
 };
 
 export default function Hero() {
-  // Data Imports
-  // Greeting
-  const heroGreeting = heroData.greeting.length ? (
-    heroData.greeting.map((greeting, index) => <h1 key={index}>{greeting}</h1>)
-  ) : (
-    <p>Data Not Found</p>
-  );
-
-  // Bio
-  const heroBio = heroData.bio.length ? (
-    heroData.bio.map((bio, index) => <h1 key={index}>{bio}</h1>)
-  ) : (
-    <p>Data Not Found</p>
-  );
-
   return (
     <>
       <div id="hero" className="relative ml-20 mt-0.5">
         <div className="mx-auto max-w-7xl">
           {/* Greeting, bio, link, polygon */}
           <div className="relative z-10 lg:w-full lg:max-w-2xl">
-            {/* Polygon */}
-            <svg
-              className="absolute inset-y-0 right-8 hidden fill-primary h-full w-80 translate-x-1/2 transform lg:block"
-              viewBox="0 0 100 100"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-            >
-              <polygon points="0,0 90,0 50,100 0,100" />
-            </svg>
-
             {/* Greeting, bio, link */}
             <div className="relative py-32 px-6 sm:py-40 lg:py-56 lg:px-8 lg:pr-0">
               {/* Greeting */}
-              {/* Larger screen */}
-              <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-                <h1 className="pb-1 text-5xl font-bold tracking-tight text-secondary sm:text-6xl heroUnderline typewriter">
-                  {heroGreeting}
-                </h1>
-              </div>
+              <motion.div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
+                <motion.h1
+                  className="pb-1 text-5xl font-bold tracking-tight text-secondary sm:text-6xl heroUnderline"
+                  variants={{
+                    hidden: { opacity: 0, y: -20 },
+                    visible,
+                  }}
+                >
+                  Hi, I'm Grayson.<span className="inline-flex animate-pulse">_</span>
+                </motion.h1>
+              </motion.div>
 
               {/* Bio */}
-              <motion.div
-                className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl"
-
-              >
-                <motion.p
-                  className="mt-6 text-lg leading-8 text-secondary"
-
-                >
-                  {heroBio}
+              <motion.div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
+                <motion.p className="mt-6 text-lg leading-8 text-secondary">
+                  I'm a{" "}
+                  <span className="underline font-medium">
+                    full-stack engineer
+                  </span>{" "}
+                  with strong skills in{" "}
+                  <span className="underline decoration-blue-light font-medium">
+                    JavaScript
+                  </span>
+                  ,{" "}
+                  <span className="underline decoration-purple font-medium">
+                    React.js
+                  </span>
+                  ,{" "}
+                  <span className="underline decoration-purple font-medium">
+                    Node.js
+                  </span>
+                  ,{" "}
+                  <span className="underline decoration-blue-light font-medium">
+                    MongoDB
+                  </span>
+                  , and{" "}
+                  <span className="underline decoration-blue-light font-medium">
+                    MySQL
+                  </span>
+                  . I recently earned a certificate in full-stack development
+                  from Northwestern University, complementing my degrees in
+                  Psychology and International Studies.{" "}
                 </motion.p>
                 {/* Link */}
-                <motion.div
-                  className="mt-10 flex items-center gap-x-6"
-
-                >
+                <motion.div className="mt-10 flex items-center gap-x-6">
                   <Link
                     to="projects"
                     spy={true}

@@ -48,14 +48,15 @@ export default function Hero() {
               <span className="inline-flex animate-pulse">_</span>
             </motion.h1>
           </div>
+          
           {/* Bio, Link, Img */}
-          <div className="border border-red flex justify-evenly items-center">
+          <div className="flex justify-evenly items-center">
             {/* Bio, Link */}
             <div>
               {/* Bio */}
               <div>
                 <motion.p
-                  className="max-w-3xl border text-silver text-2xl font-normal "
+                  className="max-w-3xl  text-silver text-2xl font-normal "
                   variants={itemVariants}
                 >
                   I'm a{" "}
@@ -98,7 +99,7 @@ export default function Hero() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="relative border border-green text-lg font-semibold leading-7 text-silver cursor-pointer hover:text-gold"
+                  className="relative text-lg font-semibold leading-7 text-silver cursor-pointer hover:text-gold"
                 >
                   View my projects <span aria-hidden="true">→</span>
                 </Link>
@@ -110,6 +111,7 @@ export default function Hero() {
               className=" w-96 h-45"
               src={heroImg}
               alt="Grayson Harvey"
+              variants={itemVariants}
             />
           </div>
         </motion.div>

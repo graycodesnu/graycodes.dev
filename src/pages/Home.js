@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <div>
-            {/* <Hero id="/" /> */}
+            <Hero id="/" />
             <Divider />
             <Test/>
             <Divider/>
