@@ -49,7 +49,6 @@ module.exports = {
       'gold': '#d89d46',
       'orange': '#B35919',
       'purple': '#5F4C99'
-
     }
   },
   plugins: [],
