@@ -53,27 +53,27 @@ export default function Hero() {
                   variants={itemVariants}
                 >
                   I'm a{" "}
-                  <span className="bioDataUnderline ">
+                  <span className="bioDataUnderline text-red tracking-wide	font-inconsolata">
                     full-stack engineer
                   </span>{" "}
                   with strong skills in{" "}
-                  <span className="bioDataUnderline ">
+                  <span className="bioDataUnderline text-orange tracking-wide font-inconsolata">
                     JavaScript
                   </span>
                   ,{" "}
-                  <span className="bioDataUnderline ">
+                  <span className="bioDataUnderline text-gold tracking-wide font-inconsolata">
                     React.js
                   </span>
                   ,{" "}
-                  <span className="bioDataUnderline">
+                  <span className="bioDataUnderline text-green-light tracking-wide font-inconsolata">
                     Node.js
                   </span>
                   ,{" "}
-                  <span className="bioDataUnderline ">
+                  <span className="bioDataUnderline text-blue-readable tracking-wide  font-inconsolata">
                     MongoDB
                   </span>
                   , and{" "}
-                  <span className="bioDataUnderline">
+                  <span className="bioDataUnderline text-purple-readable tracking-wide font-inconsolata">
                     MySQL
                   </span>
                   . I recently earned a certificate in full-stack development
@@ -107,7 +107,7 @@ export default function Hero() {
        lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
         >
           <motion.img
-            className="brightness-90 aspect-auto object-cover rounded-lg xlg:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
+            className="brightness-50 drop-shadow-xl shadow-orange aspect-auto object-cover rounded-lg xlg:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
             src={heroImg}
             alt="Grayson Harvey"
             variants={itemVariants}

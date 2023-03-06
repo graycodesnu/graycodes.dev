@@ -42,13 +42,16 @@ module.exports = {
       // secondary was previously #D9D9D9 C6C4C7
       'silver': '#C6C4C7',
       'green': '#0B7A75',
+      'green-light': '#0E958F',
       'white': '#FBF7F7',
       'red': '#A04048',
       'blue': '#2E294E',
       'blue-light': '#42375A',
+      'blue-readable': '#0F69FA',
       'gold': '#d89d46',
       'orange': '#B35919',
-      'purple': '#5F4C99'
+      'purple': '#5F4C99',
+      'purple-readable': '#8876BC'
     }
   },
   plugins: [],
