@@ -38,10 +38,11 @@ export default function Background() {
     <>
       <div id="background">
         <h1 className="text-6xl text-secondary font-bold p-6">My Proficiencies</h1>
-        {/* Front to tools div w/ dividers */}
-        <div className="pt-8 pb-5 flex flex-wrap justify-between">
+        {/* Front to Tools div w/ dividers */}
+        <div className="pt-8 pb-5 flex flex-wrap lg:justify-between 2xs:justify-center">
           {/* Frontend */}
-          <div className="p-5 border border-primary-dark bg-primary-light rounded-lg">
+          {/* sm:mr-3 lg:mr-0 */}
+          <div className="w-96 xs:mb-4 xl:mb-0  p-5 border border-primary-dark bg-primary-light rounded-lg">
             <div className="px-5">
               {/* Heading with icon */}
               <div className="p-2 flex flex-row justify-center items-end">
@@ -75,12 +76,12 @@ export default function Background() {
           </div>
 
           {/* Divider */}
-          <div className="visible md:visible xs:invisible">
+          <div className="sm:p-3 lg:p-0 visible lg:visible 2xs:invisible">
             <div className="w-0.5 h-64 mt-6 bg-green " />
           </div>
 
           {/* Backend */}
-          <div className="p-5 border border-primary-dark bg-primary-light rounded-lg">
+          <div className="w-96 xs:mb-4 xl:mb-0 p-5 border border-primary-dark bg-primary-light rounded-lg">
             <div className="px-5">
               {/* Heading with icon */}
               <div className="p-2 flex flex-row justify-center items-end">
@@ -111,12 +112,12 @@ export default function Background() {
           </div>
 
           {/* Divider */}
-          <div className="visible md:visible xs:invisible">
+          <div className="sm:p-3 lg:p-0 visible lg:visible 2xs:invisible">
             <div className="w-0.5 h-64 mt-6 bg-green" />
           </div>
 
           {/* Tools */}
-          <div className="p-5 border border-primary-dark bg-primary-light rounded-lg">
+          <div className="w-96 xs:pt-4 xl:mt-0 p-5 border border-primary-dark bg-primary-light rounded-lg">
             <div className="px-5">
               {/* Heading with icon */}
               <div className="p-2 flex flex-row justify-center items-end">
