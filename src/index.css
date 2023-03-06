@@ -14,13 +14,23 @@ html {
 }
 
 /*! Hero */
-/* Heading underlines */
+/* Heading underline */
 .heroUnderline {
   background-image: linear-gradient(90deg, #a04048, #a04048);
   background-position: 15% 85%;
   background-size: 100% 15%;
   background-repeat: no-repeat;
   width: 86%;
+}
+
+/* Bio data underlines */
+
+.bioDataUnderline {
+  background-image: linear-gradient(90deg, #a04048, #a04048);
+  background-position: 15% 85%;
+  background-size: 100% 15%;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 /* Typewriter effect */
