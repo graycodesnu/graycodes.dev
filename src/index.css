@@ -40,29 +40,12 @@ html {
   width: 100%;
 }
 
-/* Code bracket animation */
-.cls-1
-  $delay: calc(var(--item) * 1s)
-  fill: none
-  stroke: #000
-  stroke-miterlimit: 10
-  stroke-width: 5px
-  stroke-linecap: round
-  stroke-miterlimit: 10
-  stroke-dasharray: 1500
-  animation: lines 4s infinite $delay
-  
-.dot
-  stroke-dasharray: 500
-  stroke: var(--color)
-  
-.stem
-  stroke: var(--color)
-
-@keyframes lines 
-  100% 
-    stroke-dashoffset: 3000
-
+/* Code bracket color */
+.codeBracketColor{
+  background-image: linear-gradient(60deg, #E21143, #FFB03A);
+  background-clip: text;
+  color: transparent;
+}
 
 /* Typewriter effect */
 .typewriter {

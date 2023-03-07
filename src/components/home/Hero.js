@@ -4,10 +4,8 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 // Import data
 import heroImg from "../../assets/images/heroImg.jpg";
-// Code bracket icon
-// import { ReactComponent as CodeBracketIcon } from "../../assets/icons/codeBracket.svg";
 
-// Animations for appearing on page
+// Animations for elements to appear on page
 const visible = { opacity: 1, y: 0, transition: { duration: 1.5, delay: 0.4 } };
 
 const itemVariants = {
@@ -15,7 +13,7 @@ const itemVariants = {
   visible,
 };
 
-// Animations for code bracket appearing
+// Animations for code bracket draw
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
   visible: (i) => {
@@ -67,11 +65,11 @@ export default function Hero() {
 
               {/* Bio */}
               <motion.div
-                className="z-50 2xs:shadow-2xl 2xs:shadow-blue 2xl:shadow-none 2xs:px-3 2xl:px-0 rounded-md 2xs:mt-6 2xl:mt-3 mx-auto max-w-2xl lg:mx-0 lg:max-w-xl"
+                className=" z-50 2xs:shadow-2xl 2xs:shadow-blue 2xl:shadow-none 2xs:px-3 2xl:px-0 rounded-md 2xs:mt-6 2xl:mt-3 mx-auto max-w-2xl lg:mx-0 lg:max-w-xl"
                 variants={itemVariants}
               >
                 <motion.p
-                  className="bg-primary rounded-lg pt-3 text-xl leading-8 font-normal text-silver"
+                  className="pt-3 text-xl leading-8 font-normal text-silver"
                   variants={itemVariants}
                 >
                   I'm a{" "}
@@ -124,7 +122,6 @@ export default function Hero() {
         </div>
 
         {/* Image */}
-        {/* 2xs:hidden 2xl:flex */}
         <div
           className="2xs:hidden 2xl:flex 
        lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
@@ -137,10 +134,10 @@ export default function Hero() {
           />
         </div>
 
-        {/* Code bracket icon */}
+        {/* Code bracket icons */}
         <motion.div
-          className="border z-0 flex flex-col  xs:flex 1xl:hidden 
-       absolute inset-y-0 right-0 w-fit h-fit  "
+          className="animate-pulse z-0 flex flex-col xl:mr-14 xs:flex 1xl:hidden 
+       absolute inset-y-0 right-0 w-fit h-fit"
           variants={itemVariants}
         >
           <motion.svg
@@ -149,36 +146,36 @@ export default function Hero() {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            stroke-width="0.75"
             stroke="currentColor"
-            className=" 2xl:invisible aspect-auto object-fill rounded-lg xl:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
+            className="2xl:invisible aspect-auto object-contain rounded-lg xl:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
             variants={draw}
           >
             <motion.path
               stroke-linecap="round"
               stroke-linejoin="round"
               d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
-              stroke="#B35919"
+              stroke="rgba(179, 89, 25, 0.35)" 
               variants={draw}
               custom={1}
             />
-          </motion.svg>
+          </motion.svg>{" "}
           <motion.svg
             initial="hidden"
             animate="visible"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            stroke-width="0.75"
             stroke="currentColor"
-            className=" 2xl:invisible aspect-auto object-fill rounded-lg xl:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
+            className=" 2xl:invisible aspect-auto object-contain rounded-lg xl:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
             variants={draw}
           >
             <motion.path
               stroke-linecap="round"
               stroke-linejoin="round"
               d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
-              stroke="#B35919"
+              stroke="rgba(179, 89, 25, 0.25)"
               variants={draw}
               custom={2}
             />
@@ -189,23 +186,21 @@ export default function Hero() {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            stroke-width=".75"
             stroke="currentColor"
-            className=" 2xl:invisible aspect-auto object-fill rounded-lg xl:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
+            className=" 2xl:invisible aspect-auto object-contain rounded-lg xl:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
             variants={draw}
           >
             <motion.path
               stroke-linecap="round"
               stroke-linejoin="round"
               d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
-              stroke="#B35919"
+              stroke="rgba(179, 89, 25, 0.35)"
               variants={draw}
               custom={3}
             />
           </motion.svg>
-          
         </motion.div>
-        
       </motion.div>
     </>
   );
