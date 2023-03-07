@@ -45,7 +45,7 @@ export default function Hero() {
         }}
       >
         <div className="mx-auto max-w-7xl">
-          {/* Greeting, bio, link, polygon */}
+          {/* Greeting, bio, link */}
           <div className="relative z-10 lg:w-full lg:max-w-2xl">
             {/* Greeting, bio, link */}
             <div className="relative py-32 px-6 sm:py-40 lg:py-56 lg:px-8 lg:pr-0">
@@ -67,11 +67,11 @@ export default function Hero() {
 
               {/* Bio */}
               <motion.div
-                className="2xs:shadow-2xl 2xs:shadow-blue 2xl:shadow-none 2xs:px-3 2xl:px-0 rounded-md 2xs:mt-6 2xl:mt-3 mx-auto max-w-2xl lg:mx-0 lg:max-w-xl"
+                className="z-50 2xs:shadow-2xl 2xs:shadow-blue 2xl:shadow-none 2xs:px-3 2xl:px-0 rounded-md 2xs:mt-6 2xl:mt-3 mx-auto max-w-2xl lg:mx-0 lg:max-w-xl"
                 variants={itemVariants}
               >
                 <motion.p
-                  className=" pt-3 text-xl leading-8 font-normal text-silver"
+                  className="bg-primary rounded-lg pt-3 text-xl leading-8 font-normal text-silver"
                   variants={itemVariants}
                 >
                   I'm a{" "}
@@ -139,8 +139,8 @@ export default function Hero() {
 
         {/* Code bracket icon */}
         <motion.div
-          className="mt-10 py-20 xs:flex 1xl:hidden justify-items-center
-       absolute inset-y-0 right-0 w-fit h-fit"
+          className="border z-0 flex flex-col  xs:flex 1xl:hidden 
+       absolute inset-y-0 right-0 w-fit h-fit  "
           variants={itemVariants}
         >
           <motion.svg
@@ -203,7 +203,9 @@ export default function Hero() {
               custom={3}
             />
           </motion.svg>
+          
         </motion.div>
+        
       </motion.div>
     </>
   );
