@@ -13,7 +13,7 @@ const itemVariants = {
   visible,
 };
 
-// Animations for code bracket draw
+// Animations for icon draw
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
   visible: (i) => {
@@ -22,7 +22,7 @@ const draw = {
       pathLength: 1,
       opacity: 1,
       transition: {
-        pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
+        pathLength: { delay, type: "spring", duration: 4, bounce: 0 },
         opacity: { delay, duration: 0.01 },
       },
     };
@@ -134,53 +134,32 @@ export default function Hero() {
           />
         </div>
 
-        {/* Code bracket icons */}
+        {/* Icons */}
         <motion.div
-          className="animate-pulse z-0 flex flex-col xl:mr-14 xs:flex 1xl:hidden 
+          className=" z-0 flex flex-col mt-28 xl:mr-14 xs:flex 1xl:hidden 
        absolute inset-y-0 right-0 w-fit h-fit"
           variants={itemVariants}
         >
-          <motion.svg
-            initial="hidden"
-            animate="visible"
+          {/* Square Stack SVG */}
+          {/* <motion.svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="0.75"
-            stroke="currentColor"
+            stroke="rgba(179, 89, 25, 0.35)"
             className="2xl:invisible aspect-auto object-contain rounded-lg xl:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
             variants={draw}
           >
             <motion.path
               stroke-linecap="round"
               stroke-linejoin="round"
-              d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
-              stroke="rgba(179, 89, 25, 0.35)" 
+              d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3"
               variants={draw}
               custom={1}
             />
-          </motion.svg>{" "}
-          <motion.svg
-            initial="hidden"
-            animate="visible"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="0.75"
-            stroke="currentColor"
-            className=" 2xl:invisible aspect-auto object-contain rounded-lg xl:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
-            variants={draw}
-          >
-            <motion.path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
-              stroke="rgba(179, 89, 25, 0.25)"
-              variants={draw}
-              custom={2}
-            />
-          </motion.svg>
-          <motion.svg
+          </motion.svg> */}
+          {/* Bracket SVG */}
+          {/* <motion.svg
             initial="hidden"
             animate="visible"
             xmlns="http://www.w3.org/2000/svg"
@@ -195,9 +174,59 @@ export default function Hero() {
               stroke-linecap="round"
               stroke-linejoin="round"
               d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
-              stroke="rgba(179, 89, 25, 0.35)"
+              stroke="rgba(11, 121, 116, 0.35)"
               variants={draw}
-              custom={3}
+              custom={2}
+            />
+          </motion.svg> */}
+
+          {/* Light Bulb SVG */}
+          <motion.svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width=".5"
+            className="2xl:invisible aspect-auto object-contain rounded-lg xl:aspect-auto lg:h-64 lg:w-full 2xl:object-contain"
+            variants={draw}
+          >
+            <motion.path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"
+              stroke="rgba(216, 157, 70, 0.5)"
+              variants={draw}
+              custom={5}
+            />
+          </motion.svg>
+
+          
+
+          {/* Solid Square Stack SVG */}
+          <motion.svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#0e0e0e"
+            stroke-width=".5"
+            className="2xl:invisible aspect-auto object-contain rounded-lg xl:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
+            variants={draw}
+          >
+            <motion.path
+              d="M11.644 1.59a.75.75 0 01.712 0l9.75 5.25a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.712 0l-9.75-5.25a.75.75 0 010-1.32l9.75-5.25z"
+              stroke="rgba(160, 64, 72, 0.75)"
+              variants={draw}
+              custom={1}
+            />
+            <motion.path
+              d="M3.265 10.602l7.668 4.129a2.25 2.25 0 002.134 0l7.668-4.13 1.37.739a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.71 0l-9.75-5.25a.75.75 0 010-1.32l1.37-.738z"
+              stroke="rgba(95, 76, 154, 0.75)"
+              variants={draw}
+              custom={2.5}
+            />
+            <motion.path
+              d="M10.933 19.231l-7.668-4.13-1.37.739a.75.75 0 000 1.32l9.75 5.25c.221.12.489.12.71 0l9.75-5.25a.75.75 0 000-1.32l-1.37-.738-7.668 4.13a2.25 2.25 0 01-2.134-.001z"
+              variants={draw}
+              custom={4}
+              stroke="rgba(179, 89, 25, 0.75)"
             />
           </motion.svg>
         </motion.div>

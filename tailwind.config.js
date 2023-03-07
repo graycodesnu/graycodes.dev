@@ -34,6 +34,9 @@ module.exports = {
     extend: {
       skew: {
         '50': '50deg'
+      },
+      animation: {
+        'pulse-slow': 'pulse 5s linear infinite',
       }
     },
     colors: {
