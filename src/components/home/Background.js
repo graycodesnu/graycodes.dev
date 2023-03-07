@@ -117,7 +117,7 @@ export default function Background() {
           </div>
 
           {/* Tools */}
-          <div className="w-96 xs:pt-4 xl:mt-0 p-5 border border-primary-dark bg-primary-light rounded-lg">
+          <div className="w-96 xs:mr-6 xl:mr-0 xs:pt-4 xl:mt-0 p-5 border border-primary-dark bg-primary-light rounded-lg">
             <div className="px-5">
               {/* Heading with icon */}
               <div className="p-2 flex flex-row justify-center items-end">

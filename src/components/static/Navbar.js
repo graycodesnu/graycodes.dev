@@ -52,7 +52,7 @@ export default function Navbar() {
                   duration={500}
                 >
                   <Logo
-                    className="sm:block h-28 w-auto justify-items-start 2xs:hidden"
+                    className="sm:block h-28 w-auto justify-items-start 2xs:hidden cursor-pointer"
                     alt="Grayson Harvey"
                   />
                 </Link>
@@ -96,7 +96,7 @@ export default function Navbar() {
           </div>
           {/* Bar Menu */}
           <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pt-2 pb-3">
+            <div className="space-y-1 px-2 pt-2 pb-3 cursor-pointer">
               {navigation.map((item) => (
                 <Link
                   to={item.href}

@@ -12,8 +12,6 @@ export default function Home() {
     <>
       <div>
             <Hero id="/" />
-            <Divider />
-            <Test/>
             <Divider/>
             <Background id="background" />
             <Divider />

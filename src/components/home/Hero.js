@@ -32,9 +32,9 @@ export default function Hero() {
             {/* Greeting, bio, link */}
             <div className="relative py-32 px-6 sm:py-40 lg:py-56 lg:px-8 lg:pr-0">
               {/* Greeting */}
-              <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
+              <div className=" mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <motion.h1
-                  className="pb-1 text-5xl font-bold tracking-tight text-secondary sm:text-6xl "
+                  className="2xs:pb-3 2xl:pb-0 text-5xl font-bold tracking-tight text-secondary sm:text-6xl "
                   variants={{
                     hidden: { opacity: 0, y: -20 },
                     visible,
@@ -47,7 +47,7 @@ export default function Hero() {
               </div>
 
               {/* Bio */}
-              <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
+              <div className="border mt-3 mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <motion.p
                   className="mt-6 text-lg leading-8 font-normal text-silver"
                   variants={itemVariants}
@@ -64,10 +64,6 @@ export default function Hero() {
                   <span className="bioDataUnderline tracking-wider font-inconsolata">
                     React.js
                   </span>
-                  {/* ,{" "}
-                  <span className="bioDataUnderline text-green-light tracking-wide font-inconsolata">
-                    Node.js
-                  </span> */}
                   ,{" "}
                   <span className="bioDataUnderline tracking-wider  font-inconsolata">
                     MongoDB
@@ -102,12 +98,13 @@ export default function Hero() {
         </div>
 
         {/* Image */}
+        {/* 2xs:hidden 2xl:flex */}
         <div
-          className="
+          className="2xs:hidden 2xl:flex
        lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
         >
           <motion.img
-            className="brightness-50 drop-shadow-xl shadow-orange aspect-auto object-cover rounded-lg xlg:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
+            className="brightness-75 drop-shadow-xl shadow-orange aspect-auto object-cover rounded-lg xlg:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
             src={heroImg}
             alt="Grayson Harvey"
             variants={itemVariants}
