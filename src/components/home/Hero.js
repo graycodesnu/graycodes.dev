@@ -40,16 +40,20 @@ export default function Hero() {
                     visible,
                   }}
                 >
-                  <span className="heroUnderline">Hi, I'm Grayson.
-                  <span className="inline-flex animate-pulse">_</span>
+                  <span className="heroUnderline">
+                    Hi, I'm Grayson.
+                    <span className="inline-flex animate-pulse">_</span>
                   </span>
                 </motion.h1>
               </div>
 
               {/* Bio */}
-              <div className="border mt-3 mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
+              <motion.div
+                className="2xs:shadow-md 2xs:shadow-blue 2xl:shadow-none 2xs:px-3 2xl:px-0 rounded-md mt-3 mx-auto max-w-2xl lg:mx-0 lg:max-w-xl"
+                variants={itemVariants}
+              >
                 <motion.p
-                  className="mt-6 text-lg leading-8 font-normal text-silver"
+                  className=" pt-3 text-lg leading-8 font-normal text-silver"
                   variants={itemVariants}
                 >
                   I'm a{" "}
@@ -78,7 +82,7 @@ export default function Hero() {
                 </motion.p>
                 {/* Link */}
                 <motion.div
-                  className="mt-10 flex items-center gap-x-6"
+                  className="mt-10 pb-2 flex items-center gap-x-6"
                   variants={itemVariants}
                 >
                   <Link
@@ -92,7 +96,7 @@ export default function Hero() {
                     View my projects <span aria-hidden="true">→</span>
                   </Link>
                 </motion.div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
