@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 // Import data
 import heroImg from "../../assets/images/heroImg.jpg";
 // Code bracket icon
-import { CodeBracketIcon } from "@heroicons/react/24/outline";
+// import { ReactComponent as CodeBracketIcon } from "../../assets/icons/codeBracket.svg";
 
 // Animations for appearing on page
 const visible = { opacity: 1, y: 0, transition: { duration: 1.5, delay: 0.4 } };
@@ -16,6 +16,20 @@ const itemVariants = {
 };
 
 // Animations for code bracket appearing
+const draw = {
+  hidden: { pathLength: 0, opacity: 0 },
+  visible: (i) => {
+    const delay = 1 + i * 0.5;
+    return {
+      pathLength: 1,
+      opacity: 1,
+      transition: {
+        pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
+        opacity: { delay, duration: 0.01 },
+      },
+    };
+  },
+};
 
 export default function Hero() {
   return (
@@ -125,11 +139,70 @@ export default function Hero() {
 
         {/* Code bracket icon */}
         <motion.div
-          className="xs:flex 1xl:hidden content-center
+          className="mt-10 py-20 xs:flex 1xl:hidden justify-items-center
        absolute inset-y-0 right-0 w-fit h-fit"
           variants={itemVariants}
         >
-          <CodeBracketIcon className="2xl:invisible text-blue aspect-auto object-fill rounded-lg xl:aspect-auto lg:h-full lg:w-full 2xl:object-contain" />
+          <motion.svg
+            initial="hidden"
+            animate="visible"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className=" 2xl:invisible aspect-auto object-fill rounded-lg xl:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
+            variants={draw}
+          >
+            <motion.path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+              stroke="#B35919"
+              variants={draw}
+              custom={1}
+            />
+          </motion.svg>
+          <motion.svg
+            initial="hidden"
+            animate="visible"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className=" 2xl:invisible aspect-auto object-fill rounded-lg xl:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
+            variants={draw}
+          >
+            <motion.path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+              stroke="#B35919"
+              variants={draw}
+              custom={2}
+            />
+          </motion.svg>
+          <motion.svg
+            initial="hidden"
+            animate="visible"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className=" 2xl:invisible aspect-auto object-fill rounded-lg xl:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
+            variants={draw}
+          >
+            <motion.path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+              stroke="#B35919"
+              variants={draw}
+              custom={3}
+            />
+          </motion.svg>
         </motion.div>
       </motion.div>
     </>
