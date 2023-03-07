@@ -19,8 +19,13 @@ module.exports = {
       'xl': '1280px',
       // => @media (min-width: 1280px) { ... }
 
+      '1xl': '1500',
+
+      '2xl-alt': '1520',
+
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
+
     },
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"],

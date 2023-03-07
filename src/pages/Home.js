@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <div>
             <Hero id="/" />
-            <Divider/>
+
             <Background id="background" />
             <Divider />
             <Projects id="projects" />
