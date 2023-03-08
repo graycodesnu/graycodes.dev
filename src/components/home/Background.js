@@ -36,9 +36,9 @@ export default function Background() {
 
   return (
     <>
-      <div id="background" >
-        <h1 className="flex justify-center xl:mt-14 text-5xl font-bold tracking-tight text-secondary sm:text-6xl  ">
-          <span className="backgroundUnderline">My Proficiencies </span>
+      <div id="background">
+        <h1 className="flex justify-center xl:mt-14 text-5xl font-bold tracking-tight text-secondary sm:text-6xl">
+          <span className="backgroundUnderline">My Expertise </span>
         </h1>
         {/* Front to Tools div w/ dividers */}
         <div className="pt-10 pb-5 flex flex-wrap lg:justify-between 2xs:justify-center">
@@ -149,6 +149,14 @@ export default function Background() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Additional Background */}
+        <div>
+          <div className="flex justify-center pt-8">
+            <h2>Testing Div</h2>
+          </div>
+
         </div>
       </div>
     </>
