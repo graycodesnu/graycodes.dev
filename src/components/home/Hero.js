@@ -34,7 +34,7 @@ export default function Hero() {
     <>
       <motion.div
         id="hero"
-        className="relative ml-20 mt-0.5 h-screen"
+        className="relative ml-20 mt-0.5 "
         initial="hidden"
         animate="visible"
         exit={{ opacity: 0, transition: { duration: 1 } }}
@@ -58,14 +58,14 @@ export default function Hero() {
                 >
                   <span className="heroUnderline">
                     Hi, I'm Grayson.
-                    <span className="inline-flex animate-pulse">_</span>
+                    <span className="inline-flex animate-pulse-fast">_</span>
                   </span>
                 </motion.h1>
               </div>
 
               {/* Bio */}
               <motion.div
-                className=" z-50 2xs:shadow-2xl 2xs:shadow-blue 2xl:shadow-none 2xs:px-3 2xl:px-0 rounded-md 2xs:mt-6 2xl:mt-3 mx-auto max-w-2xl lg:mx-0 lg:max-w-xl"
+                className="bg-primary z-50 2xs:shadow-2xl 2xs:shadow-blue 2xl:shadow-none 2xs:px-3 2xl:px-0 rounded-md 2xs:mt-6 2xl:mt-3 mx-auto max-w-2xl lg:mx-0 lg:max-w-xl"
                 variants={itemVariants}
               >
                 <motion.p
@@ -73,32 +73,33 @@ export default function Hero() {
                   variants={itemVariants}
                 >
                   I'm a{" "}
-                  <span className="bioUnderline tracking-wider	font-inconsolata">
+                  <span className="bioUnderline tracking-wider	">
                     full-stack engineer
                   </span>{" "}
                   with strong skills in{" "}
-                  <span className="bioDataUnderline tracking-wider font-inconsolata">
+                  <span className="bioDataUnderline tracking-wider">
                     JavaScript
                   </span>
                   ,{" "}
-                  <span className="bioDataUnderline tracking-wider font-inconsolata">
+                  <span className="bioDataUnderline tracking-wider">
                     React.js
                   </span>
                   ,{" "}
-                  <span className="bioDataUnderline tracking-wider font-inconsolata">
+                  <span className="bioDataUnderline tracking-wider">
                     Node.js
                   </span>
                   ,{" "}
-                  <span className="bioDataUnderline tracking-wider  font-inconsolata">
+                  <span className="bioDataUnderline tracking-wider">
                     MongoDB
                   </span>
                   , and{" "}
-                  <span className="bioDataUnderline tracking-wider font-inconsolata">
+                  <span className="bioDataUnderline tracking-wider">
                     MySQL
                   </span>
                   . I recently earned a certificate in full-stack development
                   from Northwestern University, complementing my degrees in
-                  Psychology and International Studies.{" "}
+                  Psychology and International Studies.
+                
                 </motion.p>
                 {/* Link */}
                 <motion.div
@@ -140,46 +141,6 @@ export default function Hero() {
        absolute inset-y-0 right-0 w-fit h-fit"
           variants={itemVariants}
         >
-          {/* Square Stack SVG */}
-          {/* <motion.svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="0.75"
-            stroke="rgba(179, 89, 25, 0.35)"
-            className="2xl:invisible aspect-auto object-contain rounded-lg xl:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
-            variants={draw}
-          >
-            <motion.path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3"
-              variants={draw}
-              custom={1}
-            />
-          </motion.svg> */}
-          {/* Bracket SVG */}
-          {/* <motion.svg
-            initial="hidden"
-            animate="visible"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width=".75"
-            stroke="currentColor"
-            className=" 2xl:invisible aspect-auto object-contain rounded-lg xl:aspect-auto lg:h-full lg:w-full 2xl:object-contain"
-            variants={draw}
-          >
-            <motion.path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
-              stroke="rgba(11, 121, 116, 0.35)"
-              variants={draw}
-              custom={2}
-            />
-          </motion.svg> */}
-
           {/* Light Bulb SVG */}
           <motion.svg
             xmlns="http://www.w3.org/2000/svg"
@@ -195,11 +156,9 @@ export default function Hero() {
               d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"
               stroke="rgba(216, 157, 70, 0.75)"
               variants={draw}
-              custom={7}
+              custom={7.5}
             />
           </motion.svg>
-
-          
 
           {/* Solid Square Stack SVG */}
           <motion.svg

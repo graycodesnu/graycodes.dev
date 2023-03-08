@@ -36,13 +36,15 @@ export default function Background() {
 
   return (
     <>
-      <div id="background">
-        <h1 className="text-6xl text-secondary font-bold p-6">My Proficiencies</h1>
+      <div id="background" >
+        <h1 className="flex justify-center xl:mt-14 text-5xl font-bold tracking-tight text-secondary sm:text-6xl  ">
+          <span className="backgroundUnderline">My Proficiencies </span>
+        </h1>
         {/* Front to Tools div w/ dividers */}
-        <div className="pt-8 pb-5 flex flex-wrap lg:justify-between 2xs:justify-center">
+        <div className="pt-10 pb-5 flex flex-wrap lg:justify-between 2xs:justify-center">
           {/* Frontend */}
           {/* sm:mr-3 lg:mr-0 */}
-          <div className="w-96 xs:mb-4 xl:mb-0  p-5 border border-primary-dark bg-primary-light rounded-lg">
+          <div className="shadow-lg shadow-blue w-96 xs:mb-4 xl:mb-0  p-5 border-2 border-primary-dark bg-primary-light rounded-lg">
             <div className="px-5">
               {/* Heading with icon */}
               <div className="p-2 flex flex-row justify-center items-end">
@@ -75,13 +77,13 @@ export default function Background() {
             </div>
           </div>
 
-          {/* Divider */}
+          {/*  Green divider */}
           <div className="sm:p-3 lg:p-0 visible lg:visible 2xs:invisible">
             <div className="w-0.5 h-64 mt-6 bg-green " />
           </div>
 
           {/* Backend */}
-          <div className="w-96 xs:mb-4 xl:mb-0 p-5 border border-primary-dark bg-primary-light rounded-lg">
+          <div className="shadow-lg shadow-blue w-96 xs:mb-4 xl:mb-0 p-5 border-2 border-primary-dark bg-primary-light rounded-lg">
             <div className="px-5">
               {/* Heading with icon */}
               <div className="p-2 flex flex-row justify-center items-end">
@@ -117,7 +119,7 @@ export default function Background() {
           </div>
 
           {/* Tools */}
-          <div className="w-96 xs:mr-6 xl:mr-0 xs:pt-4 xl:mt-0 p-5 border border-primary-dark bg-primary-light rounded-lg">
+          <div className="shadow-lg shadow-blue w-96 xs:mr-6 xl:mr-0 xs:pt-4 xl:mt-0 p-5 border-2 border-primary-dark bg-primary-light rounded-lg">
             <div className="px-5">
               {/* Heading with icon */}
               <div className="p-2 flex flex-row justify-center items-end">
@@ -148,8 +150,6 @@ export default function Background() {
             </div>
           </div>
         </div>
-
-        
       </div>
     </>
   );

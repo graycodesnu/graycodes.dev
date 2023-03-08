@@ -40,13 +40,6 @@ html {
   width: 100%;
 }
 
-/* Code bracket color */
-.codeBracketColor{
-  background-image: linear-gradient(60deg, #E21143, #FFB03A);
-  background-clip: text;
-  color: transparent;
-}
-
 /* Typewriter effect */
 .typewriter {
   white-space: nowrap;
@@ -63,7 +56,15 @@ html {
 }
 
 /*! Background */
-/* Heading underlines */
+/* Heading underline */
+.backgroundUnderline {
+  background-image: linear-gradient(90deg, #085E5A, #085E5A);
+  background-position: 15% 95%;
+  background-size: 100% 25%;
+  background-repeat: no-repeat;
+}
+
+/* Card underlines */
 .frontendUnderline {
   background-image: linear-gradient(90deg, #a04048, #a04048);
   background-position: 15% 92%;
