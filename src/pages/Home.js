@@ -5,7 +5,8 @@ import Background from "../components/home/Background";
 import Projects from "../components/home/Projects";
 import Contact from "../components/home/Contact";
 
-import Test from "../components/home/Test"
+// Import project data
+import { projectData } from "../data/projectData";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
 
             <Background id="background" />
             <Divider />
-            <Projects id="projects" />
+            <Projects id="projects" data={projectData}/>
             <Divider />
             <Contact id="contact" />
             <Divider />
