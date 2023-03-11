@@ -1,5 +1,6 @@
 // title, screenshot, github link, live link, description, skills tags, responsibilities (for bigger projects)
-// TODO: Implementation and
+// TODO: The rest of project data 
+// TODO: Add svg screenshots for each project
 const projectData = [
   //! Mix-n-Match
   {
