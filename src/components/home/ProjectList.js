@@ -1,18 +1,11 @@
-export default function ProjectList(project) {
-
-
+export default function ProjectList({ project }) {
+  
+  console.log('hey im a project here')
   return (
     <>
-      <div id="projects" >
+      <div>
         <div>
-          <h1 className="xl:mt-14 text-5xl font-bold tracking-tight text-secondary sm:text-6xl">
-            <span className="projectHeadingUnderline">My Projects</span>
-          </h1>
-
-          <div key={project.id}>
-
-            <p>{project.title}</p>
-          </div>
+          <h5>{project.title}</h5>
         </div>
       </div>
     </>

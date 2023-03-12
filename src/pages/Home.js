@@ -9,6 +9,9 @@ import Contact from "../components/home/Contact";
 import { projectData } from "../data/projectData";
 
 export default function Home() {
+
+  console.log("project from home", projectData)
+
   return (
     <>
       <div>
