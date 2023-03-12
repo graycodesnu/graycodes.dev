@@ -93,7 +93,7 @@ html {
 /* Heading underline */
 .projectHeadingUnderline {
   background-image: linear-gradient(90deg, #5f4c99, #5f4c99);
-  background-position: 15% 92%;
-  background-size: 100% 20%;
+  background-position: 15% 82%;
+  background-size: 100% 18%;
   background-repeat: no-repeat;
 }

@@ -5,24 +5,33 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 export default function ProjectList({ project }) {
   return (
     <>
-      <div className="py-7">
+      <div className="border border-red py-4">
+        <div className="border">
+        {/* Screenshot */}
         <div>{project.screenshot}</div>
-        <h5>{project.title}</h5>
+        {/* Title */}
+        <h5 className="text-xl font-medium">{project.title}</h5>
+        {/* Description */}
         <p>{project.description}</p>
+        {/* Reponsibilities */}
         <ul>
           <li>{project.responsibilities}</li>
         </ul>
-        <ul>
-          <li>{project.skills}</li>
-        </ul>
+        {/* Skills */}
+        <div className="">
+         <span className="border">
+            {project.skills}
+          </span>
+        </div>
         {/* GitHub */}
         <a href={project.github}>
           <GitHubIcon className="h-6 w-6" />
         </a>
         {/* Live Link */}
         <a href={project.live}>
-          <ArrowTopRightOnSquareIcon className="h-6 w-6"/>
+          <ArrowTopRightOnSquareIcon className="h-6 w-6" />
         </a>
+        </div>
       </div>
     </>
   );
