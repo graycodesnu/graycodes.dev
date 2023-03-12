@@ -2,12 +2,11 @@
 // TODO: The rest of project data
 // TODO: Add svg screenshots for each project
 export const projectData = [
-
   //! Mix-n-Match
   {
     id: 1,
     title: "Mix-N-Match",
-    screenshot: "",
+    screenshot: "INSERT SCREENSHOT HERE",
     github: "https://github.com/graycodesnu/mix-match",
     live: "",
     description:
@@ -22,7 +21,6 @@ export const projectData = [
       "React",
       "MongoDB",
       "JavaScript",
-      
       "JSX",
       "GraphQL",
       "Material UI",
@@ -36,7 +34,7 @@ export const projectData = [
   {
     id: 2,
     title: "GoodWeeds",
-    screenshot: "",
+    screenshot: "INSERT SCREENSHOT HERE",
     github: "https://github.com/graycodesnu/goodWeeds",
     live: "",
     description:
@@ -64,7 +62,7 @@ export const projectData = [
   {
     id: 3,
     title: "Intertain",
-    screenshot: "",
+    screenshot: "INSERT SCREENSHOT HERE",
     github: "https://github.com/NW-Bootcamp-Team1/Night-In",
     live: "https://nw-bootcamp-team1.github.io/Night-In/home-page/index",
     description:
