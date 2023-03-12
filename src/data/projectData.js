@@ -36,7 +36,7 @@ export const projectData = [
     title: "GoodWeeds",
     screenshot: "INSERT SCREENSHOT HERE",
     github: "https://github.com/graycodesnu/goodWeeds",
-    live: "",
+    live: "https://tranquil-tor-86628.herokuapp.com/",
     description:
       "Utilizes a MySQL database – built from scratch – to allow a user to create a secure account, browse popular weed strains, add strains to favorites, and post a review to the WeedFeed.",
     responsibilities: [

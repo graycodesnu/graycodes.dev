@@ -13,7 +13,7 @@ export default function Projects() {
     <>
       <div id="projects">
         <h1 className="xl:mt-14 text-5xl font-bold tracking-tight text-secondary sm:text-6xl">
-          <span className="projectHeadingUnderline">My Projects</span>
+          <span className="projectHeadingUnderline">Featured Projects</span>
         </h1>
 
         <div>{projectDataList}</div>

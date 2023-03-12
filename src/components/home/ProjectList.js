@@ -11,6 +11,8 @@ export default function ProjectList({ project }) {
         <ul>
           <li>{project.skills}</li>
         </ul>
+        <a href={project.github}>GitHub</a>
+        <a href={project.live}>Live</a>
       </div>
     </>
   );
