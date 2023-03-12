@@ -1,3 +1,7 @@
+// Import icons
+import { ReactComponent as GitHubIcon } from "../../assets/icons/githubIcon.svg";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+
 export default function ProjectList({ project }) {
   return (
     <>
@@ -11,8 +15,14 @@ export default function ProjectList({ project }) {
         <ul>
           <li>{project.skills}</li>
         </ul>
-        <a href={project.github}>GitHub</a>
-        <a href={project.live}>Live</a>
+        {/* GitHub */}
+        <a href={project.github}>
+          <GitHubIcon className="h-6 w-6" />
+        </a>
+        {/* Live Link */}
+        <a href={project.live}>
+          <ArrowTopRightOnSquareIcon className="h-6 w-6"/>
+        </a>
       </div>
     </>
   );
