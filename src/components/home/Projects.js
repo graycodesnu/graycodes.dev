@@ -16,7 +16,9 @@ export default function Projects() {
           <span className="projectHeadingUnderline">Featured Projects</span>
         </h1>
 
-        <div>{projectDataList}</div>
+        <div className="border flex flex-row mt-4">
+          {projectDataList}
+          </div>
       </div>
     </>
   );
