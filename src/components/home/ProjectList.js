@@ -2,11 +2,15 @@
 import { ReactComponent as GitHubIcon } from "../../assets/icons/githubIcon.svg";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
+
 export default function ProjectList({ project }) {
+
+const skillArray = project.skills
+console.log(skillArray)
+
+
   return (
     <>
-      
-
       <div className="">
         <div className="border border-green h-fit px-2">
           {/* Screenshot */}
@@ -20,8 +24,12 @@ export default function ProjectList({ project }) {
             <li>{project.responsibilities}</li>
           </ul>
           {/* Skills */}
-          <div className="">
-            <span className="border">{project.skills}</span>
+          <div>
+            
+            {skillArray.map(skill => (
+              <li>{skill}</li>
+            ))}
+          
           </div>
           {/* GitHub */}
           <a href={project.github}>
