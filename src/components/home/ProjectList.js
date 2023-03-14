@@ -5,24 +5,29 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import ProjectModal from "./ProjectModal";
 // Import useState for modal functionality
 import { useState } from "react";
+// Import Data
+import { projectData } from "../../data/projectData";
 
 export default function ProjectList({ project }) {
-  // ** Modal useState **
+  // Modal useState
   const [openModal, setOpenModal] = useState(false);
-
-  // ** Short skill array for project preview card **
+// Modal data map 
+const modalProjectData = projectData.map((modalProjectData) => (
+  <ProjectModal key={modalProjectData.id} modalProjectData={modalProjectData} open={openModal} onClose={() => setOpenModal(false)} />
+))
+  // Short skill array for project preview card 
   const shortSkillArray = project.skillsShort;
   console.log(
     "This is the short skills array from ProjectList!",
     shortSkillArray
   );
 
-  // ** Detailed skill array for project detail card **
-  const detailedSkillArray = project.skillsDetail;
-  console.log(
-    "This is the detailed skills array from ProjectList!",
-    detailedSkillArray
-  );
+  // Detailed skill array for project detail card 
+  // const detailedSkillArray = project.skillsDetail;
+  // console.log(
+  //   "This is the detailed skills array from ProjectList!",
+  //   detailedSkillArray
+  // );
 
   return (
     <>
@@ -56,14 +61,10 @@ export default function ProjectList({ project }) {
             <ArrowTopRightOnSquareIcon className="h-6 w-6" />
           </a>
         </div>
-        <ProjectModal open={openModal} onClose={() => setOpenModal(false)} />
+        
       </div>
-      {/* Detailed Skills */}
-      {/* <div>
-        {detailedSkillArray.map((skill) => (
-          <li className="list-none px-1">{skill}</li>
-        ))}
-      </div> */}
+      {/* Modal */}
+<div>{modalProjectData}</div>
     </>
   );
 }
