@@ -17,7 +17,13 @@ export const projectData = [
       "Authorization/login functionality using JSON web tokens",
       "UI/UX (Material UI)",
     ],
-    skills: [
+    skillsShort: [
+      "React",
+      "MongoDB",
+      "JavaScript",
+      "Material UI",
+    ],
+    skillsDetail: [
       "React",
       "MongoDB",
       "JavaScript",
@@ -46,7 +52,13 @@ export const projectData = [
       "Login authorization and sign up",
       "UX/UI",
     ],
-    skills: [
+    skillsShort: [
+      "JavaScript",
+      "Bootstrap",
+      "Express.js",
+      "Node.js",
+    ],
+    skillsDetail: [
       "JavaScript",
       "HTML",
       "Handlebars",
@@ -72,6 +84,7 @@ export const projectData = [
       "Third-party API and implementation",
       "UX/UI",
     ],
-    skills: ["JavaScript", "HTML", "CSS", "Heroku"],
+    skillsShort: ["JavaScript", "HTML", "CSS", "Heroku"],
+    skillsDetail: ["JavaScript", "HTML", "CSS", "Heroku"],
   },
 ];

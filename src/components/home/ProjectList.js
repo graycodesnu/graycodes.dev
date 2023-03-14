@@ -5,8 +5,8 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 export default function ProjectList({ project }) {
 
-const skillArray = project.skills
-console.log(skillArray)
+const shortSkillArray = project.skillsShort
+console.log("This is the skills array from ProjectList!",shortSkillArray)
 
 
   return (
@@ -24,10 +24,10 @@ console.log(skillArray)
             <li>{project.responsibilities}</li>
           </ul>
           {/* Skills */}
-          <div>
+          <div >
             
-            {skillArray.map(skill => (
-              <li>{skill}</li>
+            {shortSkillArray.map(skill => (
+              <li className="list-none">{skill}</li>
             ))}
           
           </div>
