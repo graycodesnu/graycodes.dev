@@ -1,16 +1,23 @@
 // Import icons
 import { ReactComponent as GitHubIcon } from "../../assets/icons/githubIcon.svg";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+// Import ProjectModal
+import ProjectModal from "./ProjectModal";
+// Import useState for modal functionality
+import { useState } from "react";
 
 export default function ProjectList({ project }) {
-  // Short skill array for project preview card
+  // ** Modal useState **
+  const [openModal, setOpenModal] = useState(false);
+
+  // ** Short skill array for project preview card **
   const shortSkillArray = project.skillsShort;
   console.log(
     "This is the short skills array from ProjectList!",
     shortSkillArray
   );
 
-  // Detailed skill array for project detail card
+  // ** Detailed skill array for project detail card **
   const detailedSkillArray = project.skillsDetail;
   console.log(
     "This is the detailed skills array from ProjectList!",
@@ -20,7 +27,10 @@ export default function ProjectList({ project }) {
   return (
     <>
       <div className="">
-        <div className="border border-green h-fit px-2">
+        <div
+          onClick={() => setOpenModal(true)}
+          className="border border-green h-fit px-2"
+        >
           {/* Screenshot */}
           <div>{project.screenshot}</div>
           {/* Title */}
@@ -46,13 +56,14 @@ export default function ProjectList({ project }) {
             <ArrowTopRightOnSquareIcon className="h-6 w-6" />
           </a>
         </div>
+        <ProjectModal open={openModal} onClose={() => setOpenModal(false)} />
       </div>
       {/* Detailed Skills */}
-      <div>
+      {/* <div>
         {detailedSkillArray.map((skill) => (
           <li className="list-none px-1">{skill}</li>
         ))}
-      </div>
+      </div> */}
     </>
   );
 }
