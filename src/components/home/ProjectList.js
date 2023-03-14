@@ -2,12 +2,20 @@
 import { ReactComponent as GitHubIcon } from "../../assets/icons/githubIcon.svg";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
-
 export default function ProjectList({ project }) {
+  // Short skill array for project preview card
+  const shortSkillArray = project.skillsShort;
+  console.log(
+    "This is the short skills array from ProjectList!",
+    shortSkillArray
+  );
 
-const shortSkillArray = project.skillsShort
-console.log("This is the skills array from ProjectList!",shortSkillArray)
-
+  // Detailed skill array for project detail card
+  const detailedSkillArray = project.skillsDetail;
+  console.log(
+    "This is the detailed skills array from ProjectList!",
+    detailedSkillArray
+  );
 
   return (
     <>
@@ -23,13 +31,11 @@ console.log("This is the skills array from ProjectList!",shortSkillArray)
           <ul>
             <li>{project.responsibilities}</li>
           </ul>
-          {/* Skills */}
+          {/* Short Skills */}
           <div className="flex flex-row">
-            
-            {shortSkillArray.map(skill => (
+            {shortSkillArray.map((skill) => (
               <li className="list-none p-3">{skill}</li>
             ))}
-          
           </div>
           {/* GitHub */}
           <a href={project.github}>
@@ -40,6 +46,12 @@ console.log("This is the skills array from ProjectList!",shortSkillArray)
             <ArrowTopRightOnSquareIcon className="h-6 w-6" />
           </a>
         </div>
+      </div>
+      {/* Detailed Skills */}
+      <div>
+        {detailedSkillArray.map((skill) => (
+          <li className="list-none px-1">{skill}</li>
+        ))}
       </div>
     </>
   );
