@@ -24,10 +24,10 @@ console.log("This is the skills array from ProjectList!",shortSkillArray)
             <li>{project.responsibilities}</li>
           </ul>
           {/* Skills */}
-          <div >
+          <div className="flex flex-row">
             
             {shortSkillArray.map(skill => (
-              <li className="list-none">{skill}</li>
+              <li className="list-none p-3">{skill}</li>
             ))}
           
           </div>
