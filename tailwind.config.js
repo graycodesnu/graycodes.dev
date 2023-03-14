@@ -8,24 +8,14 @@ module.exports = {
       '2xs': '360px',
       'xs': '475px',
       'sm': '640px',
-      // => @media (min-width: 640px) { ... }
-
       'md': '768px',
-      // => @media (min-width: 768px) { ... }
-
       'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
+      // Specific to hero page responsiveness
       'hero-lg': '1230px',
       'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
-
       '1xl': '1500',
-
       '2xl-alt': '1520',
-
       '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
-
     },
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"],

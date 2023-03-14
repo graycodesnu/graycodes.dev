@@ -78,13 +78,26 @@ export const projectData = [
     github: "https://github.com/NW-Bootcamp-Team1/Night-In",
     live: "https://nw-bootcamp-team1.github.io/Night-In/home-page/index",
     description:
-      "Utilizes third-party APIs and local storage to allow users to randomly generate entertainment options in the form of a book, movie, and board game, which can be saved in local storage or refreshed.",
+      "Utilizes third-party web APIs and local storage to allow users to randomly generate entertainment options in the form of a book, movie, and board game, which can be saved in local storage or refreshed.",
     responsibilities: [
       "Local storage functionality",
       "Third-party API and implementation",
       "UX/UI",
     ],
     skillsShort: ["JavaScript", "HTML", "CSS", "Heroku"],
-    skillsDetail: ["JavaScript", "HTML", "CSS", "Heroku"],
+    skillsDetail: ["JavaScript", "HTML", "CSS", "Heroku", "Local Storage"],
   },
+  {
+    id: 4,
+    title: "Weather Dashboard",
+    screenshot: "INSERT SCREENSHOT HERE",
+    github: "https://github.com/graycodesnu/weather-dashboard-week06",
+    live: "https://graycodesnu.github.io/weather-dashboard-week06/",
+    description:
+      "Utilizes Open Weather's web API and local storage to allow users to get the most up-to-date weather data for a given city, in addition to a five-day forecast. Results save in local storage and turn into a button for easy access next time you need to search.",
+    skillsShort: ["JavaScript", "Web APIs", "Local Storage", "CSS"],
+    skillsDetail: ["JavaScript", "Web APIs", "Local Storage", "HTML", "CSS", "Heroku"]
+  },
+
+
 ];
