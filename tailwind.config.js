@@ -49,7 +49,7 @@ module.exports = {
       'blue-light': '#42375A',
       'blue-readable': '#0F69FA',
       'gold': '#d89d46',
-      'orange': '#',
+      'orange': '#B35919',
       'purple': '#5F4C99',
       'purple-readable': '#8876BC'
     }
