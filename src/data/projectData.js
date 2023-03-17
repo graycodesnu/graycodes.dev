@@ -1,8 +1,6 @@
 // title, screenshot, github link, live link, description, skills tags, responsibilities (for bigger projects)
 // TODO: The rest of project data
 // TODO: Add svg screenshots for each project
-import {ReactComponent as GoodWeedsScreenshot} from "../assets/project-screenshots/goodweeds/goodweeds.svg";
-
 
 export const projectData = [
   //! Mix-n-Match
@@ -47,7 +45,7 @@ export const projectData = [
     github: "https://github.com/graycodesnu/goodWeeds",
     live: "https://tranquil-tor-86628.herokuapp.com/",
     description:
-      "Utilizes a MySQL database – built from scratch – to allow a user to create a secure account, browse popular weed strains, add strains to favorites, and post a review to the WeedFeed.",
+      "Utilizes a RESTful API and MySQL database to allow a user to create a secure account, browse popular weed strains, add strains to favorites, and post a review to the WeedFeed.",
     responsibilities: [
       "Agile development upon stepping into a leadership role",
       "Backend functionality and database integration with MySQL",

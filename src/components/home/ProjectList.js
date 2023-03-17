@@ -38,26 +38,27 @@ export default function ProjectList({ project }) {
 
   return (
     <>
-      <div className="">
+      <div className="cursor-pointer">
         <div
           onClick={() => setOpenModal(true)}
           className="border border-primary-dark bg-primary shadow-sm shadow-primary-dark h-fit px-4 w-min"
         >
           {/* Screenshot */}
-          <div> <img src={project.screenshot}></img></div>
+          <div> <img src={project.screenshot}/></div>
           {/* TITLE AND LINKS */}
-          <div className="flex flex-row justify-between">
+          <div className="flex flex-row justify-between mt-3">
           {/* Title */}
-          <h5 className="text-xl font-medium mt-1">{project.title}</h5>
-          {/* LINKS */}
+          <h5 className="text-2xl font-medium">
+            <span className="projectCardTitle hover:hoverProjectCardTitle">{project.title}</span></h5>
+          {/* LINKS DIV */}
           <div className="flex">
           {/* GitHub */}
-          <a href={project.github}>
-            <GitHubIcon className="h-7 w-7 mr-1" />
+          <a href={project.github} className="rounded-full text-green hover:text-gold mr-1">
+            <GitHubIcon className="h-8 w-8" />
           </a>
           {/* Live Link */}
-          <a href={project.live}>
-            <ArrowTopRightOnSquareIcon className="h-7 w-7 ml-1" />
+          <a href={project.live} className="rounded-full text-green hover:text-gold ml-1">
+            <ArrowTopRightOnSquareIcon className="h-8 w-8" />
           </a>
           </div>
           </div>
@@ -67,7 +68,7 @@ export default function ProjectList({ project }) {
           <div className="flex flex-row">
             {shortSkillArray.map((skill) => (
               <div className="flex justify-items-center items-center ">
-              <li className="list-none mt-3 mb-3 mx-2 py-1 px-3 rounded-full bg-primary-dark  shadow-inner shadow-red">{skill}</li>
+              <li className="list-none mt-3 mb-3 mx-2 py-1 px-3 rounded-full bg-primary-dark  shadow-inner shadow-blue-light">{skill}</li>
               </div>
             ))}
           </div>
