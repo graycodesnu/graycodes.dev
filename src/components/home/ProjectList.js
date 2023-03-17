@@ -8,6 +8,8 @@ import { useState } from "react";
 // Import Data
 import { projectData } from "../../data/projectData";
 
+
+
 export default function ProjectList({ project }) {
   // Modal useState
   const [openModal, setOpenModal] = useState(false);
@@ -39,28 +41,28 @@ export default function ProjectList({ project }) {
       <div className="">
         <div
           onClick={() => setOpenModal(true)}
-          className="border border-primary-dark bg-primary shadow-sm shadow-primary-dark h-fit px-2"
+          className="border border-primary-dark bg-primary shadow-sm shadow-primary-dark h-fit px-4 w-min"
         >
           {/* Screenshot */}
-          <div>{project.screenshot}</div>
+          <div >{project.screenshot}</div>
           {/* TITLE AND LINKS */}
           <div className="flex flex-row justify-between">
           {/* Title */}
-          <h5 className="text-xl font-medium">{project.title}</h5>
+          <h5 className="text-xl font-medium mt-1">{project.title}</h5>
           {/* LINKS */}
           <div className="flex">
           {/* GitHub */}
           <a href={project.github}>
-            <GitHubIcon className="h-6 w-6 mr-1" />
+            <GitHubIcon className="h-7 w-7 mr-1" />
           </a>
           {/* Live Link */}
           <a href={project.live}>
-            <ArrowTopRightOnSquareIcon className="h-6 w-6 ml-1" />
+            <ArrowTopRightOnSquareIcon className="h-7 w-7 ml-1" />
           </a>
           </div>
           </div>
           {/* Description */}
-          <p className="text-silver pt-2 leading-relaxed">{project.description}</p>
+          <p className="flex justify-center items-center text-silver my-2 leading-relaxed">{project.description}</p>
           {/* Short Skills */}
           <div className="flex flex-row">
             {shortSkillArray.map((skill) => (

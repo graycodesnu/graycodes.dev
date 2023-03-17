@@ -1,12 +1,15 @@
 // title, screenshot, github link, live link, description, skills tags, responsibilities (for bigger projects)
 // TODO: The rest of project data
 // TODO: Add svg screenshots for each project
+import {ReactComponent as GoodWeedsScreenshot} from "../assets/project-screenshots/goodweeds/goodweeds.svg";
+
+
 export const projectData = [
   //! Mix-n-Match
   {
     id: 1,
     title: "Mix-N-Match",
-    screenshot: "INSERT SCREENSHOT HERE",
+    screenshot: <GoodWeedsScreenshot className="h-36 w-36"/>,
     github: "https://github.com/graycodesnu/mix-match",
     live: "",
     description:
