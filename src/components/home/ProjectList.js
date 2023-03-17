@@ -38,10 +38,10 @@ export default function ProjectList({ project }) {
 
   return (
     <>
-      <div className="cursor-pointer">
+      <div className="">
         <div
           onClick={() => setOpenModal(true)}
-          className="border border-primary-dark bg-primary shadow-sm shadow-primary-dark h-fit px-4 w-min"
+          className="border-4 border-primary-dark bg-primary shadow-sm shadow-primary-dark h-fit px-4 projectCardFormat"
         >
           {/* Screenshot */}
           <div> <img src={project.screenshot}/></div>
@@ -53,11 +53,11 @@ export default function ProjectList({ project }) {
           {/* LINKS DIV */}
           <div className="flex">
           {/* GitHub */}
-          <a href={project.github} className="rounded-full text-green hover:text-gold mr-1">
+          <a href={project.github} className="rounded-full text-gold-alt hover:text-gold mr-1">
             <GitHubIcon className="h-8 w-8" />
           </a>
           {/* Live Link */}
-          <a href={project.live} className="rounded-full text-green hover:text-gold ml-1">
+          <a href={project.live} className="rounded-full text-gold-alt hover:text-gold ml-1">
             <ArrowTopRightOnSquareIcon className="h-8 w-8" />
           </a>
           </div>

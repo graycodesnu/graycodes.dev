@@ -73,7 +73,7 @@ html {
 }
 
 .backendUnderline {
-  background-image: linear-gradient(90deg, #5f4c99, #5f4c99);
+  background-image: linear-gradient(90deg, rgba(168, 115, 36, 0.9), rgba(168, 115, 36, 0.9));
   background-position: 15% 92%;
   background-size: 100% 20%;
   background-repeat: no-repeat;
@@ -98,16 +98,16 @@ html {
   background-repeat: no-repeat;
 }
 
+/* Project Card */
+.projectCardFormat {
+  width: 32rem;
+}
+
+
 /* Project Card Title Underline */
 .projectCardTitle {
-  background-image: linear-gradient(90deg, #085E5A, #085E5A);
-  background-position: 15% 85%;
-  background-size: 100% 20%;
-  background-repeat: no-repeat;
-}
-.hoverProjectCardTitle {
-  background-image: linear-gradient(90deg, #5f4c99, #A04048);
-  background-position: 15% 85%;
-  background-size: 100% 100%;
+  background-image: linear-gradient(#2E294E, #A04048);
+  background-position: 15% 87%;
+  background-size: 100% 35%;
   background-repeat: no-repeat;
 }
