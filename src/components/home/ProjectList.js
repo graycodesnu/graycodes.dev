@@ -44,7 +44,7 @@ export default function ProjectList({ project }) {
           className="border border-primary-dark bg-primary shadow-sm shadow-primary-dark h-fit px-4 w-min"
         >
           {/* Screenshot */}
-          <div >{project.screenshot}</div>
+          <div> <img src={project.screenshot}></img></div>
           {/* TITLE AND LINKS */}
           <div className="flex flex-row justify-between">
           {/* Title */}

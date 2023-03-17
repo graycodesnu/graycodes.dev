@@ -9,7 +9,7 @@ export const projectData = [
   {
     id: 1,
     title: "Mix-N-Match",
-    screenshot: <GoodWeedsScreenshot className="h-36 w-36"/>,
+    screenshot: "https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg",
     github: "https://github.com/graycodesnu/mix-match",
     live: "",
     description:
@@ -43,7 +43,7 @@ export const projectData = [
   {
     id: 2,
     title: "GoodWeeds",
-    screenshot: "INSERT SCREENSHOT HERE",
+    screenshot: "https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg",
     github: "https://github.com/graycodesnu/goodWeeds",
     live: "https://tranquil-tor-86628.herokuapp.com/",
     description:
@@ -77,7 +77,7 @@ export const projectData = [
   {
     id: 3,
     title: "Intertain",
-    screenshot: "INSERT SCREENSHOT HERE",
+    screenshot: "https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg",
     github: "https://github.com/NW-Bootcamp-Team1/Night-In",
     live: "https://nw-bootcamp-team1.github.io/Night-In/home-page/index",
     description:
@@ -93,7 +93,7 @@ export const projectData = [
   {
     id: 4,
     title: "Weather Dashboard",
-    screenshot: "INSERT SCREENSHOT HERE",
+    screenshot: "https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg",
     github: "https://github.com/graycodesnu/weather-dashboard-week06",
     live: "https://graycodesnu.github.io/weather-dashboard-week06/",
     description:
