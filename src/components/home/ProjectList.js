@@ -41,7 +41,7 @@ export default function ProjectList({ project }) {
       <div className="">
         <div
           onClick={() => setOpenModal(true)}
-          className="border-4 border-primary-dark bg-primary shadow-sm shadow-primary-dark h-fit px-4 projectCardFormat"
+          className="border-4 border-primary-dark bg-primary shadow-sm shadow-primary-dark h-fit px-4 md:w-128 md:ml-0  2xs:ml-20 2xs:w-96"
         >
           {/* Screenshot */}
           <div> <img src={project.screenshot}/></div>
@@ -65,10 +65,10 @@ export default function ProjectList({ project }) {
           {/* Description */}
           <p className="flex justify-center items-center text-silver my-2 leading-relaxed">{project.description}</p>
           {/* Short Skills */}
-          <div className="flex flex-row">
+          <div className="flex flex-row space-x-2 mt-3 mb-3  2xs:flex-wrap md:flex-nowrap">
             {shortSkillArray.map((skill) => (
-              <div className="flex justify-items-center items-center ">
-              <li className="list-none mt-3 mb-3 mx-2 py-1 px-3 rounded-full bg-primary-dark  shadow-inner shadow-blue-light">{skill}</li>
+              <div className="flex items-center">
+              <li className="list-none py-1 px-3 rounded-full bg-primary-dark  shadow-inner shadow-blue-light">{skill}</li>
               </div>
             ))}
           </div>

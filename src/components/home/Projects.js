@@ -16,9 +16,9 @@ export default function Projects() {
           <span className="projectHeadingUnderline">Featured Projects</span>
         </h1>
 
-        <div className="border mt-4 flex flex-row flex-wrap gap-5">
+        <div className="border mt-4 flex flex-row justify-evenly flex-wrap gap-5">
           {projectDataList}
-          </div>
+        </div>
       </div>
     </>
   );
