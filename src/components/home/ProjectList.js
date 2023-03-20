@@ -68,7 +68,7 @@ export default function ProjectList({ project }) {
           <div className="flex flex-row space-x-2 mt-3 mb-3  2xs:flex-wrap md:flex-nowrap">
             {shortSkillArray.map((skill) => (
               <div className="flex items-center">
-              <li className="list-none py-1 px-3 rounded-full bg-primary-dark  shadow-inner shadow-blue-light">{skill}</li>
+              <li className="list-none py-1 px-2 rounded-full bg-primary-dark  shadow-inner shadow-blue-light">{skill}</li>
               </div>
             ))}
           </div>
