@@ -41,7 +41,7 @@ export const projectData = [
   {
     id: 2,
     title: "GoodWeeds",
-    screenshot: "https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg",
+    screenshot: require('../assets/project-screenshots/goodweeds/goodweeds.png'),
     github: "https://github.com/graycodesnu/goodWeeds",
     live: "https://tranquil-tor-86628.herokuapp.com/",
     description:
