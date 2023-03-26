@@ -38,10 +38,9 @@ export default function ProjectList({ project }) {
 
   return (
     <>
-      <div className="">
         <div
           onClick={() => setOpenModal(true)}
-          className="border-4 border-primary-dark bg-primary shadow-sm shadow-primary-dark h-fit px-4 md:w-128 md:ml-0  2xs:ml-20 2xs:w-96"
+          className="border-4 border-silver bg-primary shadow-sm shadow-primary-dark h-fit md:w-128 md:ml-0  2xs:ml-20 2xs:w-96"
         >
           {/* Screenshot */}
           <div> <img src={project.screenshot}/></div>
@@ -73,7 +72,6 @@ export default function ProjectList({ project }) {
             ))}
           </div>
         </div>
-      </div>
       {/* Modal */}
       <div>{modalProjectData}</div>
     </>

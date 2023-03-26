@@ -75,7 +75,7 @@ export const projectData = [
   {
     id: 3,
     title: "Intertain",
-    screenshot: "https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg",
+    screenshot: require('../assets/project-screenshots/intertain/intertain.png'),
     github: "https://github.com/NW-Bootcamp-Team1/Night-In",
     live: "https://nw-bootcamp-team1.github.io/Night-In/home-page/index",
     description:
@@ -88,10 +88,11 @@ export const projectData = [
     skillsShort: ["JavaScript", "HTML", "CSS", "Heroku"],
     skillsDetail: ["JavaScript", "HTML", "CSS", "Heroku", "Local Storage"],
   },
+  // ! Weather Dashboard
   {
     id: 4,
     title: "Weather Dashboard",
-    screenshot: "https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg",
+    screenshot: require('../assets/project-screenshots/misc/weather-dashboard.png'),
     github: "https://github.com/graycodesnu/weather-dashboard-week06",
     live: "https://graycodesnu.github.io/weather-dashboard-week06/",
     description:
@@ -99,6 +100,29 @@ export const projectData = [
     skillsShort: ["JavaScript", "Web APIs", "Local Storage", "CSS"],
     skillsDetail: ["JavaScript", "Web APIs", "Local Storage", "HTML", "CSS", "Heroku"]
   },
-
+  // ! Password Generator
+  {
+    id: 5,
+    title: "Password Generator",
+    screenshot: require('../assets/project-screenshots/misc/password-generator.png'),
+    github: "https://github.com/graycodesnu/password_generator",
+    live: "https://graycodesnu.github.io/password_generator/",
+    description:
+      "A password generator in which the user is prompted to select password criteria via modals.",
+    skillsShort: ["JavaScript", "CSS", "HTML"],
+    skillsDetail: ["JavaScript", "HTML", "CSS"]
+  },
+  // ! Node README
+    {
+      id: 6,
+      title: "README.md Generator",
+      screenshot: require('../assets/project-screenshots/misc/node-readme.png'),
+      github: "https://github.com/graycodesnu/node-readme",
+      live: "https://drive.google.com/file/d/1St-Si8Wu9aCa9QI1vvXhKOsWRZptzbra/view",
+      description:
+        "A README.md file generator using Node.js and command line prompts.",
+      skillsShort: ["JavaScript", "Node.js"],
+      skillsDetail: ["JavaScript", "Node.js"]
+    }
 
 ];
