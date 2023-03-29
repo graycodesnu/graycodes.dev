@@ -24,22 +24,7 @@ export default function Contact() {
       </div>
       <div>
         {/* FORM */}
-        /*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
-export default function Example() {
-  return (
+        
     <div className="relative isolate bg-white py-24 px-6 sm:py-32 lg:px-8">
       <svg
         className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"

@@ -59,5 +59,7 @@ module.exports = {
       'purple-readable': '#8876BC'
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }
