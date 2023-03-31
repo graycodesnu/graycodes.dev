@@ -1,5 +1,7 @@
 // Animation
 import { motion } from "framer-motion";
+// Email 
+import emailjs from "emailjs-com";
 
 const visible = { opacity: 1, y: 0, transition: { duration: 0.75 } };
 
@@ -27,26 +29,27 @@ export default function Contact() {
         <p className="mt-2 text-lg leading-8 text-gray-600">
         I'm always looking to connect with folks across all industries!
         </p>
-        <div className="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
+        {/* Form, Contact Info */}
+        <div className="mt-12 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
           <form action="#" method="POST" className="lg:flex-auto">
             <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
               <div>
-                <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                  First name
+                <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-secondary">
+                  Name
                 </label>
-                <div className="mt-2.5">
+                <div className="mt-1.5">
                   <input
                     type="text"
                     name="first-name"
                     id="first-name"
                     autoComplete="given-name"
-                    className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-2 px-3.5 text-blue shadow-sm ring-1 ring-inset ring-green placeholder:text-purple focus:ring-2 focus:ring-inset focus:ring-green-light sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
               <div>
                 <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                  Last name
+                  Email
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -58,32 +61,7 @@ export default function Contact() {
                   />
                 </div>
               </div>
-              <div>
-                <label htmlFor="budget" className="block text-sm font-semibold leading-6 text-gray-900">
-                  Budget
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    id="budget"
-                    name="budget"
-                    type="text"
-                    className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div>
-                <label htmlFor="website" className="block text-sm font-semibold leading-6 text-gray-900">
-                  Website
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="url"
-                    name="website"
-                    id="website"
-                    className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
+
               <div className="sm:col-span-2">
                 <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
                   Message
