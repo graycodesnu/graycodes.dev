@@ -1,5 +1,8 @@
+// ! Imports
 // Animation
 import { motion } from "framer-motion";
+// State
+import { useState } from "react";
 // Email/Message Send Functionality
 import emailjs from "emailjs-com";
 // Form Element
@@ -7,6 +10,7 @@ import { useForm } from "react-hook-form";
 // Notification
 import { ToastContainer, toast } from "react-toastify";
 
+// ! Animation
 const visible = { opacity: 1, y: 0, transition: { duration: 0.75 } };
 
 const itemVariants = {
@@ -69,16 +73,16 @@ export default function Contact() {
     });
   };
 
-  //! Pointer leave
-  const [pointer, pointerSetError] = useState("");
+  // //! Pointer leave
+  // const [pointer, pointerSetError] = useState("");
 
-  function pointerLeave(event) {
-    if (!event.target.value) {
-      pointerSetError("*All fields are required.");
-    } else {
-      pointer("");
-    }
-  }
+  // function pointerLeave(event) {
+  //   if (!event.target.value) {
+  //     pointerSetError("*All fields are required.");
+  //   } else {
+  //     pointer("");
+  //   }
+  // }
 
   //! Email validation
   const [message, setMessage] = useState("");
@@ -101,19 +105,22 @@ export default function Contact() {
   // ** RETURN **
   return (
     <>
-      {/* Header */}
       <div id="contact">
+        {/* Toastify Notification */}
+        <div>
+          <ToastContainer closeButton={false} />
+        </div>
+        {/* Header */}
         <h1 className="xl:mt-14 text-5xl font-bold tracking-tight text-secondary sm:text-6xl">
           <span className="contactHeadingUnderline">Say Hello</span>
         </h1>
       </div>
 
       <div>
-        {/* FORM */}
-
+        {/* LARGE CONTAINER */}
         <div className="border relative isolate py-12 px-6 sm:py-10 lg:px-8">
           <div className="mx-auto max-w-xl lg:max-w-4xl">
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900">
+            <h2 className="text-4xl font-bold tracking-tight text-silver">
               Contact me via any of the below methods.
             </h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
@@ -121,25 +128,48 @@ export default function Contact() {
             </p>
             {/* Form, Contact Info */}
             <div className="mt-12 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
-              <form action="#" method="POST" className="lg:flex-auto">
+              <form
+                action="#"
+                method="POST"
+                className="lg:flex-auto"
+                onSubmit={handleSubmit(onSubmit)}
+              >
                 <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
+                  {/* Input Name */}
                   <div>
                     <label
-                      htmlFor="first-name"
+                      htmlFor="name"
                       className="block text-sm font-semibold leading-6 text-secondary"
                     >
                       Name
                     </label>
                     <div className="mt-1.5">
+                      {/* input error for name field */}
+                      {errors.name && (
+                        <span className="errorMessage">
+                          {errors.name.message}
+                        </span>
+                      )}
                       <input
                         type="text"
                         name="name"
                         id="name"
                         autoComplete="name"
-                        className="block w-full rounded-md border-0 py-2 px-3.5 bg-white text-blue shadow-sm ring-1 ring-inset ring-green placeholder:text-purple focus:ring-2 focus:ring-inset focus:ring-green-light focus:bg-white-light sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 py-2 px-3.5 bg-white text-blue shadow-sm ring-1 ring-inset ring-green placeholder:text-purple focus:ring-2 focus:ring-inset focus:ring-green-light focus:bg-white-light sm:text-sm sm:leading-6 "
+                        // Field submit message
+                        {...register("name", {
+                          required: {
+                            value: true,
+                            message: "Please enter your name.",
+                          },
+                        })}
+                        placeholder="Name"
                       />
                     </div>
                   </div>
+                  
+                  
+                  {/* Input Email */}
                   <div>
                     <label
                       htmlFor="email"
@@ -148,16 +178,29 @@ export default function Contact() {
                       Email
                     </label>
                     <div className="mt-1.5">
+                      {/* input error for email field */}
+                      {errors.email && (
+                        <span className="errorMessage">
+                          Please enter a valid email address.
+                        </span>
+                      )}
                       <input
-                        type="text"
+                        type="email"
                         name="email"
                         id="email"
                         autoComplete="email"
                         className="block w-full rounded-md border-0 py-2 px-3.5 bg-white text-blue shadow-sm ring-1 ring-inset ring-green placeholder:text-purple focus:ring-2 focus:ring-inset focus:ring-green-light focus:bg-white-light sm:text-sm sm:leading-6"
+                        // Validation
+                        value={message}
+                        onChange={handleEmailChange}
+                        helperText={emailError && <alert>{emailError}</alert>}
+                        placeholder="Email"
                       />
                     </div>
                   </div>
-
+                  
+                  
+                  {/* Input Message */}
                   <div className="sm:col-span-2">
                     <label
                       htmlFor="message"
@@ -166,27 +209,35 @@ export default function Contact() {
                       Message
                     </label>
                     <div className="mt-1.5">
+                      {errors.message && (
+                        <span className="errorMessage">
+                          Please enter a message.
+                        </span>
+                      )}
                       <textarea
                         id="message"
                         name="message"
                         rows={4}
                         className="block w-full rounded-md border-0 py-2 px-3.5 bg-white text-blue shadow-sm ring-1 ring-inset ring-green placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-light focus:bg-white-light sm:text-sm sm:leading-6"
                         defaultValue={""}
+                        placeholder="Enter your message here."
+
                       />
                     </div>
                   </div>
                 </div>
+                {/* Submit */}
                 <div className="mt-10">
                   <button
                     type="submit"
-                    className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    className="block w-full rounded-md bg-green px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue hover:text-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red"
                   >
                     Let’s talk
                   </button>
                 </div>
                 <p className="mt-4 text-sm leading-6 text-gray-500">
                   By submitting this form, I agree to the{" "}
-                  <a href="#" className="font-semibold text-indigo-600">
+                  <a href="#" className="font-semibold text-red">
                     privacy&nbsp;policy
                   </a>
                   .

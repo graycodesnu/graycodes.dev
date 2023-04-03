@@ -9,23 +9,17 @@ import Contact from "../components/home/Contact";
 import { projectData } from "../data/projectData";
 
 export default function Home() {
-
-  console.log("project from home", projectData)
+  console.log("project from home", projectData);
 
   return (
     <>
       <div>
-            <Hero id="/" />
+        <Hero id="/" />
 
-            <Background id="background" />
-            <Divider />
-            <Projects id="projects" data={projectData}/>
-            <Divider />
-            <Contact id="contact" />
-            <Divider />
-          </div>
-
+        <Background id="background" />
+        <Projects id="projects" data={projectData} />
+        <Contact id="contact" />
+      </div>
     </>
   );
 }
-
