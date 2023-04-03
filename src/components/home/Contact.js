@@ -120,6 +120,7 @@ export default function Contact() {
         {/* LARGE CONTAINER */}
         <div className="border relative isolate py-12 px-6 sm:py-10 lg:px-8">
           <div className="mx-auto max-w-xl lg:max-w-4xl">
+            {/* Subheaders */}
             <h2 className="text-4xl font-bold tracking-tight text-silver">
               Contact me via any of the below methods.
             </h2>
@@ -138,7 +139,6 @@ export default function Contact() {
                   {/* Input Name */}
                   <div>
                     <label
-                      htmlFor="name"
                       className="block text-sm font-semibold leading-6 text-secondary"
                     >
                       Name
@@ -173,7 +173,6 @@ export default function Contact() {
                   {/* Input Email */}
                   <div>
                     <label
-                      htmlFor="email"
                       className="block text-sm font-semibold leading-6 text-secondary"
                     >
                       Email
@@ -205,7 +204,6 @@ export default function Contact() {
                   {/* Input Message */}
                   <div className="sm:col-span-2">
                     <label
-                      htmlFor="message"
                       className="block text-sm font-semibold leading-6 text-secondary"
                     >
                       Message
@@ -229,10 +227,11 @@ export default function Contact() {
                     </div>
                   </div>
                 </div>
-                {/* Submit */}
+                {/* Submit Button */}
                 <div className="mt-10">
                   <button
                     type="submit"
+                    disabled={disabled}
                     className="block w-full rounded-md bg-green px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue hover:text-gold"
                   >
                     Let’s talk
