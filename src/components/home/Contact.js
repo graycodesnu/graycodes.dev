@@ -152,6 +152,7 @@ export default function Contact() {
                       )}
                       <input
                         type="text"
+                        label="Name"
                         name="name"
                         id="name"
                         autoComplete="name"
@@ -185,6 +186,7 @@ export default function Contact() {
                         </span>
                       )}
                       <input
+                      label="Email"
                         type="email"
                         name="email"
                         id="email"
@@ -217,6 +219,7 @@ export default function Contact() {
                       <textarea
                         id="message"
                         name="message"
+                        label="Message"
                         rows={4}
                         className="block w-full rounded-md border-0 py-2 px-3.5 bg-white text-blue shadow-sm ring-1 ring-inset ring-green placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-light focus:bg-white-light sm:text-sm sm:leading-6"
                         defaultValue={""}
@@ -230,7 +233,7 @@ export default function Contact() {
                 <div className="mt-10">
                   <button
                     type="submit"
-                    className="block w-full rounded-md bg-green px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue hover:text-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red"
+                    className="block w-full rounded-md bg-green px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue hover:text-gold"
                   >
                     Let’s talk
                   </button>
