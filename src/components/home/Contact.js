@@ -144,141 +144,140 @@ export default function Contact() {
               </div>
             </div>
             {/* ********************* Form ********************* */}
-            {/* WORKING CONTACT FORM */}
-            <div className="ContactForm">
-              <div className="container">
-                <div className="row">
+            {/* DIV WITH FORM AND TOASTIFY NOTIF */}
+            <form
+              id="contact-form"
+              onSubmit={handleSubmit(onSubmit)}
+              noValidate
+              className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
+            >
+              {/* WHOLE FORM DIV */}
+              <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+                {/* DIV WITHOUT BUTTON */}
+                <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                
+                  {/* First Name */}
                   <div className="">
-                    <div className="">
-                      <form
-                        id="contact-form"
-                        onSubmit={handleSubmit(onSubmit)}
-                        noValidate
-                      >
-                        <div className="">
-                          {/* First Name */}
-                          <div className="">
-                            <input
-                              type="text"
-                              name="firstName"
-                              {...register("firstName", {
-                                required: {
-                                  value: true,
-                                  message: "Please enter your first name.",
-                                },
-                                maxLength: {
-                                  value: 30,
-                                  message: "Please use 30 characters or less",
-                                },
-                              })}
-                              className="form-control formInput"
-                              placeholder="First Name"
-                            ></input>
-                            {errors.name && (
-                              <span className="errorMessage">
-                                {errors.firstName.message}
-                              </span>
-                            )}
-                          </div>
-                          {/* Last Name */}
-                          <div className="">
-                            <input
-                              type="text"
-                              name="lastName"
-                              {...register("lastName", {
-                                required: {
-                                  value: true,
-                                  message: "Please enter your last name.",
-                                },
-                                maxLength: {
-                                  value: 30,
-                                  message: "Please use 30 characters or less",
-                                },
-                              })}
-                              className="form-control formInput"
-                              placeholder="Last Name"
-                            ></input>
-                            {errors.lastName && (
-                              <span className="errorMessage">
-                                {errors.lastName.message}
-                              </span>
-                            )}
-                          </div>
-                          {/* Email */}
-                          <div className="col-6">
-                            <input
-                              type="email"
-                              name="email"
-                              {...register("email", {
-                                required: true,
-                                pattern:
-                                  /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                              })}
-                              className="form-control formInput"
-                              placeholder="Email Address"
-                            ></input>
-                            {errors.email && (
-                              <span className="errorMessage">
-                                Please enter a valid email address
-                              </span>
-                            )}
-                          </div>
-                          {/* Phone */}
-                          <div className="">
-                            <input
-                              type="text"
-                              name="phone"
-                              {...register("phone", {
-                                required: {
-                                  value: false,
-                                  message: "Please enter your phone number.",
-                                },
-                                maxLength: {
-                                  value: 11,
-                                  message: "Please use 11 characters or less",
-                                },
-                              })}
-                              className="form-control formInput"
-                              placeholder="Phone Number"
-                            ></input>
-                            {errors.phone && (
-                              <span className="errorMessage">
-                                {errors.phone.message}
-                              </span>
-                            )}
-                          </div>
-                        </div>
-                        {/* Message */}
-                        <div className="row formRow">
-                          <div className="col">
-                            <textarea
-                              rows={3}
-                              name="message"
-                              {...register("message", {
-                                required: true,
-                              })}
-                              className="form-control formInput"
-                              placeholder="Message"
-                            ></textarea>
-                            {errors.message && (
-                              <span className="errorMessage">
-                                Please enter a message
-                              </span>
-                            )}
-                          </div>
-                        </div>
-                        {/* Submit Button */}
-                        <button className="submit-btn" type="submit">
-                          Submit
-                        </button>
-                      </form>
-                    </div>
-                    {/* Toastify Notification */}
-                    <ToastContainer />
+                    <input
+                      type="text"
+                      name="firstName"
+                      {...register("firstName", {
+                        required: {
+                          value: true,
+                          message: "Please enter your first name.",
+                        },
+                        maxLength: {
+                          value: 30,
+                          message: "Please use 30 characters or less",
+                        },
+                      })}
+                      className="form-control formInput"
+                      placeholder="First Name"
+                    ></input>
+                    {errors.name && (
+                      <span className="errorMessage">
+                        {errors.firstName.message}
+                      </span>
+                    )}
+                  </div>
+                  {/* Last Name */}
+                  <div className="">
+                    <input
+                      type="text"
+                      name="lastName"
+                      {...register("lastName", {
+                        required: {
+                          value: true,
+                          message: "Please enter your last name.",
+                        },
+                        maxLength: {
+                          value: 30,
+                          message: "Please use 30 characters or less",
+                        },
+                      })}
+                      className="form-control formInput"
+                      placeholder="Last Name"
+                    ></input>
+                    {errors.lastName && (
+                      <span className="errorMessage">
+                        {errors.lastName.message}
+                      </span>
+                    )}
+                  </div>
+                  {/* Email */}
+                  <div className="col-6">
+                    <input
+                      type="email"
+                      name="email"
+                      {...register("email", {
+                        required: true,
+                        pattern:
+                          /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                      })}
+                      className="form-control formInput"
+                      placeholder="Email Address"
+                    ></input>
+                    {errors.email && (
+                      <span className="errorMessage">
+                        Please enter a valid email address
+                      </span>
+                    )}
+                  </div>
+                  {/* Phone */}
+                  <div className="">
+                    <input
+                      type="text"
+                      name="phone"
+                      {...register("phone", {
+                        required: {
+                          value: false,
+                          message: "Please enter your phone number.",
+                        },
+                        maxLength: {
+                          value: 11,
+                          message: "Please use 11 characters or less",
+                        },
+                      })}
+                      className="form-control formInput"
+                      placeholder="Phone Number"
+                    ></input>
+                    {errors.phone && (
+                      <span className="errorMessage">
+                        {errors.phone.message}
+                      </span>
+                    )}
+                  </div>
+             
+                {/* Message */}
+                <div className="row formRow">
+                  <div className="col">
+                    <textarea
+                      rows={3}
+                      name="message"
+                      {...register("message", {
+                        required: true,
+                      })}
+                      className="form-control formInput"
+                      placeholder="Message"
+                    ></textarea>
+                    {errors.message && (
+                      <span className="errorMessage">
+                        Please enter a message
+                      </span>
+                    )}
                   </div>
                 </div>
+                </div>
+                {/* Submit Button */}
+                <button className="submit-btn" type="submit">
+                  Submit
+                </button>
               </div>
-            </div>
+            </form>
+            {/* Toastify Notification */}
+            <ToastContainer />
+
+            {/* LARGER DIV */}
           </div>
         </div>
       </div>
