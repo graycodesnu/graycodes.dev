@@ -155,8 +155,8 @@ export default function Contact() {
                         onSubmit={handleSubmit(onSubmit)}
                         noValidate
                       >
-                        {/* Row 1 of form */}
                         <div className="">
+                          {/* First Name */}
                           <div className="">
                             <input
                               type="text"
@@ -172,14 +172,39 @@ export default function Contact() {
                                 },
                               })}
                               className="form-control formInput"
-                              placeholder="Name"
+                              placeholder="First Name"
                             ></input>
                             {errors.name && (
                               <span className="errorMessage">
-                                {errors.name.message}
+                                {errors.firstName.message}
                               </span>
                             )}
                           </div>
+                          {/* Last Name */}
+                          <div className="">
+                            <input
+                              type="text"
+                              name="lastName"
+                              {...register("lastName", {
+                                required: {
+                                  value: true,
+                                  message: "Please enter your last name.",
+                                },
+                                maxLength: {
+                                  value: 30,
+                                  message: "Please use 30 characters or less",
+                                },
+                              })}
+                              className="form-control formInput"
+                              placeholder="Last Name"
+                            ></input>
+                            {errors.lastName && (
+                              <span className="errorMessage">
+                                {errors.lastName.message}
+                              </span>
+                            )}
+                          </div>
+                          {/* Email */}
                           <div className="col-6">
                             <input
                               type="email"
@@ -190,7 +215,7 @@ export default function Contact() {
                                   /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                               })}
                               className="form-control formInput"
-                              placeholder="Email address"
+                              placeholder="Email Address"
                             ></input>
                             {errors.email && (
                               <span className="errorMessage">
@@ -198,8 +223,32 @@ export default function Contact() {
                               </span>
                             )}
                           </div>
+                          {/* Phone */}
+                          <div className="">
+                            <input
+                              type="text"
+                              name="phone"
+                              {...register("phone", {
+                                required: {
+                                  value: false,
+                                  message: "Please enter your phone number.",
+                                },
+                                maxLength: {
+                                  value: 11,
+                                  message: "Please use 11 characters or less",
+                                },
+                              })}
+                              className="form-control formInput"
+                              placeholder="Phone Number"
+                            ></input>
+                            {errors.phone && (
+                              <span className="errorMessage">
+                                {errors.phone.message}
+                              </span>
+                            )}
+                          </div>
                         </div>
-                        {/* Row 3 of form */}
+                        {/* Message */}
                         <div className="row formRow">
                           <div className="col">
                             <textarea
@@ -218,11 +267,13 @@ export default function Contact() {
                             )}
                           </div>
                         </div>
+                        {/* Submit Button */}
                         <button className="submit-btn" type="submit">
                           Submit
                         </button>
                       </form>
                     </div>
+                    {/* Toastify Notification */}
                     <ToastContainer />
                   </div>
                 </div>
