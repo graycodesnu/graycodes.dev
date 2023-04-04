@@ -50,6 +50,7 @@ module.exports = {
       'white': '#E0E0E0',
       'white-light': '#EBEBEB',
       'red': '#A04048',
+      'red-light': '#BF5F67',
       'blue': '#2E294E',
       'blue-light': '#42375A',
       'blue-readable': '#0F69FA',

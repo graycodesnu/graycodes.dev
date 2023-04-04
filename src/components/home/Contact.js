@@ -178,8 +178,8 @@ export default function Contact() {
                         placeholder="First Name"
                       />
                     </div>
-                    {errors.name && (
-                      <span className="errorMessage text-red">
+                    {errors.firstName && (
+                      <span className="errorMessage text-red-light">
                         {errors.firstName.message}
                       </span>
                     )}
@@ -208,7 +208,7 @@ export default function Contact() {
                       />
                     </div>
                     {errors.lastName && (
-                      <span className="errorMessage">
+                      <span className="errorMessage text-red-light">
                         {errors.lastName.message}
                       </span>
                     )}
@@ -232,8 +232,8 @@ export default function Contact() {
                       />
                     </div>
                     {errors.email && (
-                      <span className="errorMessage">
-                        Please enter a valid email address
+                      <span className="errorMessage text-red-light">
+                        Please enter a valid email address.
                       </span>
                     )}
                   </div>
@@ -248,7 +248,7 @@ export default function Contact() {
                         name="phone"
                         {...register("phone", {
                           required: {
-                            value: false,
+                            value: true,
                             message: "Please enter your phone number.",
                           },
                           maxLength: {
@@ -261,7 +261,7 @@ export default function Contact() {
                       />
                     </div>
                     {errors.phone && (
-                      <span className="errorMessage">
+                      <span className="errorMessage text-red-light">
                         {errors.phone.message}
                       </span>
                     )}
@@ -284,16 +284,18 @@ export default function Contact() {
                       />
                     </div>
                     {errors.message && (
-                      <span className="errorMessage">
+                      <span className="errorMessage text-red-light">
                         Please include a message.
                       </span>
                     )}
                   </div>
                 </div>
                 {/* Submit Button */}
-                <button className="submit-btn" type="submit">
+                <div className="mt-8 flex justify-end">
+                <button className="submit-btn rounded-md bg-green px-3.5 py-2.5 text-center text-sm font-semibold shadow-sm hover:bg-blue hover:text-gold" type="submit">
                   Submit
                 </button>
+                </div>
               </div>
             </form>
             {/* Toastify Notification */}
