@@ -157,7 +157,11 @@ export default function Contact() {
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 
                   {/* First Name */}
-                  <div className="">
+                  <div>
+                    <label className="block text-sm font-semibold leading-6">
+                      First Name
+                    </label>
+                    <div className="mt-2.5">
                     <input
                       type="text"
                       name="firstName"
@@ -171,7 +175,7 @@ export default function Contact() {
                           message: "Please use 30 characters or less",
                         },
                       })}
-                      className="form-control formInput"
+                      className="form-control formInput block w-full rounded-md border-0 px-3.5 py-2 text-blue shadow-sm ring-1 ring-inset ring-green sm:text-sm sm:leading-6"
                       placeholder="First Name"
                     ></input>
                     {errors.name && (
@@ -179,6 +183,7 @@ export default function Contact() {
                         {errors.firstName.message}
                       </span>
                     )}
+                    </div>
                   </div>
                   {/* Last Name */}
                   <div className="">
