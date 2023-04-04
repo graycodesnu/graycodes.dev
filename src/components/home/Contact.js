@@ -219,17 +219,17 @@ export default function Contact() {
                       Email
                     </label>
                     <div className="mt-2.5">
-                    <input
-                      type="email"
-                      name="email"
-                      {...register("email", {
-                        required: true,
-                        pattern:
-                          /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                      })}
-                      className="form-control formInput block w-full rounded-md border-0 px-3.5 py-2 text-blue shadow-sm ring-1 ring-inset ring-green focus:ring-2 focus:ring-inset focus:ring-green-light sm:text-sm sm:leading-6"
-                      placeholder="Email Address"
-                    ></input>
+                      <input
+                        type="email"
+                        name="email"
+                        {...register("email", {
+                          required: true,
+                          pattern:
+                            /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                        })}
+                        className="form-control formInput block w-full rounded-md border-0 px-3.5 py-2 text-blue shadow-sm ring-1 ring-inset ring-green focus:ring-2 focus:ring-inset focus:ring-green-light sm:text-sm sm:leading-6"
+                        placeholder="Email Address"
+                      />
                     </div>
                     {errors.email && (
                       <span className="errorMessage">
@@ -238,23 +238,28 @@ export default function Contact() {
                     )}
                   </div>
                   {/* Phone */}
-                  <div className="">
-                    <input
-                      type="text"
-                      name="phone"
-                      {...register("phone", {
-                        required: {
-                          value: false,
-                          message: "Please enter your phone number.",
-                        },
-                        maxLength: {
-                          value: 11,
-                          message: "Please use 11 characters or less",
-                        },
-                      })}
-                      className="form-control formInput"
-                      placeholder="Phone Number"
-                    ></input>
+                  <div>
+                    <label className="block text-sm font-semibold leading-6">
+                      Phone
+                    </label>
+                    <div className="mt-2.5">
+                      <input
+                        type="text"
+                        name="phone"
+                        {...register("phone", {
+                          required: {
+                            value: false,
+                            message: "Please enter your phone number.",
+                          },
+                          maxLength: {
+                            value: 11,
+                            message: "Please use 11 characters or less",
+                          },
+                        })}
+                        className="form-control formInput block w-full rounded-md border-0 px-3.5 py-2 text-blue shadow-sm ring-1 ring-inset ring-green focus:ring-2 focus:ring-inset focus:ring-green-light sm:text-sm sm:leading-6"
+                        placeholder="Phone Number"
+                      />
+                    </div>
                     {errors.phone && (
                       <span className="errorMessage">
                         {errors.phone.message}
