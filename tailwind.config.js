@@ -57,6 +57,7 @@ module.exports = {
       'gold': '#d89d46',
       'gold-alt': 'rgba(168, 115, 36, 0.9)',
       'orange': '#B35919',
+      'orange-dark': 'rgba(190, 89, 25, 0.75)',
       'purple': '#5F4C99',
       'purple-readable': '#8876BC'
     }
