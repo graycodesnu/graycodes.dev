@@ -36,7 +36,7 @@ export default function ProjectList({ project }) {
 
   return (
     <>
-      <li className="col-span-1 flex flex-col rounded-lg bg-primary-light shadow">
+      <li className="col-span-3 flex flex-col rounded-lg bg-primary-light shadow">
         <img
           className="rounded-t-lg mx-auto min-h-fit min-w-f flex-shrink-0"
           src={project.screenshot}
@@ -46,13 +46,13 @@ export default function ProjectList({ project }) {
           <h3 className="mt-1 text-xl font-semibold">{project.title}</h3>
           <dl className="mt-1 flex flex-grow flex-col justify-between">
             <dt className="sr-only">Title</dt>
-            <dd className="text-sm text-silver">{project.description}</dd>
+            <dd className="text-sm text-silver mt-1">{project.description}</dd>
             <dt className="sr-only">Description</dt>
             <dd className="sr-only">Skills</dd>
           </dl>
         </div>
         {/* Skills */}
-        <span className="inline-flex items-center rounded-full py-0.5 leading-relaxed text-sm font-medium font-inconsolata mb-2 ml-1 ">
+        <span className="inline-flex flex-wrap items-center rounded-full py-0.5 leading-relaxed text-sm font-medium font-inconsolata mb-2 ml-1 ">
           {shortSkillArray.map((skill) => (
             <div className="flex items-center">
               <li className="list-none py-1 px-2 m-1 rounded-full outline bg-blue outline-blue-light ">
@@ -63,11 +63,11 @@ export default function ProjectList({ project }) {
         </span>
         <div>
           {/* ***** Links ***** */}
-          <div className="-mt-px flex divide-x divide-green">
+          <div className="-mt-px flex divide-x divide-green-opaque">
             <div className="flex w-0 flex-1 rounded-bl-lg hover:bg-blue">
               <a
                 href={project.github}
-                className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-green hover:border-none py-4 text-sm font-semibold hover:text-gold"
+                className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-green-opaque hover:border-none py-4 text-sm font-semibold hover:text-gold"
               >
                 <GitHubIcon
                   className="h-5 w-5 text-secondary"
@@ -79,7 +79,7 @@ export default function ProjectList({ project }) {
             <div className="-ml-px flex w-0 flex-1 rounded-br-lg hover:bg-blue ">
               <a
                 href={project.live}
-                className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-green hover:border-none py-4 text-sm font-semibold text-silver hover:text-gold"
+                className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-green-opaque hover:border-none py-4 text-sm font-semibold text-silver hover:text-gold"
               >
                 <ArrowTopRightOnSquareIcon
                   className="h-5 w-5 text-secondary"

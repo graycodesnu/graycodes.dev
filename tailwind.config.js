@@ -47,6 +47,7 @@ module.exports = {
       'silver': '#C6C4C7',
       'green': '#0B7A75',
       'green-light': '#0E958F',
+      'green-opaque': 'rgba(11, 121, 116, 0.2)',
       'white': '#E0E0E0',
       'white-light': '#EBEBEB',
       'red': '#A04048',
