@@ -36,13 +36,14 @@ export default function ProjectList({ project }) {
 
   return (
     <>
-      <li className="col-span-1 flex flex-col divide-y divide-green rounded-lg bg-primary-light shadow">
-        <div className="flex flex-1 flex-col p-8">
-          <img
-            className="mx-auto min-h-fit min-w-f flex-shrink-0 rounded-sm"
+      <li className="col-span-1 flex flex-col rounded-lg bg-primary-light shadow">
+      <img
+            className="rounded-t-lg mx-auto min-h-fit min-w-f flex-shrink-0"
             src={project.screenshot}
             alt=""
           />
+        <div className="flex flex-1 flex-col p-8">
+
           <h3 className="mt-6 text-xl font-semibold">
             {project.title}
           </h3>
@@ -66,26 +67,26 @@ export default function ProjectList({ project }) {
         </div>
         <div>
           {/* ***** Links ***** */}
-          <div className="-mt-px flex divide-x divide-gray-200">
-            <div className="flex w-0 flex-1">
+          <div className="-mt-px flex divide-x divide-blue">
+            <div className="flex w-0 flex-1 rounded-bl-lg hover:bg-blue">
               <a
                 href={project.github}
-                className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm font-semibold text-gray-900"
+                className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-blue py-4 text-sm font-semibold text-silver hover:text-gold"
               >
                 <GitHubIcon
-                  className="h-5 w-5 text-gray-400"
+                  className="h-5 w-5 text-secondary"
                   aria-hidden="true"
                 />
                 GitHub
               </a>
             </div>
-            <div className="-ml-px flex w-0 flex-1">
+            <div className="-ml-px flex w-0 flex-1 rounded-br-lg hover:bg-blue ">
               <a
                 href={project.live}
-                className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm font-semibold text-gray-900"
+                className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-blue py-4 text-sm font-semibold text-silver hover:text-gold"
               >
                 <ArrowTopRightOnSquareIcon
-                  className="h-5 w-5 text-gray-400"
+                  className="h-5 w-5 text-secondary"
                   aria-hidden="true"
                 />
                 Live Link
