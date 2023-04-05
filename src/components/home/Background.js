@@ -44,7 +44,7 @@ export default function Background() {
         <div className="pt-10 pb-5 flex flex-wrap lg:justify-between 2xs:justify-center">
           {/* Frontend */}
           {/* sm:mr-3 lg:mr-0 */}
-          <div className="shadow-md shadow-blue w-96 xs:mb-4 xl:mb-0  p-5 border-2 border-primary-dark bg-primary-light">
+          <div className="rounded-lg shadow-sm shadow-blue w-96 xs:mb-4 xl:mb-0  p-5 bg-primary-light">
             <div className="px-5">
               {/* Heading with icon */}
               <div className="p-2 flex flex-row justify-center items-end">
@@ -83,7 +83,7 @@ export default function Background() {
           </div>
 
           {/* Backend */}
-          <div className="shadow-md shadow-blue w-96 xs:mb-4 xl:mb-0 p-5 border-2 border-primary-dark bg-primary-light">
+          <div className="rounded-lg shadow-sm shadow-blue w-96 xs:mb-4 xl:mb-0 p-5  bg-primary-light">
             <div className="px-5">
               {/* Heading with icon */}
               <div className="p-2 flex flex-row justify-center items-end">
@@ -119,7 +119,7 @@ export default function Background() {
           </div>
 
           {/* Tools */}
-          <div className="shadow-md shadow-blue w-96 xs:mr-6 xl:mr-0 xs:pt-4 xl:mt-0 p-5 border-2 border-primary-dark bg-primary-light">
+          <div className="rounded-lg shadow-sm shadow-blue w-96 xs:mr-6 xl:mr-0 xs:pt-4 xl:mt-0 p-5 bg-primary-light">
             <div className="px-5">
               {/* Heading with icon */}
               <div className="p-2 flex flex-row justify-center items-end">

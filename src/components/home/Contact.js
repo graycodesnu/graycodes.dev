@@ -87,9 +87,7 @@ export default function Contact() {
                   <span className="contactHeadingUnderline">Say Hello</span>
                 </h2>
                 <p className="mt-6 text-lg leading-8 text-silver">
-                  Proin volutpat consequat porttitor cras nullam gravida at.
-                  Orci molestie a eu arcu. Sed ut tincidunt integer elementum id
-                  sem. Arcu sed malesuada et magna.
+                  Contact me via any of the below methods or send me a direct message through the submission form. I'm always looking to connect with new people across all industries!
                 </p>
                 <dl className="mt-10 space-y-4 text-base leading-7">
                   <div className="flex gap-x-4">
@@ -293,7 +291,7 @@ export default function Contact() {
                   {/* Submit Button */}
                   <div className="mt-8 flex justify-end">
                     <button
-                      className="submit-btn rounded-md outline outline-green px-3.5 py-2.5 text-white-light text-center text-sm font-semibold shadow-sm hover:bg-blue hover:text-gold hover:outline-none"
+                      className="submit-btn rounded-md outline outline-green px-3.5 py-2.5 text-secondary text-center text-sm font-semibold shadow-sm hover:bg-blue hover:text-gold hover:outline-none"
                       type="submit"
                     >
                       Submit Message

@@ -4,7 +4,7 @@ import Divider from "../components/static/Divider";
 import Background from "../components/home/Background";
 import Projects from "../components/home/Projects";
 import Contact from "../components/home/Contact";
-
+import Test from "../components/home/Test"
 // Import project data
 import { projectData } from "../data/projectData";
 
@@ -19,6 +19,7 @@ export default function Home() {
         <Background id="background" />
         <Projects id="projects" data={projectData} />
         <Contact id="contact" />
+        <Test />
       </div>
     </>
   );
