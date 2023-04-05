@@ -36,13 +36,13 @@ export default function ProjectList({ project }) {
 
   return (
     <>
-      <li className="col-span-3 flex flex-col rounded-lg bg-primary-light shadow">
+      <li className="col-span-3 flex flex-col rounded-lg bg-primary-light shadow-sm transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
         <img
-          className="rounded-t-lg mx-auto min-h-fit min-w-f flex-shrink-0"
+          className="rounded-t-lg mx-auto flex-shrink-0 "
           src={project.screenshot}
           alt=""
         />
-        <div className="flex flex-1 flex-col px-5 py-5">
+        <div className="flex flex-1 flex-col px-5 py-5 brightness-100">
           <h3 className="mt-1 text-xl font-semibold">{project.title}</h3>
           <dl className="mt-1 flex flex-grow flex-col justify-between">
             <dt className="sr-only">Title</dt>

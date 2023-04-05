@@ -98,12 +98,6 @@ html {
   background-repeat: no-repeat;
 }
 
-/* Project Card */
-.projectCardFormat {
-  width: 32rem;
-}
-
-
 /* Project Card Title Underline */
 .projectCardTitle {
   background-image: linear-gradient(#2E294E, #A04048);

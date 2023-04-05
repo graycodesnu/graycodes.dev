@@ -17,7 +17,7 @@ export default function Projects() {
         </h1>
 
         <div className="">
-          <ul className="border mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-11">
+          <ul className="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-11">
               {projectDataList}
           </ul>
         </div>
