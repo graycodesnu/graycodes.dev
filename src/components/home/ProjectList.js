@@ -8,8 +8,13 @@ import { useState } from "react";
 // Import Data
 import { projectData } from "../../data/projectData";
 
-export default function ProjectList({ project }) {
-  // Modal useState
+export default function ProjectList({ project, toggleFavorites, isFavorite }) {
+  
+  const buttonText = isFavorite ? <p>Remove the boom!</p> : <p>Boom!</p>
+
+
+  // ! Modal
+  // Modal useState open & close
   const [openModal, setOpenModal] = useState(false);
   // Modal data map
   const modalProjectData = projectData.map((modalProjectData) => (
@@ -20,14 +25,17 @@ export default function ProjectList({ project }) {
       onClose={() => setOpenModal(false)}
     />
   ));
-  // Short skill array for project preview card
+
+
+
+  //! Short skill array for project preview card
   const shortSkillArray = project.skillsShort;
   console.log(
     "This is the short skills array from ProjectList!",
     shortSkillArray
   );
 
-  // Detailed skill array for project detail card
+  //? Detailed skill array for project detail card
   // const detailedSkillArray = project.skillsDetail;
   // console.log(
   //   "This is the detailed skills array from ProjectList!",
@@ -36,8 +44,13 @@ export default function ProjectList({ project }) {
 
   return (
     <>
-      <li         onClick={() => setOpenModal(true)}
- className="col-span-3 flex flex-col rounded-lg bg-primary-light shadow-sm shadow-primary-dark hover:shadow-primary-light hover:shadow-lg cursor-pointer">
+      <li
+      // open/close modal by id
+        onClick={() => {setOpenModal(true); toggleFavorites(project.id)}}
+        
+        className="col-span-3 flex flex-col rounded-lg bg-primary-light shadow-sm shadow-primary-dark hover:shadow-primary-light hover:shadow-lg cursor-pointer"
+      >
+        <p>{buttonText}</p>
         <img
           className="rounded-t-lg mx-auto flex-shrink-0 "
           src={project.screenshot}
