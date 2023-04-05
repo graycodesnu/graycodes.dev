@@ -16,8 +16,10 @@ export default function Projects() {
           <span className="projectHeadingUnderline">Featured Projects</span>
         </h1>
 
-        <div className="border mt-4">
-          {projectDataList}
+        <div className="">
+          <ul className="border mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              {projectDataList}
+          </ul>
         </div>
       </div>
     </>
