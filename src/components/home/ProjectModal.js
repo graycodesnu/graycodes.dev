@@ -1,7 +1,7 @@
 // Import icons
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
-export default function ProjectModal({ open, onClose, modalProjectData }) {
+export default function ProjectModal({ open, onClose, modalProjectData}) {
   // Modal functionality
   if (!open) return null;
 
@@ -13,7 +13,7 @@ export default function ProjectModal({ open, onClose, modalProjectData }) {
   );
 
   return (
-    <div onClick={onClose}>
+    <div onClick={onClose} className="modal">
       {/* Stop propagation prevents close when modal is clicked */}
       <div
         onClick={(e) => {
@@ -25,7 +25,6 @@ export default function ProjectModal({ open, onClose, modalProjectData }) {
         {detailedSkillArray.map((skill) => (
           <li className="list-none px-1">{skill}</li>
         ))}
-
         <XMarkIcon onClick={onClose} />
       </div>
     </div>

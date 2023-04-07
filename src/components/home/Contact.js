@@ -14,7 +14,7 @@ import {
   PhoneIcon,
 } from "@heroicons/react/24/outline";
 
-// ! Animation
+// * Animation
 const visible = { opacity: 1, y: 0, transition: { duration: 0.75 } };
 
 const itemVariants = {
@@ -22,9 +22,10 @@ const itemVariants = {
   visible,
 };
 
+// ! Function
 export default function Contact() {
-  // ! Form testing
-
+  
+  // * Form submission
   const {
     register,
     handleSubmit,
@@ -76,7 +77,7 @@ export default function Contact() {
   // ** RETURN **
   return (
     <>
-      <div id="contact">
+      <div id="contact" className="mt-8">
         {/* TAILWIND COMPONENT */}
         <div className="relative isolate">
           <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">

@@ -1,3 +1,4 @@
+// ! Imports
 // Import icons
 import { ReactComponent as GitHubIcon } from "../../assets/icons/githubLogo.svg";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
@@ -8,10 +9,8 @@ import { useState } from "react";
 // Import Data
 import { projectData } from "../../data/projectData";
 
+// ! Function
 export default function ProjectList({ project, toggleFavorites, isFavorite }) {
-  
-  const buttonText = isFavorite ? <p>Remove the boom!</p> : <p>Boom!</p>
-
 
   // ! Modal
   // Modal useState open & close
@@ -25,6 +24,14 @@ export default function ProjectList({ project, toggleFavorites, isFavorite }) {
       onClose={() => setOpenModal(false)}
     />
   ));
+
+  
+  const buttonText = isFavorite ? <p>Remove the boom!</p> : <p>Boom!</p>
+
+// ! * Modal Pseudo Code:
+// If card for certain ID is clicked, display element for that specific ID
+// Read ID of card ONCLICK
+// Render component of ONLY the data associated with that ID
 
 
 
@@ -48,7 +55,7 @@ export default function ProjectList({ project, toggleFavorites, isFavorite }) {
       // open/close modal by id
         onClick={() => {setOpenModal(true); toggleFavorites(project.id)}}
         
-        className="col-span-3 flex flex-col rounded-lg bg-primary-light shadow-sm shadow-primary-dark hover:shadow-primary-light hover:shadow-lg cursor-pointer"
+        className="col-span-3 flex flex-col rounded-lg bg-primary-light shadow-sm shadow-primary-dark hover:shadow-primary-light hover:shadow-xl cursor-pointer"
       >
         <p>{buttonText}</p>
         <img

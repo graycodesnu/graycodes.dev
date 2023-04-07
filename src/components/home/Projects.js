@@ -1,3 +1,4 @@
+// ! Imports
 // Import state
 import { useState } from "react";
 // Import project list component
@@ -5,9 +6,10 @@ import ProjectList from "./ProjectList";
 // Import data
 import { projectData } from "../../data/projectData";
 
+// ! Function
 export default function Projects() {
 
-  //! Modal functionality
+  //* Modal functionality
   const [favorites, setFavorites] = useState([])
 
   const toggleFavorites = (id) => {
@@ -27,7 +29,8 @@ export default function Projects() {
 
   const isFavorite = (id) => favorites.includes(id);
 
-  // ! Project Cards
+
+  // * Project Cards
   // Map over project data to return ProjectList component
   const projectDataList = projectData.map((project) => (
     <ProjectList
@@ -38,7 +41,7 @@ export default function Projects() {
     />
   ));
 
-
+// ** RETURN **
   return (
     <>
       <div id="projects">

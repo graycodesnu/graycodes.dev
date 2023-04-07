@@ -28,12 +28,13 @@ module.exports = {
       animation: {
         'pulse-slow': 'pulse 5s linear infinite',
         'pulse-fast': 'pulse 1s linear infinite',
-
       },
       width: {
         '128': '28rem',
+      },
+      backgroundImage: {
+        'expertise-image': "url('../../assets/images/code-screenshot.png')"
       }
-
     },
     colors: {
       'primary': '#141414',

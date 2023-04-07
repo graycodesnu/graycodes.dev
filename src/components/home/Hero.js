@@ -50,7 +50,7 @@ export default function Hero() {
               {/* Greeting */}
               <div className=" mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <motion.h1
-                  className="2xs:pb-3 2xl:pb-0 text-5xl font-bold tracking-tight text-secondary sm:text-6xl "
+                  className="2xs:pb-3 2xl:pb-0 text-6xl font-bold tracking-tight text-secondary sm:text-6xl "
                   variants={{
                     hidden: { opacity: 0, y: -20 },
                     visible,

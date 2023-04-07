@@ -1,3 +1,5 @@
+import bgImg from '../../assets/images/code-screenshot.png'
+
 // Import icons
 import {
   ComputerDesktopIcon,
@@ -8,6 +10,7 @@ import {
 // Import data
 import { proficiencies } from "../../data/resumeData";
 
+// ! Function
 export default function Background() {
   // Frontend
   const frontendList = proficiencies.frontend.length ? (
@@ -34,6 +37,7 @@ export default function Background() {
     <p>No data to show.</p>
   );
 
+  // ** RETURN **
   return (
     <>
       <div id="background">
@@ -155,6 +159,7 @@ export default function Background() {
         <div>
           <div className="flex justify-center pt-8">
             <h2>Testing Div</h2>
+            <img src={bgImg}/>
           </div>
 
         </div>
