@@ -89,6 +89,13 @@ html {
   background-repeat: no-repeat;
 }
 
+.expertiseBgImage {
+  background-image: url("./assets/images/code-screenshot.png");
+  background-position: 103% 87%;
+  background-size: 100% ;
+  background-repeat: no-repeat;
+}
+
 /*! Projects */
 /* Heading underline */
 .projectHeadingUnderline {

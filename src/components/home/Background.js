@@ -1,18 +1,21 @@
-import bgImg from '../../assets/images/code-screenshot.png'
-
+// ! Imports
 // Import icons
 import {
   ComputerDesktopIcon,
   Cog8ToothIcon,
-  WrenchScrewdriverIcon,
+  WrenchScrewdriverIcon, CodeBracketIcon
 } from "@heroicons/react/24/outline";
-
 // Import data
 import { proficiencies } from "../../data/resumeData";
+// Import image
+import codeScreenshot from "../../assets/images/code-screenshot.png";
+
+
 
 // ! Function
 export default function Background() {
-  // Frontend
+  // * Frontend
+  // Not currently being used, as hard coding the data within these elements has made for easier styling
   const frontendList = proficiencies.frontend.length ? (
     proficiencies.frontend.map((frontend, index) => (
       <li key={index}>{frontend}</li>
@@ -21,7 +24,8 @@ export default function Background() {
     <p>No data to show.</p>
   );
 
-  // Backend
+  // * Backend
+  // Not currently being used, as hard coding the data within these elements has made for easier styling
   const backendList = proficiencies.backend.length ? (
     proficiencies.backend.map((backend, index) => (
       <li key={index}>{backend}</li>
@@ -30,7 +34,9 @@ export default function Background() {
     <p>No data to show.</p>
   );
 
-  // Tools
+  // * Tools
+  // Not currently being used, as hard coding the data within these elements has made for easier styling
+
   const toolsList = proficiencies.tools.length ? (
     proficiencies.tools.map((tools, index) => <li key={index}>{tools}</li>)
   ) : (
@@ -40,12 +46,12 @@ export default function Background() {
   // ** RETURN **
   return (
     <>
-      <div id="background">
+      <div id="background" className="">
         <h1 className="flex justify-center xl:mt-14 text-5xl font-bold tracking-tight text-secondary sm:text-6xl">
           <span className="backgroundUnderline">My Expertise </span>
         </h1>
         {/* Front to Tools div w/ dividers */}
-        <div className="pt-10 pb-5 flex flex-wrap lg:justify-between 2xs:justify-center">
+        <div className="h-full pt-10 pb-5 flex flex-wrap lg:justify-between 2xs:justify-center">
           {/* Frontend */}
           {/* sm:mr-3 lg:mr-0 */}
           <div className="rounded-lg shadow-sm w-96 xs:mb-4 xl:mb-0  p-5 bg-primary-light">
@@ -153,16 +159,23 @@ export default function Background() {
               </div>
             </div>
           </div>
+
+
         </div>
 
+{/* BACKGROUND IMG EXPERIMENTS */}
+          {/* Bracket Icon */}
+          {/* <CodeBracketIcon className="bg-primary text-blue opacity-25 h-56 w-56" /> */}
+        {/* <img src={codeScreenshot} className="opacity-25"/> */}
+
+        {/* <div className="expertiseBgImage h-full w-full"> <p>test div</p></div> */}
         {/* Additional Background */}
-        <div>
+        {/* <div>
           <div className="flex justify-center pt-8">
             <h2>Testing Div</h2>
-            <img src={bgImg}/>
+            <img src={bgImg} />
           </div>
-
-        </div>
+        </div> */}
       </div>
     </>
   );
