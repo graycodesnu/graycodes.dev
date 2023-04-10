@@ -2,31 +2,29 @@
 // Import icons
 import { ReactComponent as GitHubIcon } from "../../assets/icons/githubLogo.svg";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
-// Import ProjectModal
-import ProjectModal from "./ProjectModal";
 // Import useState for modal functionality
 import { useState } from "react";
 // Import Data
 import { projectData } from "../../data/projectData";
 
 // ! Function
-export default function ProjectList({ project, toggleFavorites, isFavorite }) {
+export default function ProjectList({ project /* toggleFavorites, isFavorite */ }) {
 
-  // ! Modal
-  // Modal useState open & close
-  const [openModal, setOpenModal] = useState(false);
-  // Modal data map
-  const modalProjectData = projectData.map((modalProjectData) => (
-    <ProjectModal
-      key={modalProjectData.id}
-      modalProjectData={modalProjectData}
-      open={openModal}
-      onClose={() => setOpenModal(false)}
-    />
-  ));
+  // // ! Modal
+  // // Modal useState open & close
+  // const [openModal, setOpenModal] = useState(false);
+  // // Modal data map
+  // const modalProjectData = projectData.map((modalProjectData) => (
+  //   <ProjectModal
+  //     key={modalProjectData.id}
+  //     modalProjectData={modalProjectData}
+  //     open={openModal}
+  //     onClose={() => setOpenModal(false)}
+  //   />
+  // ));
 
   
-  const buttonText = isFavorite ? <p>Remove the boom!</p> : <p>Boom!</p>
+  // const buttonText = isFavorite ? <p>Remove the boom!</p> : <p>Boom!</p>
 
 // ! * Modal Pseudo Code:
 // If card for certain ID is clicked, display element for that specific ID
@@ -52,12 +50,14 @@ export default function ProjectList({ project, toggleFavorites, isFavorite }) {
   return (
     <>
       <li
+
+
       // open/close modal by id
-        onClick={() => {setOpenModal(true); toggleFavorites(project.id)}}
+        // onClick={() => {setOpenModal(true); toggleFavorites(project.id)}}
         
         className="col-span-3 flex flex-col rounded-lg bg-primary-light shadow-sm shadow-primary-dark hover:shadow-primary-light hover:shadow-xl cursor-pointer"
       >
-        <p>{buttonText}</p>
+        {/* <p>{buttonText}</p> */}
         <img
           className="rounded-t-lg mx-auto flex-shrink-0 "
           src={project.screenshot}
@@ -65,6 +65,7 @@ export default function ProjectList({ project, toggleFavorites, isFavorite }) {
         />
         <div className="flex flex-1 flex-col px-5 py-5 brightness-100">
           <h3 className="mt-1 text-xl font-semibold">{project.title}</h3>
+          <button>Learn More</button>
           <dl className="mt-1 flex flex-grow flex-col justify-between">
             <dt className="sr-only">Title</dt>
             <dd className="text-sm text-silver mt-1">{project.description}</dd>
@@ -113,8 +114,6 @@ export default function ProjectList({ project, toggleFavorites, isFavorite }) {
         </div>
       </li>
 
-      {/* Modal */}
-      <div>{modalProjectData}</div>
     </>
   );
 }

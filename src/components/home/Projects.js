@@ -10,24 +10,24 @@ import { projectData } from "../../data/projectData";
 export default function Projects() {
 
   //* Modal functionality
-  const [favorites, setFavorites] = useState([])
+  // const [favorites, setFavorites] = useState([])
 
-  const toggleFavorites = (id) => {
-    console.log("id", id);
-    if (!favorites.includes(id)) {
-      const updatedFavorites = [...favorites, id];
-      setFavorites(updatedFavorites);
-    } else {
-      /*
-    need to filter the array where the values do not equal the id that is passed in
-    */
-      const updatedFavorites = favorites.filter((fav) => fav !== id);
-      setFavorites(updatedFavorites);
-    }
-    console.log("fav1", favorites);
-  };
+  // const toggleFavorites = (id) => {
+  //   console.log("id", id);
+  //   if (!favorites.includes(id)) {
+  //     const updatedFavorites = [...favorites, id];
+  //     setFavorites(updatedFavorites);
+  //   } else {
+  //     /*
+  //   need to filter the array where the values do not equal the id that is passed in
+  //   */
+  //     const updatedFavorites = favorites.filter((fav) => fav !== id);
+  //     setFavorites(updatedFavorites);
+  //   }
+  //   console.log("fav1", favorites);
+  // };
 
-  const isFavorite = (id) => favorites.includes(id);
+  // const isFavorite = (id) => favorites.includes(id);
 
 
   // * Project Cards
@@ -36,8 +36,6 @@ export default function Projects() {
     <ProjectList
       key={project.id}
       project={project}
-      toggleFavorites={toggleFavorites}
-      isFavorite={isFavorite(project.id)}
     />
   ));
 
@@ -50,7 +48,7 @@ export default function Projects() {
         </h1>
 
         <div className="">
-          <ul className="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-11">
+          <ul className="mt-4 grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9">
             {projectDataList}
           </ul>
         </div>
