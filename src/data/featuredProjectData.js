@@ -15,7 +15,7 @@ export const featuredProjectData = [
       "Authorization/login functionality using JSON web tokens",
       "UI/UX (Material UI)",
     ],
-    skillsShort: ["React", "MongoDB", "JavaScript", "Material UI"],
+    skillsShort: ["React", "MongoDB", "JavaScript", "Material UI", "Agile Dev"],
     skillsDetail: [
       "React",
       "MongoDB",
@@ -46,7 +46,7 @@ export const featuredProjectData = [
       "Login authorization and sign up",
       "UX/UI",
     ],
-    skillsShort: ["JavaScript", "Bootstrap", "Express.js", "Node.js", "MySQL"],
+    skillsShort: ["JavaScript", "Bootstrap", "Node.js", "MySQL", "Agile Dev"],
     skillsDetail: [
       "JavaScript",
       "HTML",
@@ -61,29 +61,29 @@ export const featuredProjectData = [
     ],
   },
   //! Intertain
-  {
-    id: 3,
-    title: "Intertain",
-    screenshot: require("../assets/project-screenshots/intertain/intertain.png"),
-    github: "https://github.com/NW-Bootcamp-Team1/Night-In",
-    live: "https://nw-bootcamp-team1.github.io/Night-In/home-page/index",
-    description:
-      "Don't know what to do for your night in? Once a user selects a genre, three web APIs work together to generate entertainment options in the form of a book, movie, and board game. Favorite your results or refresh until satisfied!",
-    responsibilities: [
-      "Local storage functionality",
-      "Third-party API and implementation",
-      "UX/UI",
-    ],
-    skillsShort: ["JavaScript", "HTML", "CSS", "Heroku"],
-    skillsDetail: [
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Heroku",
-      "Local Storage",
-      "API",
-    ],
-  },
+  // {
+  //   id: 3,
+  //   title: "Intertain",
+  //   screenshot: require("../assets/project-screenshots/intertain/intertain.png"),
+  //   github: "https://github.com/NW-Bootcamp-Team1/Night-In",
+  //   live: "https://nw-bootcamp-team1.github.io/Night-In/home-page/index",
+  //   description:
+  //     "Don't know what to do for your night in? Once a user selects a genre, three web APIs work together to generate entertainment options in the form of a book, movie, and board game. Favorite your results or refresh until satisfied!",
+  //   responsibilities: [
+  //     "Local storage functionality",
+  //     "Third-party API and implementation",
+  //     "UX/UI",
+  //   ],
+  //   skillsShort: ["JavaScript", "HTML", "CSS", "Heroku"],
+  //   skillsDetail: [
+  //     "JavaScript",
+  //     "HTML",
+  //     "CSS",
+  //     "Heroku",
+  //     "Local Storage",
+  //     "API",
+  //   ],
+  // },
   // ! Node README
   {
     id: 4,

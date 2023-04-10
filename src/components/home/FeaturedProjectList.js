@@ -14,77 +14,80 @@ import GoodWeeds from "../../pages/projects/GoodWeeds";
 
 // ! Function
 export default function ProjectList({ featuredProject }) {
+  // data test
   console.log(
     featuredProject,
     "featured project data from featured project list component"
   );
 
+  //* Short skill array for project preview card
+  const shortSkillArray = featuredProject.skillsShort;
+  console.log(
+    "This is the short skills array from ProjectList!",
+    shortSkillArray
+  );
+
   return (
     <>
-      <div className="py-10 sm:py-10">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:max-w-4xl">
-            <div className="mt-16 space-y-20 lg:mt-2 lg:space-y-2">
-              <article className="relative isolate flex flex-col gap-8 lg:flex-row">
-                {/* Screenshot */}
-                <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
-                  <img
-                    src={featuredProject.screenshot}
-                    alt=""
-                    className="absolute inset-0 h-full w-full rounded-2xl bg-red object-cover"
-                  />
-                  <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gold" />
-                </div>
-
-                {/* Main Card */}
-                <div>
-                  {/* Top Half of Card */}
-                  <div className="group relative max-w-xl">
-                    {/* Title */}
-                    <div className="inline-flex items-center justify-between">
-                      <h3 className="mt-3 text-2xl font-semibold leading-6 text-secondary group-hover:text-secondary">
-                        <a href="">
-                          <span className="absolute inset-0" />
-                          {featuredProject.title}
-
-                          <span className="absolute top-0 right-0">
-                            {/* Learn More */}
-                            <ArrowLongRightIcon className="text-silver h-6 w-8 xs:mt-2 md:mt-1" />
-                          </span>
-                        </a>
-                      </h3>
-                    </div>
-                    {/* Description */}
-                    <p className="mt-5 text-sm leading-6 text-silver">
-                      {featuredProject.description}
-                    </p>
-                  </div>
-
-                  {/* Author */}
-                  <div className="mt-6 flex border-t border-green-opaque pt-6">
-                    <div className="relative flex items-center gap-x-4">
-                      <img
-                        src=""
-                        alt=""
-                        className="h-10 w-10 rounded-full bg-gray-50"
-                      />
-                      <div className="text-sm leading-6">
-                        <p className="font-semibold text-gray-900">
-                          <a href="">
-                            <span className="absolute inset-0" />
-                            ""
-                          </a>
-                        </p>
-                        <p className="text-gray-600">bleh</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </article>
+      <li className="col-span-3 flex flex-col rounded-lg bg-primary-light shadow-sm shadow-primary-dark hover:shadow-primary-light hover:shadow-xl cursor-pointer transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+        <img
+          className="rounded-t-lg mx-auto flex-shrink-0 object-cover"
+          src={featuredProject.screenshot}
+          alt=""
+        />
+        <div className="flex flex-1 flex-col px-5 py-5 brightness-100">
+          <h3 className="mt-1 text-xl font-semibold">
+            {featuredProject.title}
+          </h3>
+          <dl className="mt-1 flex flex-grow flex-col justify-between">
+            <dt className="sr-only">Title</dt>
+            <dd className="text-sm text-silver mt-1">
+              {featuredProject.description}
+            </dd>
+            <dt className="sr-only">Description</dt>
+            <dd className="sr-only">Skills</dd>
+          </dl>
+        </div>
+        {/* Skills */}
+        <span className="inline-flex flex-wrap items-center rounded-full py-0.5 leading-relaxed text-sm font-medium font-inconsolata mb-2 ml-1 ">
+          {shortSkillArray.map((skill) => (
+            <div className="flex items-center">
+              <li className="list-none py-1 px-2 m-1 rounded-full outline bg-blue outline-blue-light cursor-default">
+                {skill}
+              </li>
+            </div>
+          ))}
+        </span>
+        <div>
+          {/* ***** Links ***** */}
+          <div className="-mt-px flex divide-x divide-green-opaque">
+            <div className="flex w-0 flex-1 rounded-bl-lg hover:bg-blue">
+              <a
+                href={featuredProject.github}
+                className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-green-opaque hover:border-none py-4 text-sm font-semibold hover:text-gold"
+              >
+                <GitHubIcon
+                  className="h-5 w-5 text-secondary"
+                  aria-hidden="true"
+                />
+                GitHub
+              </a>
+            </div>
+            <div className="-ml-px flex w-0 flex-1 rounded-br-lg hover:bg-blue ">
+              <a
+                href={featuredProject.live}
+                className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-green-opaque hover:border-none py-4 text-sm font-semibold text-silver hover:text-gold"
+              >
+                <ArrowTopRightOnSquareIcon
+                  className="h-5 w-5 text-secondary"
+                  aria-hidden="true"
+                />
+                Live Link
+              </a>
             </div>
           </div>
         </div>
-      </div>
+      </li>
     </>
   );
 }
