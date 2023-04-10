@@ -10,7 +10,7 @@ import { projectData } from "../../data/projectData";
 import GoodWeeds from "../../pages/projects/GoodWeeds";
 
 // ! Function
-export default function ProjectList({ project /* toggleFavorites, isFavorite */ }) {
+export default function ProjectList({project}) {
 
 
   //! Short skill array for project preview card
