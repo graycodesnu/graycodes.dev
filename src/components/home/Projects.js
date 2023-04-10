@@ -6,14 +6,19 @@ import FeaturedProjectList from "./FeaturedProjectList"
 import ProjectList from "./ProjectList";
 // Import data
 import { projectData } from "../../data/projectData";
+import { featuredProjectData } from "../../data/featuredProjectData";
 
 // ! Function
 export default function Projects() {
   
   // * Featured Projects
-  const featuredProjects = projectData.map((project) => (
-    <FeaturedProjectList key={project.id} project={project} />
+  const featuredProjectDataList = featuredProjectData.map((featuredProject) => (
+    <FeaturedProjectList key={featuredProject.id} featuredProject={featuredProject} />
+
   ))
+  
+  console.log(featuredProjectDataList, "FEATURING DATA FROM PROJECT COMPONENT")
+
   
   // * Project Cards
   // Map over project data to return ProjectList component
@@ -33,7 +38,7 @@ export default function Projects() {
           <h2 className="text-secondary text-5xl font-medium ">
             <span className="frontendUnderline">Featured</span>
           </h2>
-{featuredProjects}
+{featuredProjectDataList}
         </div>
 
 {/* Grid */}
