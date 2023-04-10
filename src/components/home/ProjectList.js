@@ -6,31 +6,11 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 // Import Data
 import { projectData } from "../../data/projectData";
+// Import project detail pages
+import GoodWeeds from "../../pages/projects/GoodWeeds";
 
 // ! Function
 export default function ProjectList({ project /* toggleFavorites, isFavorite */ }) {
-
-  // // ! Modal
-  // // Modal useState open & close
-  // const [openModal, setOpenModal] = useState(false);
-  // // Modal data map
-  // const modalProjectData = projectData.map((modalProjectData) => (
-  //   <ProjectModal
-  //     key={modalProjectData.id}
-  //     modalProjectData={modalProjectData}
-  //     open={openModal}
-  //     onClose={() => setOpenModal(false)}
-  //   />
-  // ));
-
-  
-  // const buttonText = isFavorite ? <p>Remove the boom!</p> : <p>Boom!</p>
-
-// ! * Modal Pseudo Code:
-// If card for certain ID is clicked, display element for that specific ID
-// Read ID of card ONCLICK
-// Render component of ONLY the data associated with that ID
-
 
 
   //! Short skill array for project preview card
@@ -47,19 +27,30 @@ export default function ProjectList({ project /* toggleFavorites, isFavorite */ 
   //   detailedSkillArray
   // );
 
+  // ! Display detail switch case
+  const [view, setView] = useState("ProjectList")
+
+  function displayPage() {
+    switch(view) {
+      case "ProjectList":
+        return <ProjectList />
+      case "GoodWeeds":
+        return <GoodWeeds/>
+      default: 
+      return <ProjectList />
+    }
+  }
+
+
   return (
     <>
       <li
 
-
-      // open/close modal by id
-        // onClick={() => {setOpenModal(true); toggleFavorites(project.id)}}
         
         className="col-span-3 flex flex-col rounded-lg bg-primary-light shadow-sm shadow-primary-dark hover:shadow-primary-light hover:shadow-xl cursor-pointer"
       >
-        {/* <p>{buttonText}</p> */}
         <img
-          className="rounded-t-lg mx-auto flex-shrink-0 "
+          className="rounded-t-lg mx-auto flex-shrink-0 object-cover"
           src={project.screenshot}
           alt=""
         />
