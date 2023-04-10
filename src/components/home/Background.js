@@ -47,7 +47,7 @@ export default function Background() {
   return (
     <>
       <div id="background" className="">
-        <h1 className="flex justify-center xl:mt-14 text-5xl font-bold tracking-tight text-secondary sm:text-6xl">
+        <h1 className="flex justify-center xl:mt-16 md:text-7xl font-bold tracking-tight text-secondary sm:text-6xl">
           <span className="backgroundUnderline">My Expertise </span>
         </h1>
         {/* Front to Tools div w/ dividers */}

@@ -13,9 +13,9 @@ export default function Home() {
   return (
     <>
       <div>
-        <Hero id="/" />
+        <Hero id="/"/>
 
-        <Background id="background" />
+        <Background id="background" className="" />
         <Projects id="projects" data={projectData} />
         <Contact id="contact" />
       </div>
