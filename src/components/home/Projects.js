@@ -3,7 +3,7 @@
 import { useState } from "react";
 // Import project components
 import FeaturedProjectList from "./FeaturedProjectList";
-import InProgressProject from "./InProgressProject";
+import InProgressProject from "./InProgressProjectList";
 import ProjectList from "./ProjectList";
 // Import data
 import { projectData } from "../../data/projectData";

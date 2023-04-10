@@ -1,32 +1,34 @@
 export const inProgressProjectData = [
       {
       id: 1,
-      title: "Mix-N-Match",
+      title: "My Pets",
       screenshot:
-        "https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg",
-      github: "https://github.com/graycodesnu/mix-match",
+        "",
+      github: "https://github.com/OurPetProjects/my_pets",
       live: "",
-      description:
-        "The MERN dating app you didn't know you needed. Users create a playlist – or mixtape – that acts as their profile. Users are able to browse other users’ mixtapes and match with them via playlist likes.",
+      description1:
+        "Following bootcamp graduation, a few members of my cohort and I decided to team up and continue to grow our skillset with the development of a new app: My Pets.",
+        description2: "With both individual and commercial users in mind, My Pets is being designed to keep track of pets' feeding schedules, vet appointments, and other important tasks.",
       responsibilities: [
         "Backend API",
         "Models and queries",
         "Authorization/login functionality using JSON web tokens",
-        "UI/UX (Material UI)",
+        "UI/UX (Figma Style Guide, Wireframing)",
       ],
-      skillsShort: ["React", "MongoDB", "JavaScript", "Material UI", "Agile Dev"],
+      skillsShort: ["React", "MongoDB", "JavaScript", "Tailwind CSS", "Agile Development"],
       skillsDetail: [
         "React",
         "MongoDB",
         "JavaScript",
         "JSX",
         "GraphQL",
-        "Material UI",
+        "Tailwind CSS",
         "bcrypt",
         "Express.js",
         "Node.js",
         "API",
         "Heroku",
+        "Agile Development"
       ]
     }
 ];
