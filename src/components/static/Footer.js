@@ -5,7 +5,7 @@ export default function Footer() {
 
         <div className="mt-8 md:order-1 md:mt-0">
           <p className=" text-xs  text-secondary">
-           Grayson Harvey  &copy;2023 
+           Designed and built by Grayson Harvey  &copy;2023 
           </p>
         </div>
       </div>
