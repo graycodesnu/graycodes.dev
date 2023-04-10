@@ -48,7 +48,7 @@ export default function Projects() {
         {/* Featured */}
         <div className="mt-7">
           <h2 className="text-secondary text-5xl font-medium flex justify-center">
-            <span className="frontendUnderline">Featured</span>
+            <span className="featuredProjectsUnderline">Featured</span>
           </h2>
           {/* Grid */}
           <ul className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9">
