@@ -3,11 +3,6 @@
 import { inProgressProjectData } from "../../data/inProgressProjectData";
 // Import icons
 import { ReactComponent as GitHubIcon } from "../../assets/icons/githubLogo.svg";
-import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from "@heroicons/react/20/solid";
 // Import screenshot
 import { ReactComponent as MyPetsLogo } from "../../assets/project-screenshots/misc/my-pets-logo.svg";
 
@@ -38,6 +33,7 @@ export default function InProgressProject({ inProgressProject }) {
                 <h3 className="mt-2 text-3xl font-bold tracking-tight text-secondary sm:text-4xl">
                   {inProgressProject.title}
                 </h3>
+
                 {/* Description */}
                 <div className="mt-6 text-lg leading-8 text-silver">
                   <p>{inProgressProject.description1}</p>
@@ -45,7 +41,7 @@ export default function InProgressProject({ inProgressProject }) {
                   <p className="mt-4">{inProgressProject.description2}</p>
                 </div>
                 {/* Skills */}
-                <span className="inline-flex flex-wrap justify-items-start rounded-full py-0.5 leading-relaxed text-sm font-medium font-inconsolata mt-10">
+                <span className="inline-flex flex-wrap justify-items-start rounded-full py-0.5 leading-relaxed text-sm font-medium font-inconsolata mt-8">
                   {shortSkillArray.map((skill) => (
                     <div className="flex items-center">
                       <li className="list-none py-1 px-2 m-1 rounded-full outline bg-blue outline-blue-light cursor-default">
@@ -54,10 +50,17 @@ export default function InProgressProject({ inProgressProject }) {
                     </div>
                   ))}
                 </span>
+                {/* GitHub */}
+                <a href={inProgressProject.github}>
+                  <button className="mt-10 inline-flex items-center justify-center min-w-full rounded-md font-medium text-md py-1 outline outline-green hover:outline-none hover:text-gold hover:bg-blue hover:shadow-lg hover:shadow-primary-light">
+                    View Our Progress on GitHub{" "}
+                    <GitHubIcon className="h-6 ml-3" />
+                  </button>
+                </a>
               </div>
             </div>
             {/* Logo */}
-            <div className="hidden lg:flex mt-12">
+            <div className="mt-20  hidden lg:flex flex-col">
               <MyPetsLogo className="h-72" />
             </div>
           </div>
