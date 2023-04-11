@@ -46,17 +46,17 @@ export default function Projects() {
           <span className="projectHeadingUnderline">My Projects</span>
         </h1>
         {/* Featured */}
-        <div className="mt-7">
+        <div className="mt-7 py-3">
           <h2 className="text-secondary text-5xl font-medium flex justify-center">
             <span className="featuredProjectsUnderline">Featured</span>
           </h2>
           {/* Grid */}
-          <ul className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9">
+          <ul className="mt-8 pt-6 pb-7 grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9">
             {featuredProjectDataList}
           </ul>
         </div>
         {/* In Progress */}
-        <div className="mt-14">{inProgressProjectDataList}</div>
+        <div className="">{inProgressProjectDataList}</div>
       </div>
     </>
   );

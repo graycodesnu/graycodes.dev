@@ -18,7 +18,7 @@ export default function InProgressProject({ inProgressProject }) {
   // ** Return **
   return (
     <>
-      <div className="overflow-hidden py-24 sm:py-32">
+      <div className="overflow-hidden py-16 ">
         {/* Section Title */}
         <h2 className="text-secondary text-5xl font-medium flex justify-center mb-12">
           <span className="inProgressProjectUnderline">In Progress</span>
@@ -60,7 +60,7 @@ export default function InProgressProject({ inProgressProject }) {
               </div>
             </div>
             {/* Logo */}
-            <div className="mt-20  hidden lg:flex flex-col">
+            <div className="mt-16  hidden lg:flex flex-col">
               <MyPetsLogo className="h-72" />
             </div>
           </div>
