@@ -46,7 +46,7 @@ export default function Background() {
   // ** RETURN **
   return (
     <>
-      <div id="background" className="mt-9">
+      <div id="background" className="mt-9 px-8">
         <h1 className="flex justify-center xl:mt-16 text-5xl font-bold tracking-tight text-secondary sm:text-7xl">
           <span className="backgroundUnderline">My Expertise </span>
         </h1>

@@ -41,12 +41,12 @@ export default function Projects() {
   // ** RETURN **
   return (
     <>
-      <div id="projects">
+      <div id="projects" className="px-8">
         <h1 className="xl:mt-16 text-5xl font-bold tracking-tight text-secondary sm:text-7xl">
           <span className="projectHeadingUnderline">My Projects</span>
         </h1>
         {/* Featured */}
-        <div className="mt-7 py-3">
+        <div className="mt-7 py-3 px-8">
           <h2 className="text-secondary text-5xl font-semibold flex justify-center">
             <span className="featuredProjectsUnderline">Featured</span>
           </h2>
@@ -58,7 +58,7 @@ export default function Projects() {
         {/* In Progress */}
         <div className="">{inProgressProjectDataList}</div>
         {/* Other */}
-        <div className="mt-7 py-3">
+        <div className="mt-7 py-3 px-8">
           <span>
             <h2 className="text-secondary text-5xl font-semibold flex">
               <span className="otherProjectsUnderline">
@@ -72,7 +72,7 @@ export default function Projects() {
             </h2>
           </span>
           {/* Other Grid */}
-          <ul className="mt-10 pt-6 pb-7 grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-12">
+          <ul className="mt-10 pt-6 pb-7  grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9">
             {otherProjectDataList}
           </ul>
         </div>
