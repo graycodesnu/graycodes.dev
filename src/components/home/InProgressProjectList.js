@@ -52,7 +52,7 @@ export default function InProgressProject({ inProgressProject }) {
                 </span>
                 {/* GitHub */}
                 <a href={inProgressProject.github}>
-                  <button className="mt-10 inline-flex items-center justify-center min-w-full rounded-md font-medium text-md py-1 outline outline-green hover:outline-none hover:text-gold hover:bg-blue hover:shadow-lg hover:shadow-primary-light">
+                  <button className="mt-10 inline-flex items-center justify-center min-w-full rounded-md font-semibold text-md py-1 outline outline-green hover:outline-none hover:text-gold hover:bg-blue hover:shadow-lg hover:shadow-primary-light">
                     View Our Progress on GitHub{" "}
                     <GitHubIcon className="h-6 ml-3" />
                   </button>

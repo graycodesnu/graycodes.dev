@@ -46,15 +46,17 @@ export default function Background() {
   // ** RETURN **
   return (
     <>
-      <div id="background" className="">
-        <h1 className="flex justify-center xl:mt-16 md:text-7xl font-bold tracking-tight text-secondary sm:text-6xl">
+      <div id="background" className="mt-9">
+        <h1 className="flex justify-center xl:mt-16 text-5xl font-bold tracking-tight text-secondary sm:text-7xl">
           <span className="backgroundUnderline">My Expertise </span>
         </h1>
         {/* Front to Tools div w/ dividers */}
+<div className="">
+        {/* Inner Div */}
         <div className="h-full pt-10 pb-5 flex flex-wrap lg:justify-between 2xs:justify-center">
           {/* Frontend */}
           {/* sm:mr-3 lg:mr-0 */}
-          <div className="rounded-lg shadow-sm w-96 xs:mb-4 xl:mb-0  p-5 bg-primary-light">
+          <div className="rounded-lg shadow-sm w-96 2xs:mb-4 xl:mb-0 p-5 bg-primary-light">
             <div className="px-5">
               {/* Heading with icon */}
               <div className="p-2 flex flex-row justify-center items-end">
@@ -88,12 +90,12 @@ export default function Background() {
           </div>
 
           {/*  Green divider */}
-          <div className="sm:p-3 lg:p-0 visible lg:visible 2xs:invisible">
+          <div className="sm:p-3 lg:p-0 visible lg:visible 2xs:hidden">
             <div className="w-0.5 h-64 mt-6 bg-green " />
           </div>
 
           {/* Backend */}
-          <div className="rounded-lg shadow-sm w-96 xs:mb-4 xl:mb-0 p-5  bg-primary-light">
+          <div className="rounded-lg shadow-sm w-96 2xs:mb-4 xl:mb-0 p-5  bg-primary-light">
             <div className="px-5">
               {/* Heading with icon */}
               <div className="p-2 flex flex-row justify-center items-end">
@@ -124,12 +126,12 @@ export default function Background() {
           </div>
 
           {/* Divider */}
-          <div className="sm:p-3 lg:p-0 visible lg:visible 2xs:invisible">
+          <div className="sm:p-3 lg:p-0 visible lg:visible 2xs:hidden">
             <div className="w-0.5 h-64 mt-6 bg-green" />
           </div>
 
           {/* Tools */}
-          <div className="rounded-lg shadow-sm w-96 xs:mr-6 xl:mr-0 xs:pt-4 xl:mt-0 p-5 bg-primary-light">
+          <div className="rounded-lg shadow-sm w-96 2xs:pt-4 xl:mr-0 xl:mt-0 p-5 bg-primary-light">
             <div className="px-5">
               {/* Heading with icon */}
               <div className="p-2 flex flex-row justify-center items-end">
@@ -162,7 +164,7 @@ export default function Background() {
 
 
         </div>
-
+        </div>
 {/* BACKGROUND IMG EXPERIMENTS */}
           {/* Bracket Icon */}
           {/* <CodeBracketIcon className="bg-primary text-blue opacity-25 h-56 w-56" /> */}
