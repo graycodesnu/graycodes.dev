@@ -2,7 +2,7 @@
 // TODO: The rest of project data
 // TODO: Add svg screenshots for each project
 
-export const projectData = [
+export const otherProjectData = [
   //! Mix-n-Match
   {
     id: 1,

@@ -4,9 +4,9 @@ import { useState } from "react";
 // Import project components
 import FeaturedProjectList from "./FeaturedProjectList";
 import InProgressProject from "./InProgressProjectList";
-import ProjectList from "./ProjectList";
+import ProjectList from "./OtherProjectList";
 // Import data
-import { projectData } from "../../data/projectData";
+import { otherProjectData } from "../../data/otherProjectData";
 import { featuredProjectData } from "../../data/featuredProjectData";
 import { inProgressProjectData } from "../../data/inProgressProjectData";
 
@@ -32,10 +32,10 @@ export default function Projects() {
     )
   );
 
-  // * Project Cards
+  // * Other Projects
   // Map over project data to return ProjectList component
-  const projectDataList = projectData.map((project) => (
-    <ProjectList key={project.id} project={project} />
+  const otherProjectDataList = otherProjectData.map((otherProject) => (
+    <ProjectList key={otherProject.id} otherProject={otherProject} />
   ));
 
   // ** RETURN **
@@ -57,6 +57,8 @@ export default function Projects() {
         </div>
         {/* In Progress */}
         <div className="">{inProgressProjectDataList}</div>
+        {/* Other */}
+        <div>{otherProjectDataList}</div>
       </div>
     </>
   );

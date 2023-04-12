@@ -5,10 +5,10 @@ import Background from "../components/home/Background";
 import Projects from "../components/home/Projects";
 import Contact from "../components/home/Contact";
 // Import project data
-import { projectData } from "../data/projectData";
+// import { projectData } from "../data/projectData";
 
 export default function Home() {
-  console.log("project from home", projectData);
+  // console.log("project from home", projectData);
 
   return (
     <>
@@ -16,7 +16,7 @@ export default function Home() {
         <Hero id="/"/>
 
         <Background id="background" className="" />
-        <Projects id="projects" data={projectData} />
+        <Projects id="projects"  />
         <Contact id="contact" />
       </div>
     </>
