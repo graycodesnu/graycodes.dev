@@ -31,7 +31,7 @@ export default function ProjectList({ featuredProject }) {
     <>
       <li className="col-span-3 flex flex-col rounded-lg bg-primary-light shadow-sm shadow-primary-dark hover:shadow-primary-light hover:shadow-md cursor-pointer transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
         <img
-          className="rounded-t-lg mx-auto flex-shrink-0 object-cover"
+          className="rounded-t-lg mx-auto flex-shrink-0 object-cover brightness-90 hover:brightness-100"
           src={featuredProject.screenshot}
           alt=""
         />
@@ -49,7 +49,7 @@ export default function ProjectList({ featuredProject }) {
           </dl>
         </div>
         {/* Skills */}
-        <span className="inline-flex flex-wrap items-center rounded-full py-0.5 leading-relaxed text-sm font-medium font-inconsolata mb-2 ml-1">
+        <span className="inline-flex flex-wrap items-center rounded-full py-0.5 leading-relaxed text-sm font-medium font-inconsolata my-2 ml-1">
           {shortSkillArray.map((skill) => (
             <div className="flex items-center">
               <li className="list-none py-1 px-2 m-1 rounded-full outline bg-blue outline-blue-light cursor-default">

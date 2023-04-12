@@ -58,8 +58,7 @@ export const otherProjectData = [
       "JavaScript",
       "Bootstrap",
       "Express.js",
-      "Node.js",
-      "MySQL"
+      "Node.js"
     ],
     skillsDetail: [
       "JavaScript",

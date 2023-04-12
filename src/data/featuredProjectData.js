@@ -15,7 +15,7 @@ export const featuredProjectData = [
       "Authorization/login functionality using JSON web tokens",
       "UI/UX (Material UI)",
     ],
-    skillsShort: ["React", "MongoDB", "JavaScript", "Material UI", "Agile Dev"],
+    skillsShort: ["React", "MongoDB", "JavaScript", "Material UI"],
     skillsDetail: [
       "React",
       "MongoDB",
@@ -46,7 +46,7 @@ export const featuredProjectData = [
       "Login authorization and sign up",
       "UX/UI",
     ],
-    skillsShort: ["JavaScript", "Bootstrap", "Node.js", "MySQL", "Agile Dev"],
+    skillsShort: ["JavaScript", "Bootstrap", "Node.js", "MySQL"],
     skillsDetail: [
       "JavaScript",
       "HTML",

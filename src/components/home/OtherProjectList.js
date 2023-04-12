@@ -1,7 +1,7 @@
 // ! Imports
 // Import icons
 import { ReactComponent as GitHubIcon } from "../../assets/icons/githubLogo.svg";
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import { ArrowTopRightOnSquareIcon, LightBulbIcon } from "@heroicons/react/24/outline";
 // Import Data
 import { otherProjectData } from "../../data/otherProjectData";
 
@@ -38,8 +38,13 @@ export default function OtherProjectList({ otherProject }) {
   return (
     <>
       <li className="col-span-3 flex flex-col rounded-lg bg-primary-light shadow-sm shadow-primary-dark hover:shadow-primary-light hover:shadow-md cursor-pointer transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
-        <div className="flex flex-1 flex-col px-5 py-5 brightness-100">
-          <h3 className="mt-1 text-xl font-semibold">{otherProject.title}</h3>
+        {/* Icon */}
+        <div className="pt-4 px-4 flex justify-start">
+          <LightBulbIcon className="h-8 w-8 text-gold-alt"/>
+        </div>
+        {/* List */}
+        <div className="flex flex-1 flex-col px-5 py-2 brightness-100">
+          <h3 className="text-2xl font-medium flex justify-center">{otherProject.title}</h3>
           <dl className="mt-1 flex flex-grow flex-col justify-between">
             <dt className="sr-only">Title</dt>
             <dd className="text-sm text-silver mt-1">
@@ -50,7 +55,7 @@ export default function OtherProjectList({ otherProject }) {
           </dl>
         </div>
         {/* Skills */}
-        <span className="inline-flex flex-wrap items-center rounded-full py-0.5 leading-relaxed text-sm font-medium font-inconsolata mb-2 ml-1 ">
+        <span className="inline-flex flex-wrap items-center rounded-full py-0.5 leading-relaxed text-sm font-medium font-inconsolata my-2 ml-1 ">
           {shortSkillArray.map((skill) => (
             <div className="flex items-center">
               <li className="list-none py-1 px-2 m-1 rounded-full outline bg-blue outline-blue-light cursor-default">

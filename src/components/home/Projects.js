@@ -58,21 +58,17 @@ export default function Projects() {
         {/* In Progress */}
         <div className="">{inProgressProjectDataList}</div>
         {/* Other */}
-        <div className="mt-7 py-3 px-8">
+        <div className="mt-12 py-3 px-8">
           <span>
             <h2 className="text-secondary text-5xl font-semibold flex">
-              <span className="otherProjectsUnderline">
-              Noteworthy 
-              </span>
+              <span className="otherProjectsUnderline">Noteworthy</span>
             </h2>
             <h2 className="text-secondary text-5xl font-semibold flex">
-              <span className="otherProjectsUnderline">
-              Projects
-              </span>
+              <span className="otherProjectsUnderline">Projects</span>
             </h2>
           </span>
           {/* Other Grid */}
-          <ul className="mt-10 pt-6 pb-7  grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9">
+          <ul className="mt-10 pt-6 pb-7  grid grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9">
             {otherProjectDataList}
           </ul>
         </div>
