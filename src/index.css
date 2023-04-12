@@ -108,8 +108,8 @@ html {
 /* Featured Heading Underline */
 .featuredProjectsUnderline {
   background-image: linear-gradient(90deg, #a04048, #a04048);
-  background-position: 15% 92%;
-  background-size: 100% 20%;
+  background-position: 15% 93%;
+  background-size: 100% 22%;
   background-repeat: no-repeat;
 }
 
@@ -117,18 +117,16 @@ html {
 .inProgressProjectUnderline {
   background-image: linear-gradient(90deg, #b35919, #b35919);
   background-position: 15% 93%;
-  background-size: 100% 20%;
+  background-size: 100% 22%;
   background-repeat: no-repeat;
 }
 
 /* Other Projects Heading Underline */
 .otherProjectsUnderline {
-  /* readable orange accent */
-  background-image: linear-gradient(90deg, rgba(168, 115, 36, 0.9), rgba(168, 115, 36, 0.9));
   /* readable gold accent */
-  /* background-image: linear-gradient(90deg, #9E6942, #9E6942); */
-  background-position: 15% 92%;
-  background-size: 100% 20%;
+  background-image: linear-gradient(90deg, rgba(168, 115, 36, 0.9), rgba(168, 115, 36, 0.9));
+  background-position: 15% 94%;
+  background-size: 100% 22%;
   background-repeat: no-repeat;
 }
 

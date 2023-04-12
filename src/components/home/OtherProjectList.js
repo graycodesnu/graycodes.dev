@@ -37,7 +37,7 @@ export default function OtherProjectList({ otherProject }) {
 
   return (
     <>
-      <li className="col-span-3 flex flex-col rounded-lg bg-primary-light shadow-sm shadow-primary-dark hover:shadow-primary-light hover:shadow-xl cursor-pointer transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+      <li className="col-span-3 flex flex-col rounded-lg bg-primary-light shadow-sm shadow-primary-dark hover:shadow-primary-light hover:shadow-md cursor-pointer transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
         <div className="flex flex-1 flex-col px-5 py-5 brightness-100">
           <h3 className="mt-1 text-xl font-semibold">{otherProject.title}</h3>
           <dl className="mt-1 flex flex-grow flex-col justify-between">

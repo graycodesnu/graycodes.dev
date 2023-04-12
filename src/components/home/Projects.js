@@ -47,7 +47,7 @@ export default function Projects() {
         </h1>
         {/* Featured */}
         <div className="mt-7 py-3">
-          <h2 className="text-secondary text-5xl font-medium flex justify-center">
+          <h2 className="text-secondary text-5xl font-semibold flex justify-center">
             <span className="featuredProjectsUnderline">Featured</span>
           </h2>
           {/* Featured Grid */}
@@ -59,11 +59,20 @@ export default function Projects() {
         <div className="">{inProgressProjectDataList}</div>
         {/* Other */}
         <div className="mt-7 py-3">
-          <h2 className="text-secondary text-5xl font-medium flex justify-center">
-            <span className="otherProjectsUnderline">Other Noteworthy Projects</span>
-          </h2>
-          {/* Featured Grid */}
-          <ul className="mt-8 pt-6 pb-7 grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9">
+          <span>
+            <h2 className="text-secondary text-5xl font-semibold flex">
+              <span className="otherProjectsUnderline">
+              Noteworthy 
+              </span>
+            </h2>
+            <h2 className="text-secondary text-5xl font-semibold flex">
+              <span className="otherProjectsUnderline">
+              Projects
+              </span>
+            </h2>
+          </span>
+          {/* Other Grid */}
+          <ul className="mt-10 pt-6 pb-7 grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-12">
             {otherProjectDataList}
           </ul>
         </div>

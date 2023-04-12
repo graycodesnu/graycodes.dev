@@ -20,7 +20,7 @@ export default function InProgressProject({ inProgressProject }) {
     <>
       <div className="overflow-hidden py-16 ">
         {/* Section Title */}
-        <h2 className="text-secondary text-5xl font-medium flex justify-center mb-12">
+        <h2 className="text-secondary text-5xl font-semibold flex justify-center mb-12">
           <span className="inProgressProjectUnderline">In Progress</span>
         </h2>
         {/* Project Section */}
