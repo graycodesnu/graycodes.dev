@@ -34,7 +34,7 @@ export default function Hero() {
     <>
       <motion.div
         id="hero"
-        className="relative ml-20 mt-0.5 "
+        className="relative ml-20 mt-[136px]"
         initial="hidden"
         animate="visible"
         exit={{ opacity: 0, transition: { duration: 1 } }}

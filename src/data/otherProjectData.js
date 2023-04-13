@@ -1,7 +1,3 @@
-// title, screenshot, github link, live link, description, skills tags, responsibilities (for bigger projects)
-// TODO: The rest of project data
-// TODO: Add svg screenshots for each project
-
 export const otherProjectData = [
   //! Intertain
   {
@@ -74,6 +70,7 @@ export const otherProjectData = [
     skillsShort: ["JavaScript", "CSS", "HTML"],
     skillsDetail: ["JavaScript", "HTML", "CSS"],
   },
+  // ! E-Commerce Backend
   {
     id: 5,
     title: "E-Commerce Backend",
@@ -86,6 +83,7 @@ export const otherProjectData = [
     skillsShort: ["MySQL", "Sequelize", "Express.js"],
     skillsDetail: ["JavaScript", "Node.js", "MySQL", "Sequelize", "Express.js"],
   },
+  // ! Team Profile Builder
   {
     id: 6,
     title: "Team Profile Builder",

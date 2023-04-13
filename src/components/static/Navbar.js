@@ -1,12 +1,15 @@
+// ! Imports
 // Import react scroll for nav buttons
 import { Link } from "react-scroll";
-
-// Import logo asset
+// Import logo
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 // Import responsive elements
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+// Import useState
+import { useState, useEffect } from "react";
 
+// ! Routes
 // Nav routes
 const navigation = [
   { name: "Home", href: "hero", current: false },
@@ -19,12 +22,32 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+// ! Function
 export default function Navbar() {
+  // * Scroll fade in/out
+  // Sets display vs. hidden context
+  const [show, setShow] = useState(true);
+  const controlNavbar = () => {
+    if (window.scrollY > 100) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  };
+  // Sets fade effect
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, []);
 
+  // ** RETURN **
   return (
+  
     <Disclosure
       as="nav"
-      className="py-3 bg-primary-dark shadow-sm shadow-blue w-full"
+      className="navbarFade z-50 py-3 bg-primary-dark shadow-sm shadow-blue w-full"
     >
       {({ open }) => (
         <>
@@ -75,7 +98,7 @@ export default function Navbar() {
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
-                      {item.name}
+                        {item.name}
                       </Link>
                     ))}
                   </div>
@@ -102,7 +125,7 @@ export default function Navbar() {
                   to={item.href}
                   spy={true}
                   smooth={true}
-                  offset={50}
+                  offset={-200}
                   duration={500}
                 >
                   <Disclosure.Button
@@ -124,6 +147,8 @@ export default function Navbar() {
           </Disclosure.Panel>
         </>
       )}
+
+
     </Disclosure>
   );
 }

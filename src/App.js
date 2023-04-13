@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <div className="font-montserrat text-secondary ">
-        <Navbar />
+        <Navbar className=""/>
 
         <div className="grid grid-cols-11">
           <SocialMedia className="col-span-1 col-start-1 col-end-2" />

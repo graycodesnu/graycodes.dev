@@ -34,7 +34,11 @@ module.exports = {
       },
       backgroundImage: {
         'expertise-image': "url('../../assets/images/code-screenshot.png')"
+      },
+      margin: {
+        '136px': '136px'
       }
+
     },
     colors: {
       'primary': '#141414',
