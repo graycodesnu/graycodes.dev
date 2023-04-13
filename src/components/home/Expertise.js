@@ -51,7 +51,7 @@ export default function Expertise() {
           <span className="backgroundUnderline">My Expertise </span>
         </h1>
         {/* Front to Tools div w/ dividers */}
-<div className="">
+<div className="mt-4">
         {/* Inner Div */}
         <div className="h-full pt-10 pb-5 flex flex-wrap lg:justify-between 2xs:justify-center">
           {/* Frontend */}
@@ -119,6 +119,7 @@ export default function Expertise() {
                     <li>MongoDB</li>
                     <li>Express.js</li>
                     <li>GraphQL</li>
+                    <li>Inquirer.js</li>
                   </ul>
                 </div>
               </div>

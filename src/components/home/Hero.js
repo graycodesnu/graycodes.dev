@@ -110,7 +110,7 @@ export default function Hero() {
                     to="projects"
                     spy={true}
                     smooth={true}
-                    offset={50}
+                    offset={-25}
                     duration={500}
                     className="text-base font-semibold leading-7 text-silver cursor-pointer hover:text-gold"
                   >
