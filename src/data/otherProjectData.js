@@ -3,128 +3,105 @@
 // TODO: Add svg screenshots for each project
 
 export const otherProjectData = [
-  //! Mix-n-Match
-  {
-    id: 1,
-    title: "Mix-N-Match",
-    screenshot: "https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg",
-    github: "https://github.com/graycodesnu/mix-match",
-    live: "",
-    description:
-      "A MERN dating app you didn't know you needed. Users create a playlist – or mixtape – that acts as their profile. Users are able to browse other users’ mixtapes and match with them via playlist likes.",
-    responsibilities: [
-      "Backend API",
-      "Models and queries",
-      "Authorization/login functionality using JSON web tokens",
-      "UI/UX (Material UI)",
-    ],
-    skillsShort: [
-      "React",
-      "MongoDB",
-      "JavaScript",
-      "Material UI",
-    ],
-    skillsDetail: [
-      "React",
-      "MongoDB",
-      "JavaScript",
-      "JSX",
-      "GraphQL",
-      "Material UI",
-      "bcrypt",
-      "Express.js",
-      "Node.js",
-      "API",
-      "Heroku",
-    ],
-  },
-  //! GoodWeeds
-  {
-    id: 2,
-    title: "GoodWeeds",
-    screenshot: require('../assets/project-screenshots/goodweeds/goodweeds.png'),
-    github: "https://github.com/graycodesnu/goodWeeds",
-    live: "https://tranquil-tor-86628.herokuapp.com/",
-    description:
-      "Curate your strain profile and join a community centered around helping people find and share strains they love. A MySQL database and RESTful API to allow users to browse popular weed strains, add strains to favorites, and post reviews to the WeedFeed.",
-    responsibilities: [
-      "Agile development upon stepping into a leadership role",
-      "Backend functionality and database integration with MySQL",
-      "Routes and data calls",
-      "Login authorization and sign up",
-      "UX/UI",
-    ],
-    skillsShort: [
-      "JavaScript",
-      "Bootstrap",
-      "Express.js",
-      "Node.js"
-    ],
-    skillsDetail: [
-      "JavaScript",
-      "HTML",
-      "Handlebars",
-      "Bootstrap",
-      "CSS",
-      "bcrypt",
-      "Express.js",
-      "Node.js",
-      "API",
-      "Heroku",
-    ],
-  },
   //! Intertain
   {
-    id: 3,
+    id: 1,
     title: "Intertain",
-    screenshot: require('../assets/project-screenshots/intertain/intertain.png'),
+    // Screenshot not used
+    // screenshot: require("../assets/project-screenshots/intertain/intertain.png"),
     github: "https://github.com/NW-Bootcamp-Team1/Night-In",
     live: "https://nw-bootcamp-team1.github.io/Night-In/home-page/index",
     description:
-      "Don't know what to do for your night in? Three separate web APIs allow users to randomly generate entertainment options in the form of a book, movie, and board game, which can be saved in local storage or refreshed until satisfied.",
+      "Three web APIs randomly generate book, movie, and board game suggestions for a night in. Save or refresh options in local storage until satisfied.",
     responsibilities: [
       "Local storage functionality",
       "Third-party API and implementation",
       "UX/UI",
     ],
-    skillsShort: ["JavaScript", "HTML", "CSS", "Heroku"],
-    skillsDetail: ["JavaScript", "HTML", "CSS", "Heroku", "Local Storage", "API"],
+    skillsShort: ["JavaScript", "APIs", "CSS"],
+    skillsDetail: [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Heroku",
+      "Local Storage",
+      "API",
+    ],
   },
   // ! Weather Dashboard
   {
-    id: 4,
+    id: 2,
     title: "Weather Dashboard",
-    screenshot: require('../assets/project-screenshots/misc/weather-dashboard.png'),
-    github: "https://github.com/graycodesnu/weather-dashboard-week06",
-    live: "https://graycodesnu.github.io/weather-dashboard-week06/",
+    // Screenshot not used
+    // screenshot: require("../assets/project-screenshots/misc/weather-dashboard.png"),
+    github: "https://github.com/graycodesnu/weather-dashboard",
+    live: "https://graycodesnu.github.io/weather-dashboard/",
     description:
-      "Utilizes Open Weather's web API and local storage to allow users to get the most up-to-date weather data for a given city, in addition to a five-day forecast. Results save in local storage and turn into a button for easy access next time you need to search.",
-    skillsShort: ["JavaScript", "Web APIs", "Local Storage", "CSS"],
-    skillsDetail: ["JavaScript", "Web APIs", "Local Storage", "HTML", "CSS", "Heroku"]
+      "Use Open Weather's API to retrieve a city's current weather & 5-day forecast. Saves as button in local storage for future access.",
+    skillsShort: ["JavaScript", "APIs", "Local Storage"],
+    skillsDetail: [
+      "JavaScript",
+      "APIs",
+      "Local Storage",
+      "HTML",
+      "CSS",
+      "Heroku",
+    ],
+  },
+  // ! SQL Employee Tracker
+  {
+    id: 3,
+    title: "SQL Employee Tracker",
+    // Screenshot not used or imported
+    // screenshot: require('../assets/project-screenshots/misc/node-readme.png'),
+    github: "https://github.com/graycodesnu/SQL-employee-tracker",
+    live: "https://watch.screencastify.com/v/ss4cCYBkBQcshhHqMTLa",
+    description:
+      "A comprehensive employee tracking system for organizations, enhancing database management efficiency.",
+    skillsShort: ["Node.js", "MySQL", "Inquirer.js"],
+    skillsDetail: ["JavaScript", "Node.js", "MySQL", "Inquirer.js"],
   },
   // ! Password Generator
   {
-    id: 5,
+    id: 4,
     title: "Password Generator",
-    screenshot: require('../assets/project-screenshots/misc/password-generator.png'),
+    // Screenshot not used
+    // screenshot: require('../assets/project-screenshots/misc/password-generator.png'),
     github: "https://github.com/graycodesnu/password_generator",
     live: "https://graycodesnu.github.io/password_generator/",
     description:
-      "A password generator in which the user is prompted to select password criteria via modals.",
+      "Create a secure password with this generator after selecting criteria via modal prompts.",
     skillsShort: ["JavaScript", "CSS", "HTML"],
-    skillsDetail: ["JavaScript", "HTML", "CSS"]
+    skillsDetail: ["JavaScript", "HTML", "CSS"],
   },
-  // ! Node README
-    {
-      id: 6,
-      title: "README.md Generator",
-      screenshot: require('../assets/project-screenshots/misc/node-readme.png'),
-      github: "https://github.com/graycodesnu/node-readme",
-      live: "https://drive.google.com/file/d/1St-Si8Wu9aCa9QI1vvXhKOsWRZptzbra/view",
-      description:
-        "A README.md file generator using Node.js and command line prompts.",
-      skillsShort: ["JavaScript", "Node.js"],
-      skillsDetail: ["JavaScript", "Node.js"]
-    }
-
+  {
+    id: 5,
+    title: "E-Commerce Backend",
+    // Screenshot not used or imported
+    // screenshot: require('../assets/project-screenshots/misc/node-readme.png'),
+    github: "https://github.com/graycodesnu/e-commerce-backend",
+    live: "https://drive.google.com/file/d/1Hsm1SIVpg1uNewBVVP_ffKXDqY7xiBY4/view",
+    description:
+      "A SQL database and RESTful API integrated to create a robust and reliable e-commerce backend.",
+    skillsShort: ["MySQL", "Sequelize", "Express.js"],
+    skillsDetail: ["JavaScript", "Node.js", "MySQL", "Sequelize", "Express.js"],
+  },
+  {
+    id: 6,
+    title: "Team Profile Builder",
+    // Screenshot not used or imported
+    // screenshot: require('../assets/project-screenshots/misc/node-readme.png'),
+    github: "https://github.com/graycodesnu/team-profile-builder",
+    live: "https://drive.google.com/file/d/1or3sE9IyC_S9jQ-RAelVDyjCGE4dxlR0/view",
+    description:
+      "Automatically generate a webpage displaying team member profiles based on CLI prompt responses, providing quick access to their information.",
+    skillsShort: ["Express.js", "Inquirer.js", "Jest"],
+    skillsDetail: [
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "Inquirer.js",
+      "Jest",
+    ],
+  },
 ];

@@ -68,7 +68,7 @@ export default function Projects() {
             </h2>
           </span>
           {/* Other Grid */}
-          <ul className="mt-10 pt-6 pb-7  grid grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9">
+          <ul className="mt-10 pt-6 pb-7 px-8 grid grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9">
             {otherProjectDataList}
           </ul>
         </div>

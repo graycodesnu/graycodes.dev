@@ -9,7 +9,7 @@ import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 // Icons
 import {
-  BuildingOffice2Icon,
+  MapPinIcon,
   EnvelopeIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
@@ -94,7 +94,7 @@ export default function Contact() {
                   <div className="flex gap-x-4">
                     <dt className="flex-none">
                       <span className="sr-only">Telephone</span>
-                      <BuildingOffice2Icon
+                      <MapPinIcon
                         className="h-7 w-6 text-purple"
                         aria-hidden="true"
                       />
