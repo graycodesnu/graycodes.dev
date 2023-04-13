@@ -13,7 +13,7 @@ import codeScreenshot from "../../assets/images/code-screenshot.png";
 
 
 // ! Function
-export default function Background() {
+export default function Expertise() {
   // * Frontend
   // Not currently being used, as hard coding the data within these elements has made for easier styling
   const frontendList = proficiencies.frontend.length ? (
@@ -46,7 +46,7 @@ export default function Background() {
   // ** RETURN **
   return (
     <>
-      <div id="background" className="mt-9 px-8">
+      <div id="expertise" className="mt-9 px-8">
         <h1 className="flex justify-center xl:mt-16 text-5xl font-bold tracking-tight text-secondary sm:text-7xl">
           <span className="backgroundUnderline">My Expertise </span>
         </h1>

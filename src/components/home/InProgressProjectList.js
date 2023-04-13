@@ -30,7 +30,7 @@ export default function InProgressProject({ inProgressProject }) {
               {/* Inner Project Info */}
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
                 {/* Title */}
-                <h3 className="mt-2 text-3xl font-bold tracking-tight text-secondary sm:text-4xl">
+                <h3 className="mt-1 text-3xl font-bold tracking-tight text-secondary sm:text-4xl">
                   {inProgressProject.title}
                 </h3>
 
@@ -60,7 +60,7 @@ export default function InProgressProject({ inProgressProject }) {
               </div>
             </div>
             {/* Logo */}
-            <div className="mt-16  hidden lg:flex flex-col">
+            <div className="mt-12  hidden lg:flex flex-col">
               <MyPetsLogo className="h-72" />
             </div>
           </div>

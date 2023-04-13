@@ -1,7 +1,7 @@
 // Import Components
 import Hero from "../components/home/Hero";
 import Divider from "../components/static/Divider";
-import Background from "../components/home/Background";
+import Expertise from "../components/home/Expertise";
 import Projects from "../components/home/Projects";
 import Contact from "../components/home/Contact";
 // Import project data
@@ -15,7 +15,7 @@ export default function Home() {
       <div>
         <Hero id="/"/>
 
-        <Background id="background" className="" />
+        <Expertise id="expertise" className="" />
         <Projects id="projects"  />
         <Contact id="contact" />
       </div>

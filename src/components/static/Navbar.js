@@ -10,7 +10,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 // Nav routes
 const navigation = [
   { name: "Home", href: "hero", current: false },
-  { name: "Background", href: "background", current: false },
+  { name: "Expertise", href: "expertise", current: false },
   { name: "Projects", href: "projects", current: false },
   { name: "Contact", href: "contact", current: false },
 ];
