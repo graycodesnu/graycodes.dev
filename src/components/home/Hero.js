@@ -5,30 +5,37 @@ import { motion } from "framer-motion";
 // Import data
 import heroImg from "../../assets/images/heroImg.jpg";
 
-// Animations for elements to appear on page
-const visible = { opacity: 1, y: 0, transition: { duration: 1.5, delay: 0.4 } };
-const itemVariants = {
-  hidden: { opacity: 0, y: 10 },
-  visible,
-};
 
-// Animations for icon draw
-const draw = {
-  hidden: { pathLength: 0, opacity: 0 },
-  visible: (i) => {
-    const delay = 1 + i * 0.5;
-    return {
-      pathLength: 1,
-      opacity: 1,
-      transition: {
-        pathLength: { delay, type: "spring", duration: 4, bounce: 0 },
-        opacity: { delay, duration: 0.01 },
-      },
-    };
-  },
-};
-
+// ! Function
 export default function Hero() {
+  // * Animations for elements to appear on page
+  const visible = {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1.5, delay: 0.4 },
+  };
+  const itemVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible,
+  };
+
+  // * Animations for icon draw
+  const draw = {
+    hidden: { pathLength: 0, opacity: 0 },
+    visible: (i) => {
+      const delay = 1 + i * 0.5;
+      return {
+        pathLength: 1,
+        opacity: 1,
+        transition: {
+          pathLength: { delay, type: "spring", duration: 4, bounce: 0 },
+          opacity: { delay, duration: 0.01 },
+        },
+      };
+    },
+  };
+
+  // ! Function
   return (
     <>
       <motion.div
@@ -92,13 +99,10 @@ export default function Hero() {
                     MongoDB
                   </span>
                   , and{" "}
-                  <span className="bioDataUnderline tracking-wider">
-                    MySQL
-                  </span>
+                  <span className="bioDataUnderline tracking-wider">MySQL</span>
                   . I recently earned a certificate in full-stack development
                   from Northwestern University, complementing my degrees in
                   Psychology and International Studies.
-                
                 </motion.p>
                 {/* Link */}
                 <motion.div

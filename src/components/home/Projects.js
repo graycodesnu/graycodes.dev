@@ -9,6 +9,8 @@ import ProjectList from "./OtherProjectList";
 import { otherProjectData } from "../../data/otherProjectData";
 import { featuredProjectData } from "../../data/featuredProjectData";
 import { inProgressProjectData } from "../../data/inProgressProjectData";
+// Import Animation
+import { motion } from "framer-motion";
 
 // ! Function
 export default function Projects() {
@@ -37,6 +39,17 @@ export default function Projects() {
   const otherProjectDataList = otherProjectData.map((otherProject) => (
     <ProjectList key={otherProject.id} otherProject={otherProject} />
   ));
+
+  // * Animation
+  const visible = {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1.5, delay: 0.4 },
+  };
+  const itemVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible,
+  };
 
   // ** RETURN **
   return (

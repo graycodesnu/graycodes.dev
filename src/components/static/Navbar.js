@@ -83,6 +83,7 @@ export default function Navbar() {
                   <Logo
                     className="sm:block h-28 w-auto justify-items-start 2xs:hidden cursor-pointer"
                     alt="Grayson Harvey"
+                    aria-label="Grayson Harvey Logo"
                   />
                 </Link>
 
@@ -92,7 +93,7 @@ export default function Navbar() {
                       <Link
                         spy={true}
                         smooth={true}
-                        offset={-30}
+                        offset={-150}
                         duration={500}
                         key={item.name}
                         to={item.href}
