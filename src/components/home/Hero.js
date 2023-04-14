@@ -34,8 +34,7 @@ export default function Hero() {
       };
     },
   };
-
-  // ! Function
+  // ** RETURN **
   return (
     <>
       <motion.div
@@ -113,7 +112,7 @@ export default function Hero() {
                     to="projects"
                     spy={true}
                     smooth={true}
-                    offset={-25}
+                    offset={-150}
                     duration={500}
                     className="text-base font-semibold leading-7 text-silver cursor-pointer hover:text-gold"
                   >

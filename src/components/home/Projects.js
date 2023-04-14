@@ -32,7 +32,7 @@ export default function Projects() {
         inProgressProject={inProgressProject}
       />
     )
-  );
+  );     
 
   // * Other Projects
   // Map over project data to return ProjectList component
@@ -51,13 +51,28 @@ export default function Projects() {
     visible,
   };
 
+// * Animation Test
+
   // ** RETURN **
   return (
     <>
-      <div id="projects" className="px-8">
-        <h1 className="xl:mt-16 text-5xl font-bold tracking-tight text-secondary sm:text-7xl">
+      <motion.div
+        id="projects"
+        className="px-8"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        exit={{ opacity: 0, transition: { duration: 1 } }}
+        variants={{
+          visible: { transition: { staggerChildren: 0.3 } },
+        }}
+      >
+        <motion.h1
+          className="xl:mt-16 text-5xl font-bold tracking-tight text-secondary sm:text-7xl"
+          variants={itemVariants}
+        >
           <span className="projectHeadingUnderline">My Projects</span>
-        </h1>
+        </motion.h1>
         {/* Featured */}
         <div className="mt-7 py-3 px-8">
           <h2 className="text-secondary text-5xl font-semibold flex justify-center">
@@ -85,7 +100,7 @@ export default function Projects() {
             {otherProjectDataList}
           </ul>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
