@@ -47,14 +47,14 @@ export default function ProjectList({ featuredProject }) {
           
         />
         <div className="flex flex-1 flex-col px-5 py-5">
-          <h3 className="mt-1 text-xl font-semibold ">
+          <motion.h3 className="mt-1 text-xl font-semibold" variants={itemVariants}>
             {featuredProject.title}
-          </h3>
+          </motion.h3>
           <dl className="mt-1 flex flex-grow flex-col justify-between">
             <dt className="sr-only">Title</dt>
-            <dd className="text-sm text-silver mt-1">
+            <motion.dd className="text-sm text-silver mt-1" variants={itemVariants}>
               {featuredProject.description}
-            </dd>
+            </motion.dd>
             <dt className="sr-only">Description</dt>
             <dd className="sr-only">Skills</dd>
           </dl>
@@ -62,16 +62,16 @@ export default function ProjectList({ featuredProject }) {
         {/* Skills */}
         <span className="inline-flex flex-wrap items-center rounded-full py-0.5 leading-relaxed text-sm font-medium font-inconsolata my-2 ml-1">
           {shortSkillArray.map((skill) => (
-            <div className="flex items-center">
+            <motion.div className="flex items-center" variants={itemVariants}>
               <li className="list-none py-1 px-2 m-1 rounded-full outline bg-blue outline-blue-light cursor-default">
                 {skill}
               </li>
-            </div>
+            </motion.div>
           ))}
         </span>
         <div>
           {/* ***** Links ***** */}
-          <div className="-mt-px flex divide-x divide-green-opaque">
+          <motion.div className="-mt-px flex divide-x divide-green-opaque" variants={itemVariants}>
             <div className="flex w-0 flex-1 rounded-bl-lg hover:bg-blue">
               <a
                 href={featuredProject.github}
@@ -96,7 +96,7 @@ export default function ProjectList({ featuredProject }) {
                 Live Link
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </motion.li>
     </>

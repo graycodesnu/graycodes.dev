@@ -19,7 +19,7 @@ export default function OtherProjectList({ otherProject }) {
   const visible = {
     opacity: 1,
     y: 0,
-    transition: { duration: 1, delay: .75 },
+    transition: { duration: 1, delay: .5 },
   };
   const itemVariants = {
     hidden: { opacity: 0, y: 0 },
