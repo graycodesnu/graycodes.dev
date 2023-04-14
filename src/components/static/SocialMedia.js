@@ -1,3 +1,8 @@
+// ! Imports
+// Animation
+import { motion } from "framer-motion";
+
+// ! Nav Data
 const navigation = [
   {
     name: "LinkedIn",
@@ -82,26 +87,51 @@ const navigation = [
   },
 ];
 
+// ! Function
 export default function SocialMedia() {
+  // * Animation
+  const visible = {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1.5, delay: 0.4 },
+  };
+  const itemVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible,
+  };
+
+  // * ** RETURN **
   return (
     <>
-      <div className="sm:flex flex-col content-center 2xs:hidden">
-        <div className="fixed bottom-0 lg:left-16 md:left-6 xs:left-2">
-          <div className="space-x-6 ">
+      <motion.div
+        className="sm:flex flex-col content-center 2xs:hidden"
+        initial="hidden"
+        animate="visible"
+        exit={{ opacity: 0, transition: { duration: 1 } }}
+        variants={{
+          visible: { transition: { staggerChildren: 0.3 } },
+        }}
+      >
+        <motion.div
+          className="fixed bottom-0 lg:left-16 md:left-6 xs:left-2"
+          variants={itemVariants}
+        >
+          <motion.div className="space-x-6" variants={itemVariants}>
             {navigation.map((item) => (
-              <a
+              <motion.a
                 key={item.name}
                 href={item.href}
                 className="text-green hover:text-gold"
+                variants={itemVariants}
               >
-                <span className="sr-only ">{item.name}</span>
+                <span className="sr-only">{item.name}</span>
                 <item.icon className="" aria-hidden="true" />
-              </a>
+              </motion.a>
             ))}
-          </div>
-          <div className="w-1 h-28 bg-gradient-to-t from-green via-green to-primary border-none ml-3 mt" />
-        </div>
-      </div>
+          </motion.div>
+          <motion.div className="w-1 h-28 bg-gradient-to-t from-green via-green to-primary border-none ml-3 mt" variants={itemVariants}/>
+        </motion.div>
+      </motion.div>
     </>
   );
 }
