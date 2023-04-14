@@ -93,7 +93,7 @@ export default function SocialMedia() {
   const visible = {
     opacity: 1,
     y: 0,
-    transition: { duration: 1.5, delay: 0.4 },
+    transition: { duration: 1, delay: .35 },
   };
   const itemVariants = {
     hidden: { opacity: 0, y: 10 },
@@ -109,7 +109,7 @@ export default function SocialMedia() {
         animate="visible"
         exit={{ opacity: 0, transition: { duration: 1 } }}
         variants={{
-          visible: { transition: { staggerChildren: 0.3 } },
+          visible: { transition: { staggerChildren: 0.75 } },
         }}
       >
         <motion.div
