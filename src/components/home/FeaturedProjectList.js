@@ -16,18 +16,10 @@ import { animate, motion} from "framer-motion";
 
 // ! Function
 export default function ProjectList({ featuredProject }) {
-  // data test
-  console.log(
-    featuredProject,
-    "featured project data from featured project list component"
-  );
 
   //* Short skill array for project preview card
   const shortSkillArray = featuredProject.skillsShort;
-  console.log(
-    "This is the short skills array from ProjectList!",
-    shortSkillArray
-  );
+
 
   // * Animation
   const visible = {
@@ -40,6 +32,7 @@ export default function ProjectList({ featuredProject }) {
     visible,
   };
 
+  // ** RETURN **
   return (
     <>
 

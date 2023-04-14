@@ -44,7 +44,7 @@ export default function Projects() {
   const visible = {
     opacity: 1,
     y: 0,
-    transition: { duration: .75, delay: 0.4 },
+    transition: { duration: 0.75, delay: 0.4 },
   };
   const itemVariants = {
     hidden: { opacity: 0, y: 10 },
@@ -79,13 +79,16 @@ export default function Projects() {
           >
             <span className="featuredProjectsUnderline">Featured</span>
           </motion.h2>
+
           {/* Featured Grid */}
           <motion.ul className="mt-8 pt-6 pb-7 grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9">
             {featuredProjectDataList}
           </motion.ul>
         </div>
+
         {/* In Progress */}
-        <div className="">{inProgressProjectDataList}</div>
+        <motion.div className="">{inProgressProjectDataList}</motion.div>
+
         {/* Other */}
         <div className="mt-12 py-3 px-8">
           <span>
@@ -96,16 +99,11 @@ export default function Projects() {
               <span className="otherProjectsUnderline">Projects</span>
             </h2>
           </span>
+
           {/* Other Grid */}
           <ul
             className="mt-10 pt-6 pb-7 px-8 grid grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            exit={{ opacity: 0, transition: { duration: 1 } }}
-            variants={{
-              visible: { transition: { staggerChildren: 0.5 } },
-            }}
+
           >
             {otherProjectDataList}
           </ul>
