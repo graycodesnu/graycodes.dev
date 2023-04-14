@@ -6,8 +6,8 @@ import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 // Import responsive elements
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-// Import useState
-import { useState, useEffect } from "react";
+// Import animation
+import { motion } from "framer-motion";
 
 // ! Routes
 // Nav routes
@@ -24,35 +24,41 @@ function classNames(...classes) {
 
 // ! Function
 export default function Navbar() {
-  // * Scroll fade in/out
-  // Sets display vs. hidden context
-  const [show, setShow] = useState(true);
-  const controlNavbar = () => {
-    if (window.scrollY > 100) {
-      setShow(false);
-    } else {
-      setShow(true);
-    }
+  // * Animation
+  const visible = {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1.5, delay: 0.4 },
   };
-  // Sets fade effect
-  useEffect(() => {
-    window.addEventListener("scroll", controlNavbar);
-    return () => {
-      window.removeEventListener("scroll", controlNavbar);
-    };
-  }, []);
+  const itemVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible,
+  };
 
   // ** RETURN **
   return (
-  
     <Disclosure
       as="nav"
-      className="navbarFade z-50 py-3 bg-primary-dark shadow-sm shadow-blue w-full"
+      className="fixed z-50 py-3 bg-primary-dark shadow-sm shadow-blue w-full"
     >
       {({ open }) => (
         <>
-          <div className="mx-auto px-2 sm:px-6 lg:px-8">
-            <div className="relative flex items-center justify-between">
+          <motion.div
+            className="mx-auto px-2 sm:px-6 lg:px-8"
+            initial="hidden"
+            animate="visible"
+            exit={{ opacity: 0, transition: { duration: 1 } }}
+            variants={{
+              visible: { transition: { staggerChildren: 0.3 } },
+            }}
+          >
+            <motion.div
+              className="relative flex items-center justify-between"
+              variants={{
+                hidden: { opacity: 0, y: -20 },
+                visible,
+              }}
+            >
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu buttons */}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2  text-green hover: hover:text-gold focus:outline-none">
@@ -115,8 +121,8 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
           {/* Bar Menu */}
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3 cursor-pointer">
@@ -147,8 +153,6 @@ export default function Navbar() {
           </Disclosure.Panel>
         </>
       )}
-
-
     </Disclosure>
   );
 }

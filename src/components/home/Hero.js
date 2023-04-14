@@ -7,7 +7,6 @@ import heroImg from "../../assets/images/heroImg.jpg";
 
 // Animations for elements to appear on page
 const visible = { opacity: 1, y: 0, transition: { duration: 1.5, delay: 0.4 } };
-
 const itemVariants = {
   hidden: { opacity: 0, y: 10 },
   visible,

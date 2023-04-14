@@ -13,13 +13,6 @@ html {
   background-color: #141414;
 }
 
-/* ! Navbar */
-.navbarFade {
-  position: fixed;
-  top: 0;
-
-}
-
 /*! Hero */
 /* Heading underline */
 .heroUnderline {
