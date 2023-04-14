@@ -11,6 +11,8 @@ import { useState } from "react";
 import { featuredProjectData } from "../../data/featuredProjectData";
 // Import project detail pages
 import GoodWeeds from "../../pages/projects/GoodWeeds";
+// Import Animation
+import { animate, motion} from "framer-motion";
 
 // ! Function
 export default function ProjectList({ featuredProject }) {
@@ -27,13 +29,30 @@ export default function ProjectList({ featuredProject }) {
     shortSkillArray
   );
 
+  // * Animation
+  const visible = {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1, delay: 0.5 },
+  };
+  const itemVariants = {
+    hidden: { opacity: 0, y: 0 },
+    visible,
+  };
+
   return (
     <>
-      <li className="col-span-3 flex flex-col rounded-lg bg-primary-light shadow-sm shadow-primary-dark hover:shadow-primary-light hover:shadow-md cursor-pointer transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+
+      <motion.li
+        className="col-span-3 flex flex-col rounded-lg bg-primary-light shadow-sm shadow-primary-dark hover:shadow-primary-light hover:shadow-md cursor-pointer transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+
+        variants={itemVariants}
+      >
         <img
           className="rounded-t-lg mx-auto flex-shrink-0 object-cover brightness-90 hover:brightness-100"
           src={featuredProject.screenshot}
           alt=""
+          
         />
         <div className="flex flex-1 flex-col px-5 py-5">
           <h3 className="mt-1 text-xl font-semibold ">
@@ -87,7 +106,7 @@ export default function ProjectList({ featuredProject }) {
             </div>
           </div>
         </div>
-      </li>
+      </motion.li>
     </>
   );
 }
