@@ -38,7 +38,6 @@ module.exports = {
       margin: {
         '136px': '136px'
       }
-
     },
     colors: {
       'primary': '#141414',

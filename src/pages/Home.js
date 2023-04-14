@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <div>
         <Hero id="/"/>
-
+        <Divider />
         <Expertise id="expertise" className="" />
         <Projects id="projects"  />
         <Contact id="contact" />
