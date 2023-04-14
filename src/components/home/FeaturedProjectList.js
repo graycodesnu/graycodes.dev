@@ -12,7 +12,7 @@ import { featuredProjectData } from "../../data/featuredProjectData";
 // Import project detail pages
 import GoodWeeds from "../../pages/projects/GoodWeeds";
 // Import Animation
-import { animate, motion} from "framer-motion";
+import { motion} from "framer-motion";
 
 // ! Function
 export default function ProjectList({ featuredProject }) {
@@ -25,7 +25,7 @@ export default function ProjectList({ featuredProject }) {
   const visible = {
     opacity: 1,
     y: 0,
-    transition: { duration: 1, delay: 0.5 },
+    transition: { duration: 1, delay: 1 },
   };
   const itemVariants = {
     hidden: { opacity: 0, y: 0 },
@@ -38,7 +38,6 @@ export default function ProjectList({ featuredProject }) {
 
       <motion.li
         className="col-span-3 flex flex-col rounded-lg bg-primary-light shadow-sm shadow-primary-dark hover:shadow-primary-light hover:shadow-md cursor-pointer transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
-
         variants={itemVariants}
       >
         <img

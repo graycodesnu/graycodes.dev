@@ -62,7 +62,7 @@ export default function Projects() {
         viewport={{ once: true }}
         exit={{ opacity: 0, transition: { duration: 1 } }}
         variants={{
-          visible: { transition: { staggerChildren: 0.5 } },
+          visible: { transition: { staggerChildren: 1 } },
         }}
       >
         <motion.h1
@@ -71,43 +71,42 @@ export default function Projects() {
         >
           <span className="projectHeadingUnderline">My Projects</span>
         </motion.h1>
-        {/* Featured */}
-        <div className="mt-7 py-3 px-8">
+        {/* *** Featured *** */}
+        <motion.div className="mt-7 py-3 px-8" variants={itemVariants}>
           <motion.h2
             className="text-secondary text-5xl font-semibold flex justify-center"
             variants={itemVariants}
           >
             <span className="featuredProjectsUnderline">Featured</span>
           </motion.h2>
-
           {/* Featured Grid */}
           <motion.ul className="mt-8 pt-6 pb-7 grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9">
             {featuredProjectDataList}
           </motion.ul>
+        </motion.div>
+
+        {/* *** In Progress *** */}
+        <div>
+          {inProgressProjectDataList}
         </div>
 
-        {/* In Progress */}
-        <motion.div className="">{inProgressProjectDataList}</motion.div>
-
-        {/* Other */}
-        <div className="mt-12 py-3 px-8">
+        {/* *** Other *** */}
+        <motion.div className="mt-12 py-3 px-8" variants={itemVariants}>
           <span>
-            <h2 className="text-secondary text-5xl font-semibold flex">
+            <motion.h2
+              className="text-secondary text-5xl font-semibold flex justify-center"
+              variants={itemVariants}
+            >
               <span className="otherProjectsUnderline">Noteworthy</span>
-            </h2>
-            <h2 className="text-secondary text-5xl font-semibold flex">
-              <span className="otherProjectsUnderline">Projects</span>
-            </h2>
+            </motion.h2>
           </span>
-
           {/* Other Grid */}
           <ul
             className="mt-10 pt-6 pb-7 px-8 grid grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9"
-
           >
             {otherProjectDataList}
           </ul>
-        </div>
+        </motion.div>
       </motion.div>
     </>
   );
