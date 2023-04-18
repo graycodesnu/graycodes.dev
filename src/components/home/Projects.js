@@ -86,9 +86,7 @@ export default function Projects() {
         </motion.div>
 
         {/* *** In Progress *** */}
-        <div>
-          {inProgressProjectDataList}
-        </div>
+        <div>{inProgressProjectDataList}</div>
 
         {/* *** Other *** */}
         <motion.div className="mt-12 py-3 px-8" variants={itemVariants}>
@@ -101,9 +99,7 @@ export default function Projects() {
             </motion.h2>
           </span>
           {/* Other Grid */}
-          <ul
-            className="mt-10 pt-6 pb-7 px-8 grid grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9"
-          >
+          <ul className="mt-10 pt-6 pb-7 px-8 grid grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9">
             {otherProjectDataList}
           </ul>
         </motion.div>
