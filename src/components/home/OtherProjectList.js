@@ -47,6 +47,7 @@ export default function OtherProjectList({ otherProject }) {
   //   }
   // }
 
+  // ** RETURN **
   return (
     <>
       <motion.li
@@ -106,6 +107,7 @@ export default function OtherProjectList({ otherProject }) {
               <a
                 href={otherProject.github}
                 target="_blank"
+                rel="noreferrer"
                 className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-green-opaque hover:border-none py-4 text-sm font-semibold hover:text-gold"
               >
                 <GitHubIcon
@@ -122,6 +124,7 @@ export default function OtherProjectList({ otherProject }) {
               <a
                 href={otherProject.live}
                 target="_blank"
+                rel="noreferrer"
                 className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-green-opaque hover:border-none py-4 text-sm font-semibold text-silver hover:text-gold"
               >
                 <ArrowTopRightOnSquareIcon

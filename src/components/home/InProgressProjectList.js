@@ -85,7 +85,11 @@ export default function InProgressProject({ inProgressProject }) {
                   ))}
                 </span>
                 {/* GitHub */}
-                <a href={inProgressProject.github} target="_blank">
+                <a
+                  href={inProgressProject.github}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <motion.button
                     className="mt-10 inline-flex items-center justify-center min-w-full rounded-md font-semibold text-md py-1 outline outline-green hover:outline-none hover:text-gold hover:bg-blue hover:shadow-lg hover:shadow-primary-light"
                     variants={itemVariants}
