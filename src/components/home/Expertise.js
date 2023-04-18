@@ -68,7 +68,7 @@ export default function Expertise() {
         }}
       >
         <motion.h1
-          className="flex justify-center xl:mt-8 text-5xl font-bold tracking-tight text-secondary sm:text-7xl"
+          className="flex justify-start xl:mt-8 text-5xl font-bold tracking-tight text-secondary sm:text-7xl"
           variants={itemVariants}
         >
           <span className="backgroundUnderline">My Expertise </span>

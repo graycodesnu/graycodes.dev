@@ -45,7 +45,10 @@ export default function InProgressProject({ inProgressProject }) {
           <span className="inProgressProjectUnderline">In Progress</span>
         </motion.h2>
         {/* Project Section */}
-        <motion.div className="mx-auto max-w-7xl md:px-6 lg:px-8  flex justify-center" variants={itemVariants}>
+        <motion.div
+          className="mx-auto max-w-7xl md:px-6 lg:px-8  flex justify-center"
+          variants={itemVariants}
+        >
           <div className="grid grid-cols-1 gap-x-8 gap-y-16 ml-20 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
             <div className="px-6 md:px-0 lg:pr-4 lg:pt-4">
               {/* Inner Project Info */}
@@ -82,7 +85,7 @@ export default function InProgressProject({ inProgressProject }) {
                   ))}
                 </span>
                 {/* GitHub */}
-                <a href={inProgressProject.github}>
+                <a href={inProgressProject.github} target="_blank">
                   <motion.button
                     className="mt-10 inline-flex items-center justify-center min-w-full rounded-md font-semibold text-md py-1 outline outline-green hover:outline-none hover:text-gold hover:bg-blue hover:shadow-lg hover:shadow-primary-light"
                     variants={itemVariants}

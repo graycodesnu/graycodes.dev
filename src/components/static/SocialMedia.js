@@ -93,7 +93,7 @@ export default function SocialMedia() {
   const visible = {
     opacity: 1,
     y: 0,
-    transition: { duration: 1, delay: .35 },
+    transition: { duration: 1, delay: 0.35 },
   };
   const itemVariants = {
     hidden: { opacity: 0, y: 10 },
@@ -121,6 +121,7 @@ export default function SocialMedia() {
               <motion.a
                 key={item.name}
                 href={item.href}
+                target="_blank"
                 className="text-green hover:text-gold"
                 variants={itemVariants}
               >
@@ -129,7 +130,10 @@ export default function SocialMedia() {
               </motion.a>
             ))}
           </motion.div>
-          <motion.div className="w-1 h-28 bg-gradient-to-t from-green via-green to-primary border-none ml-3 mt" variants={itemVariants}/>
+          <motion.div
+            className="w-1 h-28 bg-gradient-to-t from-green via-green to-primary border-none ml-3 mt"
+            variants={itemVariants}
+          />
         </motion.div>
       </motion.div>
     </>

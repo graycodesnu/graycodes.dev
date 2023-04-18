@@ -19,7 +19,7 @@ export default function OtherProjectList({ otherProject }) {
   const visible = {
     opacity: 1,
     y: 0,
-    transition: { duration: 1, delay: .5 },
+    transition: { duration: 1, delay: 0.5 },
   };
   const itemVariants = {
     hidden: { opacity: 0, y: 0 },
@@ -56,7 +56,7 @@ export default function OtherProjectList({ otherProject }) {
         viewport={{ once: true }}
         exit={{ opacity: 0, transition: { duration: 1 } }}
         variants={{
-          visible: { transition: { staggerChildren: .5 } },
+          visible: { transition: { staggerChildren: 0.5 } },
         }}
       >
         {/* Icon */}
@@ -105,6 +105,7 @@ export default function OtherProjectList({ otherProject }) {
             >
               <a
                 href={otherProject.github}
+                target="_blank"
                 className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-green-opaque hover:border-none py-4 text-sm font-semibold hover:text-gold"
               >
                 <GitHubIcon
@@ -120,6 +121,7 @@ export default function OtherProjectList({ otherProject }) {
             >
               <a
                 href={otherProject.live}
+                target="_blank"
                 className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-green-opaque hover:border-none py-4 text-sm font-semibold text-silver hover:text-gold"
               >
                 <ArrowTopRightOnSquareIcon
