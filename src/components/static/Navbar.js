@@ -9,7 +9,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 // Import animation
 import { motion } from "framer-motion";
 
-// ! Routes
+// ! Routes Data
 // Nav routes
 const navigation = [
   { name: "Home", href: "hero", current: false },

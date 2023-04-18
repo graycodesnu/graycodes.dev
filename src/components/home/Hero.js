@@ -1,3 +1,4 @@
+// ! Imports
 // Import react scroll for view projects link
 import { Link } from "react-scroll";
 // Import animation
