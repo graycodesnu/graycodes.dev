@@ -1,29 +1,30 @@
 export const otherProjectData = [
   //! Intertain
-  {
-    id: 1,
-    title: "Intertain",
-    // Screenshot not used
-    // screenshot: require("../assets/project-screenshots/intertain/intertain.png"),
-    github: "https://github.com/NW-Bootcamp-Team1/Night-In",
-    live: "https://nw-bootcamp-team1.github.io/Night-In/home-page/index",
-    description:
-      "Three web APIs randomly generate book, movie, and board game suggestions for a night in. Save or refresh options in local storage until satisfied.",
-    responsibilities: [
-      "Local storage functionality",
-      "Third-party API and implementation",
-      "UX/UI",
-    ],
-    skillsShort: ["JavaScript", "APIs", "CSS"],
-    skillsDetail: [
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Heroku",
-      "Local Storage",
-      "API",
-    ],
-  },
+  // * Removing for now to move to featured section, but would like to add this back here
+  // {
+  //   id: 1,
+  //   title: "Intertain",
+  //   // Screenshot not used
+  //   // screenshot: require("../assets/project-screenshots/intertain/intertain.png"),
+  //   github: "https://github.com/NW-Bootcamp-Team1/Night-In",
+  //   live: "https://nw-bootcamp-team1.github.io/Night-In/home-page/index",
+  //   description:
+  //     "Three web APIs randomly generate book, movie, and board game suggestions for a night in. Save or refresh options in local storage until satisfied.",
+  //   responsibilities: [
+  //     "Local storage functionality",
+  //     "Third-party API and implementation",
+  //     "UX/UI",
+  //   ],
+  //   skillsShort: ["JavaScript", "APIs", "CSS"],
+  //   skillsDetail: [
+  //     "JavaScript",
+  //     "HTML",
+  //     "CSS",
+  //     "Heroku",
+  //     "Local Storage",
+  //     "API",
+  //   ],
+  // },
   // ! Weather Dashboard
   {
     id: 2,
@@ -70,9 +71,21 @@ export const otherProjectData = [
     skillsShort: ["JavaScript", "CSS", "HTML"],
     skillsDetail: ["JavaScript", "HTML", "CSS"],
   },
-  // ! E-Commerce Backend
+    // ! Node README
   {
     id: 5,
+    title: "README.md Generator",
+    screenshot: require("../assets/project-screenshots/misc/node-readme.png"),
+    github: "https://github.com/graycodesnu/node-readme",
+    live: "https://drive.google.com/file/d/1St-Si8Wu9aCa9QI1vvXhKOsWRZptzbra/view",
+    description:
+      "README markdown files are made easy with Node.js. As users respond to prompts from the command line, a formatted markdown file is produced, making it easy to put their project's best foot forward.",
+    skillsShort: ["JavaScript", "Node.js"],
+    skillsDetail: ["JavaScript", "Node.js"],
+  },
+  // ! E-Commerce Backend
+  {
+    id: 6,
     title: "E-Commerce Backend",
     // Screenshot not used or imported
     // screenshot: require('../assets/project-screenshots/misc/node-readme.png'),
@@ -85,7 +98,7 @@ export const otherProjectData = [
   },
   // ! Team Profile Builder
   {
-    id: 6,
+    id: 7,
     title: "Team Profile Builder",
     // Screenshot not used or imported
     // screenshot: require('../assets/project-screenshots/misc/node-readme.png'),
