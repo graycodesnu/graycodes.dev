@@ -89,7 +89,7 @@ export const featuredProjectData = [
 {
   id: 5,
   title: "Code Wiz Quiz",
-  screenshot: require("../assets/project-screenshots/misc/code-wiz-quiz.png"),
+  screenshot: require("../assets/project-screenshots/misc/code-wiz.png"),
   github: "https://github.com/graycodesnu/code-wiz-quiz",
   live: "https://graycodesnu.github.io/code-wiz-quiz/",
   description:

@@ -113,7 +113,8 @@ export default function Navbar() {
                   {/* Download Resume */}
                   <div className="">
                     <a
-                      href="#"
+                      href="https://drive.google.com/file/d/1MZ7Enz0QTZIJTU_JD-2RyjHPRdM1GTsY/view?usp=sharing"
+                      target="_blank"
                       className="
                   flex items-center rounded-md px-2 py-2 text-base font-medium outline outline-green hover:outline-2 hover:text-gold hover:bg-blue hover:outline-none"
                     >
