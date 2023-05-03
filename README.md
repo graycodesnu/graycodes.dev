@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Built using React, this is the third iteration of my portfolio and the first iteration of [graycodes.dev](https://graycodes.dev/). I had a blast using Tailwind CSS, Framer Motion, and Firebase for the first time.
+Built using React, this is the third iteration of my portfolio and the first iteration of [graycodes.dev](https://graycodes.dev/). I had a blast using Tailwind CSS, Framer Motion, and Firebase for the first time.  The wireframe can be found [here](https://www.figma.com/file/YwyxUKX9HAlJNotUMXLyKy/portfolio?node-id=0%3A1&t=qs2YT2ctcCQQSiJC-1).
 
 Previous portfolio iterations: [Version 1](https://github.com/graycodesnu/portfolioWeek02), [Version 2](https://github.com/graycodesnu/g-harvey-portfolio)
 
